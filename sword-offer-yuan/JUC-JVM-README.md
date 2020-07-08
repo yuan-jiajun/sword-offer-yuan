@@ -38,8 +38,8 @@
   - 自旋锁
   - 读写锁/独占/共享锁
   - Synchronized和Lock的区别
-- CountDownLatch/CyclicBarrier/Semaphore
-  - CountDownLatch
+- Demos.CountDownLatch/CyclicBarrier/Semaphore
+  - Demos.CountDownLatch
     - 枚举类的使用
   - CyclicBarrier
   - Semaphore

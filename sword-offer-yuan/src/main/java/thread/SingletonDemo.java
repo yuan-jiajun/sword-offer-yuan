@@ -2,7 +2,7 @@ package thread;
 
 public class SingletonDemo {
     private static SingletonDemo singletonDemo=null;
-    //private static volatile SingletonDemo singletonDemo=null;
+    //private static volatile Demos.SingletonDemo singletonDemo=null;
     private SingletonDemo(){
         System.out.println(Thread.currentThread().getName()+"\t 我是构造方法");
     }

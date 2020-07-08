@@ -25,8 +25,8 @@
   - [自旋锁](#自旋锁)
   - [读写锁/独占/共享锁](#读写锁独占共享锁)
   - [Synchronized和Lock的区别](#synchronized和lock的区别)
-- [CountDownLatch/CyclicBarrier/Semaphore](#countdownlatchcyclicbarriersemaphore)
-  - [CountDownLatch](#countdownlatch)
+- [Demos.CountDownLatch/CyclicBarrier/Semaphore](#countdownlatchcyclicbarriersemaphore)
+  - [Demos.CountDownLatch](#countdownlatch)
     - [枚举类的使用](#枚举类的使用)
   - [CyclicBarrier](#cyclicbarrier)
   - [Semaphore](#semaphore)
@@ -65,7 +65,7 @@ JMM可能带来**可见性**、**原子性**和**有序性**问题。所谓可�
 [可见性测试](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/VolatileDemo.java)
 
 ```java
-class MyData{
+class Demos.MyDemos.MyData{
     int number=0;
     //volatile int number=0;
 
@@ -87,7 +87,7 @@ class MyData{
 //volatile可以保证可见性，及时通知其它线程主物理内存的值已被修改
 private static void volatileVisibilityDemo() {
     System.out.println("可见性测试");
-    MyData myData=new MyData();//资源类
+    Demos.MyDemos.MyData myData=new Demos.MyDemos.MyData();//资源类
     //启动一个线程操作共享数据
     new Thread(()->{
         System.out.println(Thread.currentThread().getName()+"\t come in");
@@ -101,7 +101,7 @@ private static void volatileVisibilityDemo() {
 }
 ```
 
-`MyData`类是资源类，一开始number变量没有用volatile修饰，所以程序运行的结果是：
+`Demos.MyDemos.MyData`类是资源类，一开始number变量没有用volatile修饰，所以程序运行的结果是：
 
 ```java
 可见性测试
@@ -142,7 +142,7 @@ putfield	//写操作
 ```java
 private static void atomicDemo() {
     System.out.println("原子性测试");
-    MyData myData=new MyData();
+    Demos.MyDemos.MyData myData=new Demos.MyDemos.MyData();
     for (int i = 1; i <= 20; i++) {
         new Thread(()->{
             for (int j = 0; j <1000 ; j++) {
@@ -191,17 +191,17 @@ volatile底层是用CPU的**内存屏障**（Memory Barrier）指令来实现的
 常见的DCL（Double Check Lock）模式虽然加了同步，但是在多线程下依然会有线程安全问题。
 
 ```java
-public class SingletonDemo {
-    private static SingletonDemo singletonDemo=null;
-    private SingletonDemo(){
+public class Demos.SingletonDemo {
+    private static Demos.SingletonDemo singletonDemo=null;
+    private Demos.SingletonDemo(){
         System.out.println(Thread.currentThread().getName()+"\t 我是构造方法");
     }
     //DCL模式 Double Check Lock 双端检索机制：在加锁前后都进行判断
-    public static SingletonDemo getInstance(){
+    public static Demos.SingletonDemo getInstance(){
         if (singletonDemo==null){
-            synchronized (SingletonDemo.class){
+            synchronized (Demos.SingletonDemo.class){
                  if (singletonDemo==null){
-                     singletonDemo=new SingletonDemo();
+                     singletonDemo=new Demos.SingletonDemo();
                  }
             }
         }
@@ -211,14 +211,14 @@ public class SingletonDemo {
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++) {
             new Thread(()->{
-                SingletonDemo.getInstance();
+                Demos.SingletonDemo.getInstance();
             },String.valueOf(i+1)).start();
         }
     }
 }
 ```
 
-这个漏洞比较tricky，很难捕捉，但是是存在的。`instance=new SingletonDemo();`可以大致分为三步
+这个漏洞比较tricky，很难捕捉，但是是存在的。`instance=new Demos.SingletonDemo();`可以大致分为三步
 
 ```java
 memory = allocate();     //1.分配内存
@@ -235,7 +235,7 @@ instance = memory;	 //3.设置引用地址
 CAS是指**Compare And Swap**，**比较并交换**，是一种很重要的同步思想。如果主内存的值跟期望值一样，那么就进行修改，否则一直重试，直到一致为止。
 
 ```java
-public class CASDemo {
+public class Demos.CASDemo {
     public static void main(String[] args) {
         AtomicInteger atomicInteger=new AtomicInteger(5);
         System.out.println(atomicInteger.compareAndSet(5, 2019)+"\t current data : "+ atomicInteger.get());
@@ -293,9 +293,9 @@ CAS实际上是一种自旋锁，
 `AtomicInteger`对整数进行原子操作，如果是一个POJO呢？可以用`AtomicReference`来包装这个POJO，使其操作原子化。
 
 ```java
-User user1 = new User("Jack",25);
-User user2 = new User("Lucy",21);
-AtomicReference<User> atomicReference = new AtomicReference<>();
+Demos.User user1 = new Demos.User("Jack",25);
+Demos.User user2 = new Demos.User("Lucy",21);
+AtomicReference<Demos.User> atomicReference = new AtomicReference<>();
 atomicReference.set(user1);
 System.out.println(atomicReference.compareAndSet(user1,user2)); // true
 System.out.println(atomicReference.compareAndSet(user1,user2)); //false
@@ -309,7 +309,7 @@ System.out.println(atomicReference.compareAndSet(user1,user2)); //false
 AtomicStampedReference.compareAndSet(expectedReference,newReference,oldStamp,newStamp);
 ```
 
-详见[ABADemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/ABADemo.java)。
+详见[Demos.ABADemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/Demos.ABADemo.java)。
 
 # 集合类不安全问题
 
@@ -379,7 +379,7 @@ public CopyOnWriteArraySet() {
 
 `HashMap`不是线程安全的，`Hashtable`是线程安全的，但是跟`Vector`类似，太重量级。所以也有类似CopyOnWriteMap，只不过叫`ConcurrentHashMap`。
 
-关于集合不安全类请看[ContainerNotSafeDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/ContainerNotSafeDemo.java)。
+关于集合不安全类请看[Demos.ContainerNotSafeDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/Demos.ContainerNotSafeDemo.java)。
 
 # Java锁
 
@@ -422,7 +422,7 @@ try{
 while (!atomicReference.compareAndSet(null, thread)) { }
 ```
 
-详见[SpinLockDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/SpinLockDemo.java)。
+详见[Demos.SpinLockDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/Demos.SpinLockDemo.java)。
 
 ## 读写锁/独占/共享锁
 
@@ -430,7 +430,7 @@ while (!atomicReference.compareAndSet(null, thread)) { }
 
 比如缓存，就需要读写锁来控制。缓存就是一个键值对，以下Demo模拟了缓存的读写操作，读的`get`方法使用了`ReentrantReadWriteLock.ReadLock()`，写的`put`方法使用了`ReentrantReadWriteLock.WriteLock()`。这样避免了写被打断，实现了多个线程同时读。
 
-[ReadWriteLockDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/ReadWriteLockDemo.java)
+[Demos.ReadWriteLockDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/ReadWriteLockDemo.java)
 
 ## Synchronized和Lock的区别
 
@@ -442,13 +442,13 @@ while (!atomicReference.compareAndSet(null, thread)) { }
 4. **是否为公平锁**：`sync`只能是非公平锁，而`Lock`既能是公平锁，又能是非公平锁。
 5. **绑定多个条件**：`sync`不能，只能随机唤醒。而`Lock`可以通过`Condition`来绑定多个条件，精确唤醒。
 
-# CountDownLatch/CyclicBarrier/Semaphore
+# Demos.CountDownLatch/CyclicBarrier/Semaphore
 
-## CountDownLatch
+## Demos.CountDownLatch
 
-`CountDownLatch`内部维护了一个**计数器**，只有当**计数器==0**时，某些线程才会停止阻塞，开始执行。
+`Demos.CountDownLatch`内部维护了一个**计数器**，只有当**计数器==0**时，某些线程才会停止阻塞，开始执行。
 
-`CountDownLatch`主要有两个方法，`countDown()`来让计数器-1，`await()`来让线程阻塞。当`count==0`时，阻塞线程自动唤醒。
+`Demos.CountDownLatch`主要有两个方法，`countDown()`来让计数器-1，`await()`来让线程阻塞。当`count==0`时，阻塞线程自动唤醒。
 
 **案例一班长关门**：main线程是班长，6个线程是学生。只有6个线程运行完毕，都离开教室后，main线程班长才会关教室门。
 
@@ -460,15 +460,15 @@ while (!atomicReference.compareAndSet(null, thread)) { }
 
 枚举类就像一个**简化的数据库**，枚举类名就像数据库名，枚举的项目就像数据表，枚举的属性就像表的字段。
 
-关于`CountDownLatch`和枚举类的使用，请看[CountDownLatchDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/CountDownLatchDemo.java)。
+关于`Demos.CountDownLatch`和枚举类的使用，请看[CountDownLatchDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/CountDownLatchDemo.java)。
 
 ## CyclicBarrier
 
-`CountDownLatch`是减，而`CyclicBarrier`是加，理解了`CountDownLatch`，`CyclicBarrier`就很容易。比如召集7颗龙珠才能召唤神龙，详见[CyclicBarrierDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/CyclicBarrierDemo.java)。
+`Demos.CountDownLatch`是减，而`CyclicBarrier`是加，理解了`Demos.CountDownLatch`，`CyclicBarrier`就很容易。比如召集7颗龙珠才能召唤神龙，详见[Demos.CyclicBarrierDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/Demos.CyclicBarrierDemo.java)。
 
 ## Semaphore
 
-`CountDownLatch`的问题是**不能复用**。比如`count=3`，那么加到3，就不能继续操作了。而`Semaphore`可以解决这个问题，比如6辆车3个停车位，对于`CountDownLatch`**只能停3辆车**，而`Semaphore`可以停6辆车，车位空出来后，其它车可以占有，这就涉及到了`Semaphore.accquire()`和`Semaphore.release()`方法。
+`Demos.CountDownLatch`的问题是**不能复用**。比如`count=3`，那么加到3，就不能继续操作了。而`Semaphore`可以解决这个问题，比如6辆车3个停车位，对于`Demos.CountDownLatch`**只能停3辆车**，而`Semaphore`可以停6辆车，车位空出来后，其它车可以占有，这就涉及到了`Semaphore.accquire()`和`Semaphore.release()`方法。
 
 ```java
 Semaphore semaphore=new Semaphore(3);
@@ -512,7 +512,7 @@ for (int i = 1; i <=6 ; i++) {
 
 需要注意的是`LinkedBlockingQueue`虽然是有界的，但有个巨坑，其默认大小是`Integer.MAX_VALUE`，高达21亿，一般情况下内存早爆了（在线程池的`ThreadPoolExecutor`有体现）。
 
-**API**：抛出异常是指当队列满时，再次插入会抛出异常；返回布尔是指当队列满时，再次插入会返回false；阻塞是指当队列满时，再次插入会被阻塞，直到队列取出一个元素，才能插入。超时是指当一个时限过后，才会插入或者取出。API使用见[BlockingQueueDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/BlockingQueueDemo.java)。
+**API**：抛出异常是指当队列满时，再次插入会抛出异常；返回布尔是指当队列满时，再次插入会返回false；阻塞是指当队列满时，再次插入会被阻塞，直到队列取出一个元素，才能插入。超时是指当一个时限过后，才会插入或者取出。API使用见[Demos.BlockingQueueDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/Demos.BlockingQueueDemo.java)。
 
 | 方法类型 | 抛出异常  | 返回布尔   | 阻塞     | 超时                     |
 | -------- | --------- | ---------- | -------- | ------------------------ |
@@ -522,7 +522,7 @@ for (int i = 1; i <=6 ; i++) {
 
 ## SynchronousQueue
 
-队列只有一个元素，如果想插入多个，必须等队列元素取出后，才能插入，只能有一个“坑位”，用一个插一个，详见[SynchronousQueueDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/SynchronousQueueDemo.java)。
+队列只有一个元素，如果想插入多个，必须等队列元素取出后，才能插入，只能有一个“坑位”，用一个插一个，详见[Demos.SynchronousQueueDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/Demos.SynchronousQueueDemo.java)。
 
 # Callable接口
 
@@ -535,9 +535,9 @@ for (int i = 1; i <=6 ; i++) {
 **Callable接口的使用**：
 
 ```java
-public class CallableDemo {
+public class Demos.CallableDemo {
     //实现Callable接口
-    class MyThread implements Callable<Integer> {
+    class Demos.MyThread implements Callable<Integer> {
         @Override
         public Integer call() throws Exception {
             System.out.println("callable come in ...");
@@ -547,7 +547,7 @@ public class CallableDemo {
     
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         //创建FutureTask类，接受MyThread。    
-        FutureTask<Integer> futureTask = new FutureTask<>(new MyThread());
+        FutureTask<Integer> futureTask = new FutureTask<>(new Demos.MyThread());
         //将FutureTask对象放到Thread类的构造器里面。
         new Thread(futureTask, "AA").start();
         int result01 = 100;
@@ -721,7 +721,7 @@ ExecutorService threadPool=new ThreadPoolExecutor(2,5,
 **jps**指令：`jps -l`可以查看运行的Java进程。
 
 ```java
-9688 thread.DeadLockDemo
+9688 thread.Demos.DeadLockDemo
 12177 sun.tools.jps.Jps
 ```
 
