@@ -5,6 +5,7 @@ public class SingletonDemo {
     private SingletonDemo(){
         System.out.println(Thread.currentThread().getName()+"\t 我是构造函数SingletonDemo（）");
     }
+
 //    DCL(Double Check Lock双端检锁机制)
     public static SingletonDemo getInstance(){
         if(instance==null){

@@ -1,5 +1,3 @@
-package Demos;
-
 import java.util.concurrent.atomic.AtomicInteger;
 
 class MyData {
@@ -54,14 +52,8 @@ public class VolatileDemo {
         while (Thread.activeCount() > 2) {
             Thread.yield();
         }
-        System.out.println(Thread.currentThread().getName() + "\t finnally number value: " + myData.number);
-        System.out.println(Thread.currentThread().getName() + "\t finnally number value: " + myData.atomicInteger);
 
-
-        //实现Runnal接口的lambda表达式
-        new Thread(() -> {
-
-        }, "AAA").start();
-
+        System.out.println(Thread.currentThread().getName() + "\t finally number value: " + myData.number);
+        System.out.println(Thread.currentThread().getName() + "\t finally number value: " + myData.atomicInteger);
     }
 }
