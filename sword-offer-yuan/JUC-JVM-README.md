@@ -12,7 +12,7 @@
 - JMM（Java内存模型） 
 - volatile关键字 Java虚拟机提供的轻量级的同步机制
   - 可见性(内存可见性)
-  - 不保证原子性（synchronized保证）
+  - 不保证原子性（synchronized保证） 
   - 有序性（禁止指令重排）
   
   - 哪些地方用到过volatile？
@@ -38,8 +38,8 @@
   - 自旋锁
   - 读写锁/独占/共享锁
   - Synchronized和Lock的区别
-- Demos.CountDownLatch/CyclicBarrier/Semaphore
-  - Demos.CountDownLatch
+- Demos.CountDownLatchDemo/CyclicBarrier/Semaphore
+  - Demos.CountDownLatchDemo
     - 枚举类的使用
   - CyclicBarrier
   - Semaphore

@@ -25,8 +25,8 @@
   - [自旋锁](#自旋锁)
   - [读写锁/独占/共享锁](#读写锁独占共享锁)
   - [Synchronized和Lock的区别](#synchronized和lock的区别)
-- [Demos.CountDownLatch/CyclicBarrier/Semaphore](#countdownlatchcyclicbarriersemaphore)
-  - [Demos.CountDownLatch](#countdownlatch)
+- [Demos.CountDownLatchDemo/CyclicBarrier/Semaphore](#countdownlatchcyclicbarriersemaphore)
+  - [Demos.CountDownLatchDemo](#countdownlatch)
     - [枚举类的使用](#枚举类的使用)
   - [CyclicBarrier](#cyclicbarrier)
   - [Semaphore](#semaphore)
@@ -273,7 +273,7 @@ public final int getAnddAddInt(Object var1,long var2,int var4){
 
 这个方法的var1和var2，就是根据**对象**和**偏移量**得到在**主内存的快照值**var5。然后`compareAndSwapInt`方法通过var1和var2得到当前**主内存的实际值**。如果这个**实际值**跟**快照值**相等，那么就更新主内存的值为var5+var4。如果不等，那么就一直循环，一直获取快照，一直对比，直到实际值和快照值相等为止。
 
-比如有A、B两个线程，一开始都从主内存中拷贝了原值为3，A线程执行到`var5=this.getIntVolatile`，即var5=3。此时A线程挂起，B修改原值为4，B线程执行完毕，由于加了volatile，所以这个修改是立即可见的。A线程被唤醒，执行`this.compareAndSwapInt()`方法，发现这个时候主内存的值不等于快照值3，所以继续循环，**重新**从主内存获取。
+比如有A、B两个线程，一开始都从主 内存中拷贝了原值为3，A线程执行到`var5=this.getIntVolatile`，即var5=3。此时A线程挂起，B修改原值为4，B线程执行完毕，由于加了volatile，所以这个修改是立即可见的。A线程被唤醒，执行`this.compareAndSwapInt()`方法，发现这个时候主内存的值不等于快照值3，所以继续循环，**重新**从主内存获取。
 
 ## CAS缺点
 
@@ -387,9 +387,13 @@ public CopyOnWriteArraySet() {
 
 **概念**：所谓**公平锁**，就是多个线程按照**申请锁的顺序**来获取锁，类似排队，先到先得。而**非公平锁**，则是多个线程抢夺锁，会导致**优先级反转**或**饥饿现象**。
 
-**区别**：公平锁在获取锁时先查看此锁维护的**等待队列**，**为空**或者当前线程是等待队列的**队首**，则直接占有锁，否则插入到等待队列，FIFO原则。非公平锁比较粗鲁，上来直接**先尝试占有锁**，失败则采用公平锁方式。非公平锁的优点是**吞吐量**比公平锁更大。
+**区别**：公平锁在获取锁时先查看此锁维护的**等待队列**，**为空**或者当前线程是等待队列的**队首**，则直接占有锁，否则插入到等待队列，FIFO原则。
 
-`synchronized`和`juc.ReentrantLock`默认都是**非公平锁**。`ReentrantLock`在构造的时候传入`true`则是**公平锁**。
+非公平锁比较粗鲁，上来直接**先尝试占有锁**，失败则采用公平锁方式。非公平锁的优点是**吞吐量**比公平锁更大。
+
+`synchronized`和`juc.ReentrantLock`默认都是**非公平锁**。
+
+`ReentrantLock`在构造的时候传入`true`则是**公平锁**。
 
 ## 可重入锁/递归锁
 
@@ -401,7 +405,7 @@ public CopyOnWriteArraySet() {
 
 ### 锁的配对
 
-锁之间要配对，加了几把锁，最后就得解开几把锁，下面的代码编译和运行都没有任何问题。但锁的数量不匹配会导致死循环。
+锁之间要配对，加了几把锁，最后就得解开几把锁，下面的代码编译和运行都没有任何问题。 但锁的数量不匹配会导致死循环。
 
 ```java
 lock.lock();
@@ -426,7 +430,11 @@ while (!atomicReference.compareAndSet(null, thread)) { }
 
 ## 读写锁/独占/共享锁
 
-**读锁**是**共享的**，**写锁**是**独占的**。`juc.ReentrantLock`和`synchronized`都是**独占锁**，独占锁就是**一个锁**只能被**一个线程**所持有。有的时候，需要**读写分离**，那么就要引入读写锁，即`juc.ReentrantReadWriteLock`。
+**读锁**是**共享的**，**写锁**是**独占的**。
+
+`juc.ReentrantLock`和`synchronized`都是**独占锁**，独占锁就是**一个锁**只能被**一个线程**所持有。
+
+有的时候，需要**读写分离**，那么就要引入读写锁，即`juc.ReentrantReadWriteLock`。
 
 比如缓存，就需要读写锁来控制。缓存就是一个键值对，以下Demo模拟了缓存的读写操作，读的`get`方法使用了`ReentrantReadWriteLock.ReadLock()`，写的`put`方法使用了`ReentrantReadWriteLock.WriteLock()`。这样避免了写被打断，实现了多个线程同时读。
 
@@ -442,13 +450,13 @@ while (!atomicReference.compareAndSet(null, thread)) { }
 4. **是否为公平锁**：`sync`只能是非公平锁，而`Lock`既能是公平锁，又能是非公平锁。
 5. **绑定多个条件**：`sync`不能，只能随机唤醒。而`Lock`可以通过`Condition`来绑定多个条件，精确唤醒。
 
-# Demos.CountDownLatch/CyclicBarrier/Semaphore
+# Demos.CountDownLatchDemo/CyclicBarrier/Semaphore
 
-## Demos.CountDownLatch
+## Demos.CountDownLatchDemo
 
-`Demos.CountDownLatch`内部维护了一个**计数器**，只有当**计数器==0**时，某些线程才会停止阻塞，开始执行。
+`Demos.CountDownLatchDemo`内部维护了一个**计数器**，只有当**计数器==0**时，某些线程才会停止阻塞，开始执行。
 
-`Demos.CountDownLatch`主要有两个方法，`countDown()`来让计数器-1，`await()`来让线程阻塞。当`count==0`时，阻塞线程自动唤醒。
+`Demos.CountDownLatchDemo`主要有两个方法，`countDown()`来让计数器-1，`await()`来让线程阻塞。当`count==0`时，阻塞线程自动唤醒。
 
 **案例一班长关门**：main线程是班长，6个线程是学生。只有6个线程运行完毕，都离开教室后，main线程班长才会关教室门。
 
@@ -460,15 +468,15 @@ while (!atomicReference.compareAndSet(null, thread)) { }
 
 枚举类就像一个**简化的数据库**，枚举类名就像数据库名，枚举的项目就像数据表，枚举的属性就像表的字段。
 
-关于`Demos.CountDownLatch`和枚举类的使用，请看[CountDownLatchDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/CountDownLatchDemo.java)。
+关于`Demos.CountDownLatchDemo`和枚举类的使用，请看[CountDownLatchDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/CountDownLatchDemo.java)。
 
 ## CyclicBarrier
 
-`Demos.CountDownLatch`是减，而`CyclicBarrier`是加，理解了`Demos.CountDownLatch`，`CyclicBarrier`就很容易。比如召集7颗龙珠才能召唤神龙，详见[Demos.CyclicBarrierDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/Demos.CyclicBarrierDemo.java)。
+`Demos.CountDownLatchDemo`是减，而`CyclicBarrier`是加，理解了`Demos.CountDownLatchDemo`，`CyclicBarrier`就很容易。比如召集7颗龙珠才能召唤神龙，详见[Demos.CyclicBarrierDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/Demos.CyclicBarrierDemo.java)。
 
 ## Semaphore
 
-`Demos.CountDownLatch`的问题是**不能复用**。比如`count=3`，那么加到3，就不能继续操作了。而`Semaphore`可以解决这个问题，比如6辆车3个停车位，对于`Demos.CountDownLatch`**只能停3辆车**，而`Semaphore`可以停6辆车，车位空出来后，其它车可以占有，这就涉及到了`Semaphore.accquire()`和`Semaphore.release()`方法。
+`Demos.CountDownLatchDemo`的问题是**不能复用**。比如`count=3`，那么加到3，就不能继续操作了。而`Semaphore`可以解决这个问题，比如6辆车3个停车位，对于`Demos.CountDownLatchDemo`**只能停3辆车**，而`Semaphore`可以停6辆车，车位空出来后，其它车可以占有，这就涉及到了`Semaphore.accquire()`和`Semaphore.release()`方法。
 
 ```java
 Semaphore semaphore=new Semaphore(3);

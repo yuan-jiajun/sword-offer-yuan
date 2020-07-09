@@ -3,6 +3,10 @@ package thread;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
 
+/*
+ * 写一个自旋锁
+ * 自旋锁的好处：循环比较获取直到成功为止，没有类似wait的阻塞。
+ * */
 public class SpinLockDemo {
     AtomicReference<Thread> atomicReference = new AtomicReference<>();
 

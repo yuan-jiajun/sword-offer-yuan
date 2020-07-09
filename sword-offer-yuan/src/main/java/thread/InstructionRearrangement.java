@@ -1,6 +1,6 @@
 package thread;
 
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
 /**
  * @author Yuan Jiajun

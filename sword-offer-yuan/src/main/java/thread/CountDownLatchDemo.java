@@ -1,5 +1,6 @@
 package thread;
 
+import java.util.Objects;
 import java.util.concurrent.CountDownLatch;
 
 public class CountDownLatchDemo {
@@ -8,27 +9,31 @@ public class CountDownLatchDemo {
         county();
     }
 
-    private static void county() throws InterruptedException {
-        CountDownLatch countDownLatch=new CountDownLatch(6);
-        for (int i = 1; i <=6 ; i++) {
-            new Thread(()->{
-                System.out.println(Thread.currentThread().getName()+"\t 国被灭");
+    private static void leaveClassroom() throws InterruptedException {
+        CountDownLatch countDownLatch = new CountDownLatch(100);
+        for (int i = 1; i <= 100; i++) {
+            new Thread(() -> {
+                System.out.println(Thread.currentThread().getName() + "\t上完自习，离开教室");
                 countDownLatch.countDown();
-            }, CountryEnum.list(i).getRetMsg()).start();
+            }, String.valueOf(i)).start();
         }
+
         countDownLatch.await();
-        System.out.println(Thread.currentThread().getName()+"\t ******秦国一统华夏");
+        System.out.println(Thread.currentThread().getName() + "\t ******班长最后关门走人");
     }
 
-    private static void leaveClassroom() throws InterruptedException {
-        CountDownLatch countDownLatch=new CountDownLatch(6);
-        for (int i = 1; i <=6 ; i++) {
-            new Thread(()->{
-                System.out.println(Thread.currentThread().getName()+"\t上完自习，离开教室");
+    private static void county() throws InterruptedException {
+        CountDownLatch countDownLatch = new CountDownLatch(6);
+        for (int i = 1; i <= 6; i++) {
+            new Thread(() -> {
+                System.out.println(Thread.currentThread().getName() + "\t 国被灭");
                 countDownLatch.countDown();
-            },String.valueOf(i)).start();
+            }, Objects.requireNonNull(CountryEnum.get(i)).getRetMsg()).start();
         }
+
         countDownLatch.await();
-        System.out.println(Thread.currentThread().getName()+"\t ******班长最后关门走人");
+        System.out.println(Thread.currentThread().getName() + "\t ******秦国一统华夏");
     }
+
+
 }

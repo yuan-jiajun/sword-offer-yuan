@@ -1,7 +1,6 @@
 package thread;
 
-import org.junit.jupiter.api.DynamicTest;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapters;
 import java.util.concurrent.TimeUnit;
@@ -25,8 +24,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class VolatileDemo {
     class MyData {
-        //    int number = 0;
-        volatile int number = 0;
+//            int number = 0;
+        volatile int number =  0;
 
         AtomicInteger atomicInteger = new AtomicInteger();
 
