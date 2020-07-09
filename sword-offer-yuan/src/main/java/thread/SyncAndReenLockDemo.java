@@ -4,21 +4,30 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+/*
+ * 题目：多线程之间按顺序调用，实现A->B->C三个线程启动，要求如下：
+ * A打印5次，B打印10次，C打印15次
+ * 紧接着
+ * A打印5次，B打印10次，C打印15次
+ * 。。。。。
+ * 打印10轮
+ * */
+
 public class SyncAndReenLockDemo {
     public static void main(String[] args) {
         ShareResource shareResource = new ShareResource();
         new Thread(() -> {
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 2; i++) {
                 shareResource.print5();
             }
         }, "A").start();
         new Thread(() -> {
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 2; i++) {
                 shareResource.print10();
             }
         }, "B").start();
         new Thread(() -> {
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 2; i++) {
                 shareResource.print15();
             }
         }, "C").start();

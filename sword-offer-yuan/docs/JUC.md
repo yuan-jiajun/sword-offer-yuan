@@ -568,7 +568,7 @@ public class Demos.CallableDemo {
 
 # 阻塞队列的应用——生产者消费者
 
-## 传统模式
+## v2.0传统模式
 
 传统模式使用`Lock`来进行操作，需要手动加锁、解锁。详见[ProdConsTradiDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/ProdConsTradiDemo.java)。
 
@@ -595,7 +595,7 @@ public void increment() throws InterruptedException {
 }
 ```
 
-## 阻塞队列模式
+## v3.0阻塞队列模式
 
 使用阻塞队列就不需要手动加锁了，详见[ProdConsBlockQueueDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/thread/ProdConsBlockQueueDemo.java)。
 

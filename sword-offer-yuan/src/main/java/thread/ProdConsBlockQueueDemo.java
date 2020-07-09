@@ -2,14 +2,17 @@ package thread;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class ProdConsBlockQueueDemo {
     public static void main(String[] args) {
-        MyResource myResource = new MyResource(new ArrayBlockingQueue<>(10));
+        MyResource myResource = new MyResource(new ArrayBlockingQueue<>(5));
+//        MyResource myResource = new MyResource(new SynchronousQueue<>());
         new Thread(() -> {
             System.out.println(Thread.currentThread().getName() + "\t生产线程启动");
+            System.out.println();
             try {
                 myResource.myProd();
             } catch (Exception e) {
@@ -19,6 +22,7 @@ public class ProdConsBlockQueueDemo {
 
         new Thread(() -> {
             System.out.println(Thread.currentThread().getName() + "\t消费线程启动");
+            System.out.println();
             try {
                 myResource.myCons();
             } catch (Exception e) {
@@ -38,13 +42,15 @@ public class ProdConsBlockQueueDemo {
 }
 
 class MyResource {
+    //多线程程序注意用volatile 修饰
     private volatile boolean FLAG = true; //默认开启，进行生产+消费
     private AtomicInteger atomicInteger = new AtomicInteger();
 
-    private BlockingQueue<String> blockingQueue;
+    private BlockingQueue<String> blockingQueue = null;
 
     public MyResource(BlockingQueue<String> blockingQueue) {
         this.blockingQueue = blockingQueue;
+        System.out.println(blockingQueue.getClass().getName());
     }
 
     public void myProd() throws Exception {
@@ -53,13 +59,16 @@ class MyResource {
         while (FLAG) {
             data = atomicInteger.incrementAndGet() + "";//++i
             retValue = blockingQueue.offer(data, 2L, TimeUnit.SECONDS);
+
             if (retValue) {
                 System.out.println(Thread.currentThread().getName() + "\t" + "插入队列" + data + "成功");
             } else {
                 System.out.println(Thread.currentThread().getName() + "\t" + "插入队列" + data + "失败");
             }
+
             TimeUnit.SECONDS.sleep(1);
         }
+
         System.out.println(Thread.currentThread().getName() + "\tFLAG==false，停止生产");
     }
 
@@ -67,7 +76,7 @@ class MyResource {
         String res;
         while (FLAG) {
             res = blockingQueue.poll(2L, TimeUnit.SECONDS);
-            if (null == res || res.equalsIgnoreCase("")) {
+            if (res == null || res.equalsIgnoreCase("")) {
                 FLAG = false;
                 System.out.println(Thread.currentThread().getName() + "\t超过2秒钟没有消费，退出消费");
                 return;

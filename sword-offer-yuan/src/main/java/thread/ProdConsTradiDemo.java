@@ -6,6 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 初始值为0的变量，两个线程交替操作，一个+1，一个-1，执行五轮
+ *
  * 1 线程  操作  资源类
  * 2 判断  干活  通知
  * 3 防止虚假唤醒机制
@@ -50,9 +51,11 @@ class ShareData {
                 //等待，不能生产
                 condition.await();
             }
+
             //2 干活
             number++;
             System.out.println(Thread.currentThread().getName() + "\t" + number);
+
             //3 通知唤醒
             condition.signalAll();
         } catch (Exception e) {
@@ -65,7 +68,7 @@ class ShareData {
     public void decrement() throws InterruptedException {
         lock.lock();
         try {
-            //1 判断
+            //1 判断,多线程判断必须用while()判断，不能用if（）
             while (number == 0) {
                 //等待，不能生产
                 condition.await();
