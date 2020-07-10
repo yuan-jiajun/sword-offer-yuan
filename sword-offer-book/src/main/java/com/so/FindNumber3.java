@@ -46,7 +46,7 @@ public class FindNumber3 {
      * @param target
      * @return
      */
-
+    /*
     public static boolean find2(int[][] array, int target) {
         if (array == null || array.length == 0) {
             return false;
@@ -71,4 +71,5 @@ public class FindNumber3 {
 
         return false;
     }
+    */
 }
