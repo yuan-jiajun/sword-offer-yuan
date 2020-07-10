@@ -1,5 +1,3 @@
-import Common.TreeNode;
-
 /**
  * 第62题
  * 二叉树的序列化与反序列化

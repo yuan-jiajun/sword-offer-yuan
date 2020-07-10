@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-import Common.TreeNode;
+
 
 /**
  * 第6题

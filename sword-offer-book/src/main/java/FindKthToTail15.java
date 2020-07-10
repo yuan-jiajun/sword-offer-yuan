@@ -1,5 +1,3 @@
-import Common.ListNode;
-
 /**
  * 第15题
  * 输入一个链表，输出该链表的倒数第K个结点

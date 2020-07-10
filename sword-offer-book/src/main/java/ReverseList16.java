@@ -1,4 +1,4 @@
-import Common.ListNode;
+
 
 /**
  * 第16题 反转链表

@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Stack;
-import Common.ListNode;
+
 
 /**
  * 第5题 从尾到头打印链表
