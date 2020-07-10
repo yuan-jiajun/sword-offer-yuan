@@ -1,4 +1,4 @@
-import sworfoffer.Singleton1;
+import swordoffer.Singleton1;
 
 public class Singleton1Test {
     public static void main(String[] args) {
