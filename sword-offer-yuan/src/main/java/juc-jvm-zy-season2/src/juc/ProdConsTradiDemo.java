@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 初始值为0的变量，两个线程交替操作，一个+1，一个-1，执行五轮
- *
+ * <p>
  * 1 线程  操作  资源类
  * 2 判断  干活  通知
  * 3 防止虚假唤醒机制

@@ -13,7 +13,7 @@ public class Test48 {
     /**
      * 继承FinalClass48类会报错
      */
-//    class TestClass48 extends FinalClass48{}
+//    class TestClass48 extends book.FinalClass48{}
 
     @Test
     public void test48() throws Exception {
