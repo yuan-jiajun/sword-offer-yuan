@@ -1,4 +1,4 @@
-package com.atguigu.java;
+package src.com.atguigu.java;
 
 /**
  * @author shkstart
