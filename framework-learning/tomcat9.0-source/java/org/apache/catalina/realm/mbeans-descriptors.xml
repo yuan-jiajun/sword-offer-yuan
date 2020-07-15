@@ -26,16 +26,16 @@
 
     <attribute   name="allRolesMode"
           description="The all roles mode."
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <attribute   name="dataSourceName"
           description="The JNDI named JDBC DataSource for your database"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="localDataSource"
           description="Configures if the DataSource is local to the webapp"
@@ -43,32 +43,32 @@
 
     <attribute   name="realmPath"
           description="The realm path"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="roleNameCol"
           description="The column in the user role table that names a role"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="stateName"
           description="The name of the LifecycleState that this component is currently in"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
                  writeable="false"/>
 
     <attribute   name="userCredCol"
           description="The column in the user table that holds the user's credentials"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="userNameCol"
           description="The column in the user table that holds the user's username"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="userRoleTable"
           description="The table that holds the relation between user's and roles"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="userTable"
           description="The table that holds user data"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="validate"
           description="The 'validate certificate chains' flag."
@@ -90,33 +90,33 @@
 
     <attribute   name="allRolesMode"
           description="The all roles mode."
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="appName"
           description="The application name passed to the JAAS LoginContext, which uses it to select the set of relevant LoginModules"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <attribute   name="roleClassNames"
           description="Comma-delimited list of javax.security.Principal classes that represent security roles"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="realmPath"
           description="The realm path"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="stateName"
           description="The name of the LifecycleState that this component is currently in"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
                  writeable="false"/>
 
     <attribute   name="userClassNames"
           description="Comma-delimited list of javax.security.Principal classes that represent individual users"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="useContextClassLoader"
           description="Sets whether to use the context or default ClassLoader."
@@ -143,57 +143,57 @@
 
     <attribute   name="allRolesMode"
           description="The all roles mode."
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <attribute   name="connectionName"
           description="The connection username to use when trying to connect to the database"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="connectionPassword"
           description="The connection password to use when trying to connect to the database"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="connectionURL"
           description="The connection URL to use when trying to connect to the database"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="driverName"
           description="The JDBC driver to use"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="roleNameCol"
           description="The column in the user role table that names a role"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="realmPath"
           description="The realm path"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="stateName"
           description="The name of the LifecycleState that this component is currently in"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
                  writeable="false"/>
 
     <attribute   name="userCredCol"
           description="The column in the user table that holds the user's credentials"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="userNameCol"
           description="The column in the user table that holds the user's username"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="userRoleTable"
           description="The table that holds the relation between user's and roles"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="userTable"
           description="The table that holds user data"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="validate"
           description="The 'validate certificate chains' flag."
@@ -218,64 +218,64 @@
 
     <attribute   name="allRolesMode"
           description="The all roles mode."
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="alternateURL"
           description="The Alternate URL"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="authentication"
           description="The type of authentication to use"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <attribute   name="commonRole"
           description="The common role"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="connectionName"
           description="The connection username for the server we will contact"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="connectionPassword"
           description="The connection password for the server we will contact"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="connectionTimeout"
           description="The connection timeout"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="connectionURL"
           description="The connection URL for the server we will contact"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="contextFactory"
           description="The JNDI context factory for this Realm"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="protocol"
           description="The protocol to be used"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="realmPath"
           description="The realm path"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="referrals"
           description="The current setting for handling JNDI referrals."
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="roleBase"
           description="The base element for role searches"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="roleName"
           description="The name of the attribute containing roles held elsewhere"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="roleNested"
           description="The 'The nested group search flag' flag"
@@ -283,7 +283,7 @@
 
     <attribute   name="roleSearch"
           description="The message format used to select roles for a user"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="roleSearchAsUser"
           description="Should the search for user roles be performed as the authenticating user?"
@@ -296,28 +296,28 @@
 
     <attribute   name="stateName"
           description="The name of the LifecycleState that this component is currently in"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
                  writeable="false"/>
 
     <attribute   name="userBase"
           description="The base element for user searches"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="userPassword"
           description="The attribute name used to retrieve the user password"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="userPattern"
           description="The message format used to select a user"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="userRoleName"
           description="The name of the attribute in the user's entry containing roles for that user"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="userSearch"
           description="The message format used to search for a user"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="userSearchAsUser"
           description="Should the search for the user's DN be performed as the authenticating user?"
@@ -347,24 +347,24 @@
 
     <attribute   name="allRolesMode"
           description="The all roles mode."
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <attribute   name="pathname"
           description="The pathname of the XML file containing our database information"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="realmPath"
           description="The realm path"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="stateName"
           description="The name of the LifecycleState that this component is currently in"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
                  writeable="false"/>
 
     <attribute   name="validate"
@@ -386,24 +386,24 @@
 
     <attribute   name="allRolesMode"
           description="The all roles mode."
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <attribute   name="resourceName"
           description="The global JNDI name of the UserDatabase resource to use"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="realmPath"
           description="The realm path"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="stateName"
           description="The name of the LifecycleState that this component is currently in"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
                  writeable="false"/>
 
     <attribute   name="validate"
@@ -425,11 +425,11 @@
 
     <attribute   name="allRolesMode"
           description="The all roles mode."
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <attribute   name="realms"
@@ -439,11 +439,11 @@
 
     <attribute   name="realmPath"
           description="The realm path"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="stateName"
           description="The name of the LifecycleState that this component is currently in"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
                  writeable="false"/>
 
     <attribute   name="validate"
@@ -474,7 +474,7 @@
 
     <attribute   name="allRolesMode"
           description="The all roles mode."
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="cacheSize"
           description="Number of users that have failed authentication to keep in cache. Over time the cache will grow to this size and may not shrink. Defaults to 1000."
@@ -486,7 +486,7 @@
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <attribute   name="failureCount"
@@ -504,7 +504,7 @@
 
     <attribute   name="realmPath"
           description="The realm path"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="validate"
           description="The 'validate certificate chains' flag."
@@ -525,7 +525,7 @@
            returnType="boolean">
       <parameter name="username"
                  description="User to test for being locked"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="unlock"
@@ -534,7 +534,7 @@
            returnType="void">
       <parameter name="username"
                  description="User to unlock"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation name="start" description="Start" impact="ACTION" returnType="void" />

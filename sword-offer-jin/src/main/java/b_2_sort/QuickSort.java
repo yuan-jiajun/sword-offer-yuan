@@ -1,4 +1,4 @@
-package b_2_sort;
+package main.java.b_2_sort;
 
 import java.util.Arrays;
 

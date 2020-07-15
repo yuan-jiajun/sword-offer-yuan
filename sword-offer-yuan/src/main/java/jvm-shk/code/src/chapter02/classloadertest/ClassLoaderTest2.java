@@ -1,4 +1,4 @@
-package com.atguigu.java1;
+package classloadertest;
 
 /**
  * @author shkstart
@@ -8,8 +8,9 @@ public class ClassLoaderTest2 {
     public static void main(String[] args) {
         try {
             //1.
-            ClassLoader classLoader = Class.forName("java.lang.String").getClassLoader();
-            System.out.println(classLoader);
+            ClassLoader StringClassLoader = Class.forName("java.lang.String").getClassLoader();
+            System.out.println("StringClassLoader: " + StringClassLoader);//null
+
             //2.
             ClassLoader classLoader1 = Thread.currentThread().getContextClassLoader();
             System.out.println(classLoader1);

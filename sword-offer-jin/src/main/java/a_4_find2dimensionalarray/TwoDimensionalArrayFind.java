@@ -1,4 +1,4 @@
-package a_4_find2dimensionalarray;
+package main.java.a_4_find2dimensionalarray;
 
 /**
  * 二维数组中的查找

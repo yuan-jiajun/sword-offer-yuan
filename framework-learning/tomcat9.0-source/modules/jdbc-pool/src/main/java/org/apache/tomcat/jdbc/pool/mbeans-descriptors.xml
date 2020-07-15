@@ -25,7 +25,7 @@
 
     <attribute    name="className"
            description="Fully qualified class name of the managed object"
-                  type="java.lang.String"
+                  type="java.java.lang.String"
              writeable="false"/>
 
     <attribute    name="size"
@@ -61,12 +61,12 @@
 
     <attribute    name="url"
            description="The JDBC url for this connection pool"
-                  type="java.lang.String"
+                  type="java.java.lang.String"
              writeable="false"/>
 
     <attribute    name="driverClassName"
            description="The JDBC driver class for this connection pool"
-                  type="java.lang.String"
+                  type="java.java.lang.String"
              writeable="false"/>
 
     <attribute    name="defaultAutoCommit"
@@ -88,12 +88,12 @@
 
     <attribute    name="connectionProperties"
            description="The connection properties that will be set for new connections. Format of the string will be [propertyName=property;]*"
-                  type="java.lang.String"
+                  type="java.java.lang.String"
              writeable="false"/>
 
     <attribute    name="defaultCatalog"
            description="The JDBC transaction isolation setting for new connections"
-                  type="java.lang.String"
+                  type="java.java.lang.String"
              writeable="false"/>
 
     <attribute    name="initialSize"
@@ -123,7 +123,7 @@
 
     <attribute    name="validationQuery"
            description="The query to run during validation"
-                  type="java.lang.String"
+                  type="java.java.lang.String"
              writeable="false"/>
 
     <attribute    name="validationQueryTimeout"
@@ -195,17 +195,17 @@
 
     <attribute    name="name"
            description="The name of the connection pool, will be used in the ObjectName of the actual pool"
-                  type="java.lang.String"
+                  type="java.java.lang.String"
              writeable="false"/>
 
     <attribute    name="password"
            description="For security purposes,this doesn't return anything"
-                  type="java.lang.String"
+                  type="java.java.lang.String"
              writeable="false"/>
 
     <attribute    name="username"
            description="The username used to open connections"
-                  type="java.lang.String"
+                  type="java.java.lang.String"
              writeable="false"/>
 
     <attribute    name="validationInterval"
@@ -215,7 +215,7 @@
 
     <attribute    name="initSQL"
            description="An SQL executed once per connection, when it is established"
-                  type="java.lang.String"
+                  type="java.java.lang.String"
              writeable="false"/>
 
     <attribute    name="testOnConnect"
@@ -226,7 +226,7 @@
 
     <attribute    name="jdbcInterceptors"
            description="The interceptors configured for this pool"
-                  type="java.lang.String"
+                  type="java.java.lang.String"
              writeable="false"/>
 
     <attribute    name="jmxEnabled"
@@ -293,7 +293,7 @@
 
     <attribute    name="dataSourceJNDI"
            description="The JNDI name for a data source to be looked up"
-                  type="java.lang.String"
+                  type="java.java.lang.String"
              writeable="false"/>
 
     <attribute    name="useDisposableConnectionFacade"
@@ -310,7 +310,7 @@
 
     <attribute    name="validatorClassName"
            description="The name of validator class which implements org.apache.tomcat.jdbc.pool.Validator interface"
-                  type="java.lang.String"
+                  type="java.java.lang.String"
              writeable="false"/>
 
     <attribute    name="waitCount"

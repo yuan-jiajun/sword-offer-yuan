@@ -30,7 +30,7 @@
     <attribute
       name="className"
       description="Fully qualified class name of the managed object"
-      type="java.lang.String"
+      type="java.java.lang.String"
       writeable="false"/>
     <attribute
       name="requireReauthentication"
@@ -39,7 +39,7 @@
     <attribute
       name="cookieDomain"
       description="(Optional) Domain to be used by sso cookies"
-      type="java.lang.String"/>
+      type="java.java.lang.String"/>
     <attribute
       name="mapSendOptions"
       description="mapSendOptions"

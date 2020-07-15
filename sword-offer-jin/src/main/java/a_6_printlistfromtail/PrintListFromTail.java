@@ -1,4 +1,4 @@
-package a_6_printlistfromtail;
+package main.java.a_6_printlistfromtail;
 
 import java.util.Stack;
 

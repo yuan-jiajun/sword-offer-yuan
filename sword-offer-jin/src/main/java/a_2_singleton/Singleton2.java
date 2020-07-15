@@ -1,4 +1,4 @@
-package a_2_singleton;
+package main.java.a_2_singleton;
 
 /**
  * 基于静态内部类实现单例模式，懒汉模式

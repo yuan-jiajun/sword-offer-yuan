@@ -1,4 +1,4 @@
-package a_3_arrayfind;
+package main.java.a_3_arrayfind;
 
 import java.util.HashMap;
 import java.util.Map;

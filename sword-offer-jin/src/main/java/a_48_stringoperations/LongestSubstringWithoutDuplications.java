@@ -1,4 +1,4 @@
-package a_48_stringoperations;
+package main.java.a_48_stringoperations;
 
 /**
  * @program: swordofferjava

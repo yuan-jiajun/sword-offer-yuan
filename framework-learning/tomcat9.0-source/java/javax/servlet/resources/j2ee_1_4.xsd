@@ -351,7 +351,7 @@ Deployment File may indicate one of the following:
   <xsd:complexType name="env-entry-type-valuesType">
     <xsd:annotation>
       <xsd:documentation>
-        <![CDATA[
+          <![CDATA[
 
           This type contains the fully-qualified Java type of the
           environment entry value that is expected by the
@@ -362,7 +362,7 @@ Deployment File may indicate one of the following:
               java.lang.Boolean
               java.lang.Byte
               java.lang.Character
-              java.lang.String
+              java.java.lang.String
               java.lang.Short
               java.lang.Integer
               java.lang.Long
@@ -381,7 +381,7 @@ Deployment File may indicate one of the following:
         <xsd:enumeration value="java.lang.Boolean"/>
         <xsd:enumeration value="java.lang.Byte"/>
         <xsd:enumeration value="java.lang.Character"/>
-        <xsd:enumeration value="java.lang.String"/>
+        <xsd:enumeration value="java.java.lang.String"/>
         <xsd:enumeration value="java.lang.Short"/>
         <xsd:enumeration value="java.lang.Integer"/>
         <xsd:enumeration value="java.lang.Long"/>

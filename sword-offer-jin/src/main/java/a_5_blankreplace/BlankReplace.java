@@ -1,4 +1,4 @@
-package a_5_blankreplace;
+package main.java.a_5_blankreplace;
 
 /**
  * 替换空格

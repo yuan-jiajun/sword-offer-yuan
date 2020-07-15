@@ -1,4 +1,4 @@
-package a_6_printlistfromtail;
+package main.java.a_6_printlistfromtail;
 
 public class ListNode {
     public int nodeValue;

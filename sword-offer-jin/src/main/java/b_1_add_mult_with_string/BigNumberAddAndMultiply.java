@@ -1,4 +1,4 @@
-package b_1_add_mult_with_string;
+package main.java.b_1_add_mult_with_string;
 
 /**
  * @program: swordofferjava

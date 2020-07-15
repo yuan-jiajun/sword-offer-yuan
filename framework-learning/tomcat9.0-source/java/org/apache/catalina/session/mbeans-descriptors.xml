@@ -30,7 +30,7 @@
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <attribute   name="duplicates"
@@ -43,7 +43,7 @@
 
     <attribute   name="jvmRoute"
           description="Retrieve the JvmRoute for the enclosing Engine"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
            writeable = "false" />
 
     <attribute   name="maxActive"
@@ -58,12 +58,12 @@
     <attribute   name="name"
           description="The descriptive name of this Manager implementation
                        (for logging)"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <attribute   name="pathname"
           description="Path name of the disk file in which active sessions"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="persistAuthentication"
           description="Indicates whether sessions shall persist authentication information when being persisted (e.g. across application restarts)."
@@ -79,15 +79,15 @@
 
     <attribute   name="secureRandomAlgorithm"
           description="The secure random number generator algorithm name"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="secureRandomClass"
           description="The secure random number generator class name"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="secureRandomProvider"
           description="The secure random number generator provider name"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="sessionAverageAliveTime"
           description="Average time an expired session had been alive"
@@ -114,7 +114,7 @@
 
     <attribute   name="stateName"
           description="The name of the LifecycleState that this component is currently in"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <attribute   name="rejectedSessions"
@@ -124,11 +124,11 @@
 
     <attribute   name="sessionAttributeNameFilter"
           description="The string pattern used for including session attributes in distribution. Null means all attributes are included."
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="sessionAttributeValueClassNameFilter"
           description="The regular expression used to filter session attributes based on the implementation class of the value. The regular expression is anchored and must match the fully qualified class name."
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="warnOnSessionAttributeFilterFailure"
           description="Should a WARN level log message be generated if a session attribute fails to match sessionAttributeNameFilter or sessionAttributeClassNameFilter?"
@@ -146,16 +146,16 @@
            returnType="void">
       <parameter name="sessionId"
           description="Id of the session"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="getCreationTime"
           description="Get the creation time"
                impact="ACTION"
-           returnType="java.lang.String">
+           returnType="java.java.lang.String">
       <parameter name="sessionId"
           description="Id of the session"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="getCreationTimestamp"
@@ -164,16 +164,16 @@
            returnType="long">
       <parameter name="sessionId"
           description="Id of the session"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="getLastAccessedTime"
           description="Get the last access time"
                impact="ACTION"
-           returnType="java.lang.String">
+           returnType="java.java.lang.String">
       <parameter name="sessionId"
           description="Id of the session"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
    <operation   name="getLastAccessedTimestamp"
@@ -182,25 +182,25 @@
            returnType="long">
       <parameter name="sessionId"
           description="Id of the session"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="getSessionAttribute"
           description="Return a session attribute"
                impact="ACTION"
-           returnType="java.lang.String">
+           returnType="java.java.lang.String">
       <parameter name="sessionId"
           description="Id of the session"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
       <parameter name="key"
           description="key of the attribute"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="listSessionIds"
           description="Return the list of active session ids"
                impact="ACTION"
-           returnType="java.lang.String">
+           returnType="java.java.lang.String">
     </operation>
 
   </mbean>
@@ -218,7 +218,7 @@
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <attribute   name="duplicates"
@@ -231,7 +231,7 @@
 
     <attribute   name="jvmRoute"
           description="Retrieve the JvmRoute for the enclosing Engine"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
            writeable = "false" />
 
     <attribute   name="maxActive"
@@ -257,7 +257,7 @@
 
     <attribute   name="name"
           description="The descriptive name of this Manager implementation (for logging)"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <attribute   name="persistAuthentication"
@@ -278,7 +278,7 @@
 
     <attribute   name="secureRandomClass"
           description="The random number generator class name"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="sessionAverageAliveTime"
           description="Average time an expired session had been alive"
@@ -305,7 +305,7 @@
 
     <attribute   name="stateName"
           description="The name of the LifecycleState that this component is currently in"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <attribute   name="rejectedSessions"
@@ -315,11 +315,11 @@
 
     <attribute   name="sessionAttributeNameFilter"
           description="The string pattern used for including session attributes in distribution. Null means all attributes are included."
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="sessionAttributeValueClassNameFilter"
           description="The regular expression used to filter session attributes based on the implementation class of the value. The regular expression is anchored and must match the fully qualified class name."
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="warnOnSessionAttributeFilterFailure"
           description="Should a WARN level log message be generated if a session attribute fails to match sessionAttributeNameFilter or sessionAttributeClassNameFilter?"
@@ -337,16 +337,16 @@
            returnType="void">
       <parameter name="sessionId"
           description="Id of the session"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="getCreationTime"
           description="Get the creation time"
                impact="ACTION"
-           returnType="java.lang.String">
+           returnType="java.java.lang.String">
       <parameter name="sessionId"
           description="Id of the session"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="getCreationTimestamp"
@@ -355,16 +355,16 @@
            returnType="long">
       <parameter name="sessionId"
           description="Id of the session"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="getLastAccessedTime"
           description="Get the last access time"
                impact="ACTION"
-           returnType="java.lang.String">
+           returnType="java.java.lang.String">
       <parameter name="sessionId"
           description="Id of the session"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
    <operation   name="getLastAccessedTimestamp"
@@ -373,25 +373,25 @@
            returnType="long">
       <parameter name="sessionId"
           description="Id of the session"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="getSessionAttribute"
           description="Return a session attribute"
                impact="ACTION"
-           returnType="java.lang.String">
+           returnType="java.java.lang.String">
       <parameter name="sessionId"
           description="Id of the session"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
       <parameter name="key"
           description="key of the attribute"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="listSessionIds"
           description="Return the list of active session ids"
                impact="ACTION"
-           returnType="java.lang.String">
+           returnType="java.java.lang.String">
     </operation>
 
     <operation   name="isLoaded"
@@ -400,7 +400,7 @@
            returnType="boolean">
       <parameter name="sessionId"
           description="Id of the session"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
   </mbean>

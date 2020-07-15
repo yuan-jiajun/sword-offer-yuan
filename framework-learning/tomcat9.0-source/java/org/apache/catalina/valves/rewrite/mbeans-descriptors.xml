@@ -25,12 +25,12 @@
 
     <attribute   name="className"
                description="Fully qualified class name of the managed object"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute   name="configuration"
                description="Rewrite configuration"
-               type="java.lang.String" />
+               type="java.java.lang.String" />
 
   </mbean>
 

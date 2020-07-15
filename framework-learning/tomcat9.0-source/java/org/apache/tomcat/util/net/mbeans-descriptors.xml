@@ -62,14 +62,14 @@
                  type="boolean"/>
 
     <attribute   name="defaultSSLHostConfigName"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="deferAccept"
                  type="boolean"
             writeable="false"/>
 
     <attribute   name="domain"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="executorTerminationTimeoutMillis"
                  type="long"/>
@@ -98,11 +98,11 @@
                  type="int"/>
 
     <attribute   name="modelerType"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <attribute   name="name"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="paused"
                  type="boolean"
@@ -145,7 +145,7 @@
             writeable="false"/>
 
     <attribute   name="sslImplementationName"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="tcpNoDelay"
                  type="boolean"/>
@@ -162,7 +162,7 @@
     <operation       name="addNegotiatedProtocol"
                returnType="void">
       <parameter name="param0"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation       name="bind"
@@ -183,13 +183,13 @@
     <operation       name="getAttribute"
                returnType="java.lang.Object">
       <parameter name="param0"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation       name="getProperty"
-               returnType="java.lang.String">
+               returnType="java.java.lang.String">
       <parameter name="param0"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation       name="hasNegotiableProtocols"
@@ -204,7 +204,7 @@
     <operation       name="reloadSslHostConfig"
                returnType="void">
       <parameter name="param0"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation       name="reloadSslHostConfigs"
@@ -213,7 +213,7 @@
     <operation       name="removeSslHostConfig"
                returnType="org.apache.tomcat.util.net.SSLHostConfig">
       <parameter name="param0"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation       name="resume"
@@ -222,9 +222,9 @@
     <operation       name="setProperty"
                returnType="boolean">
       <parameter name="param0"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
       <parameter name="param1"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation       name="shutdownExecutor"
@@ -292,14 +292,14 @@
                  type="boolean"/>
 
     <attribute   name="defaultSSLHostConfigName"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="deferAccept"
                  type="boolean"
             writeable="false"/>
 
     <attribute   name="domain"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="executorTerminationTimeoutMillis"
                  type="long"/>
@@ -328,11 +328,11 @@
                  type="int"/>
 
     <attribute   name="modelerType"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <attribute   name="name"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="paused"
                  type="boolean"
@@ -366,7 +366,7 @@
             writeable="false"/>
 
     <attribute   name="sslImplementationName"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="tcpNoDelay"
                  type="boolean"/>
@@ -380,7 +380,7 @@
     <operation       name="addNegotiatedProtocol"
                returnType="void">
       <parameter name="param0"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation       name="bind"
@@ -401,13 +401,13 @@
     <operation       name="getAttribute"
                returnType="java.lang.Object">
       <parameter name="param0"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation       name="getProperty"
-               returnType="java.lang.String">
+               returnType="java.java.lang.String">
       <parameter name="param0"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation       name="hasNegotiableProtocols"
@@ -422,7 +422,7 @@
     <operation       name="reloadSslHostConfig"
                returnType="void">
       <parameter name="param0"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation       name="reloadSslHostConfigs"
@@ -431,7 +431,7 @@
     <operation       name="removeSslHostConfig"
                returnType="org.apache.tomcat.util.net.SSLHostConfig">
       <parameter name="param0"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation       name="resume"
@@ -440,9 +440,9 @@
     <operation       name="setProperty"
                returnType="boolean">
       <parameter name="param0"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
       <parameter name="param1"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation       name="shutdownExecutor"
@@ -510,13 +510,13 @@
                  type="boolean"/>
 
     <attribute   name="defaultSSLHostConfigName"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="deferAccept"
                  type="boolean"/>
 
     <attribute   name="domain"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="executorTerminationTimeoutMillis"
                  type="long"/>
@@ -548,11 +548,11 @@
                  type="int"/>
 
     <attribute   name="modelerType"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <attribute   name="name"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="paused"
                  type="boolean"
@@ -600,7 +600,7 @@
     <operation       name="addNegotiatedProtocol"
                returnType="void">
       <parameter name="param0"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation       name="bind"
@@ -621,19 +621,19 @@
     <operation       name="getAttribute"
                returnType="java.lang.Object">
       <parameter name="param0"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation       name="getProperty"
-               returnType="java.lang.String">
+               returnType="java.java.lang.String">
       <parameter name="param0"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation       name="getSslContext"
                returnType="long">
       <parameter name="param0"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation       name="hasNegotiableProtocols"
@@ -648,7 +648,7 @@
     <operation       name="reloadSslHostConfig"
                returnType="void">
       <parameter name="param0"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation       name="reloadSslHostConfigs"
@@ -657,7 +657,7 @@
     <operation       name="removeSslHostConfig"
                returnType="org.apache.tomcat.util.net.SSLHostConfig">
       <parameter name="param0"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation       name="resume"
@@ -666,9 +666,9 @@
     <operation       name="setProperty"
                returnType="boolean">
       <parameter name="param0"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
       <parameter name="param1"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation       name="shutdownExecutor"

@@ -1,4 +1,4 @@
-package a_15_oneinbinarynumber;
+package main.java.a_15_oneinbinarynumber;
 
 /**
  * 二进制中1的个数

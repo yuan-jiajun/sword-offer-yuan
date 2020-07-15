@@ -1,3 +1,5 @@
+package init;
+
 /**
  * @author shkstart
  * @create 2020 下午 12:11
@@ -10,7 +12,7 @@ public class StackStruTest {
         int k = i + j;
 
         try {
-            Thread.sleep(6000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

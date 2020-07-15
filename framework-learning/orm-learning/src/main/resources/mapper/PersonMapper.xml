@@ -6,7 +6,7 @@
     <cache/>
     <resultMap id="personMap" type="com.github.guang19.entity.Person">
         <id column="p_id" property="pId" javaType="java.lang.Long"/>
-        <result column="p_name" property="pName" javaType="java.lang.String"/>
+        <result column="p_name" property="pName" javaType="java.java.lang.String"/>
         <result column="age" property="age" javaType="java.lang.Integer"/>
     </resultMap>
 

@@ -283,7 +283,7 @@
 Exception in thread "main" [Full GC (Ergonomics) [PSYoungGen: 2047K->0K(2560K)] [ParOldGen: 7119K->647K(7168K)] 9167K->647K(9728K), [Metaspace: 3360K->3360K(1056768K)], 0.0129597 secs] [Times: user=0.11 sys=0.00, real=0.01 secs] 
 java.lang.OutOfMemoryError: GC overhead limit exceeded
 	at java.lang.Integer.toString(Integer.java:401)
-	at java.lang.String.valueOf(String.java:3099)
+	at java.String.valueOf(String.java:3099)
 	at jvm.Demos.jvm.GCOverheadDemo.main(Demos.jvm.GCOverheadDemo.java:12)
 ```
 

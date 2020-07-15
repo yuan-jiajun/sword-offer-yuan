@@ -1,4 +1,4 @@
-package a_13_robotrange;
+package main.java.a_13_robotrange;
 
 /**
  * 通过回溯法寻找机器人的运动范围

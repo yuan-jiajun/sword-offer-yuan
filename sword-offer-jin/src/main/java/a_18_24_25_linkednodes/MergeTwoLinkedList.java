@@ -1,4 +1,4 @@
-package a_18_24_25_linkednodes;
+package main.java.a_18_24_25_linkednodes;
 
 /**
  * 合并两个有序的链表

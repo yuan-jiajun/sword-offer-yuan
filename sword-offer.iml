@@ -5,9 +5,9 @@
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/java-juc-jvm/Demos" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/sword-offer-jin/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/jvm-shk/code/src/chapter01" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/jvm-shk/code/src/chapter02" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sword-offer-jin/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/juc-jvm-zy-season1" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>

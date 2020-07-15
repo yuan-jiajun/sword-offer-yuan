@@ -1,4 +1,4 @@
-package a_7_8_binarytree;
+package main.java.a_7_8_binarytree;
 
 public class NextNodeOfBinaryTree {
     /**

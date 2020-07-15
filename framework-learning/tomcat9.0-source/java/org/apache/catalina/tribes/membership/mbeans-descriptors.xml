@@ -28,11 +28,11 @@
     <attribute
       name="address"
       description="Multicast IP Address"
-      type="java.lang.String"/>
+      type="java.java.lang.String"/>
     <attribute
       name="bind"
       description="Multicast IP Interface address (default auto)"
-      type="java.lang.String"/>
+      type="java.java.lang.String"/>
     <attribute
       name="dropTime"
       description="Timeout from frequency ping after member disappear notify"
@@ -49,7 +49,7 @@
     <attribute
       name="localMemberName"
       description="Complete local receiver information"
-      type="java.lang.String"
+      type="java.java.lang.String"
       writeable="false"/>
     <attribute
       name="membersByName"

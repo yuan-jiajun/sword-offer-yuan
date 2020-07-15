@@ -31,7 +31,7 @@
                impact="ACTION" returnType="void" >
          <parameter name="objectname"
                  description="Objectname from Server"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
                  default="Catalina:type=Server"/>
          <parameter name="backup"
                  description="store Context with backup"
@@ -49,7 +49,7 @@
                impact="ACTION" returnType="void" >
          <parameter name="objectname"
                  description="ObjectName from Context"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
          <parameter name="backup"
                  description="store with Backup"
                  type="boolean"/>

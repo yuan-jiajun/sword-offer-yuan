@@ -1,4 +1,4 @@
-package a_14_cutrope;
+package main.java.a_14_cutrope;
 
 /**
  * 使用动态规划解决剪绳子的问题

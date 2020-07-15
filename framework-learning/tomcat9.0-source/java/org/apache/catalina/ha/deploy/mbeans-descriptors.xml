@@ -26,15 +26,15 @@
     <attribute
       name="deployDir"
       description="Deployment directory."
-      type="java.lang.String"/>
+      type="java.java.lang.String"/>
     <attribute
       name="tempDir"
       description="The temporaryDirectory to store binary data when downloading a war from the cluster"
-      type="java.lang.String"/>
+      type="java.java.lang.String"/>
     <attribute
       name="watchDir"
       description="The directory where we watch for changes"
-      type="java.lang.String"/>
+      type="java.java.lang.String"/>
     <attribute
       name="watchEnabled"
       description="Is watching enabled?"

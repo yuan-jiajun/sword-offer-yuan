@@ -499,7 +499,7 @@ List of Attributes
     <td>type</td>
     <td>type of the attribute.
     </td>
-    <td><code class="noHighlight">java.lang.String</code></td>
+    <td><code class="noHighlight">java.java.lang.String</code></td>
   </tr>
 
   <tr>

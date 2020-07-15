@@ -1,4 +1,4 @@
-package a_12_matrixpath;
+package main.java.a_12_matrixpath;
 
 public class PathInMatrix {
 

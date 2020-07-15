@@ -26,11 +26,11 @@
 
     <attribute   name="description"
           description="Description of this group"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="groupname"
           description="Group name of this group"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="roles"
           description="MBean Names of roles for this group"
@@ -48,7 +48,7 @@
            returnType="void">
       <parameter name="role"
           description="Role to be added"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="removeRole"
@@ -57,7 +57,7 @@
            returnType="void">
       <parameter name="role"
           description="Role to be removed"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="removeRoles"
@@ -77,11 +77,11 @@
 
     <attribute   name="description"
           description="Description of this role"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="rolename"
           description="Role name of this role"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
   </mbean>
@@ -95,7 +95,7 @@
 
     <attribute   name="fullName"
           description="Full name of this user"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="groups"
           description="MBean Names of groups this user is a member of"
@@ -104,7 +104,7 @@
 
     <attribute   name="password"
           description="Password of this user"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="roles"
           description="MBean Names of roles for this user"
@@ -113,7 +113,7 @@
 
     <attribute   name="username"
           description="User name of this user"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <operation   name="addGroup"
           description="Add a new group membership for this user"
@@ -121,7 +121,7 @@
            returnType="void">
       <parameter name="groupname"
           description="Group name of the new group"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="addRole"
@@ -130,7 +130,7 @@
            returnType="void">
       <parameter name="role"
           description="Role to be added"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="removeGroup"
@@ -139,7 +139,7 @@
            returnType="void">
       <parameter name="groupname"
           description="Group name of the old group"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="removeGroups"
@@ -154,7 +154,7 @@
            returnType="void">
       <parameter name="role"
           description="Role to be removed"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="removeRoles"

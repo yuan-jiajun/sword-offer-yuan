@@ -1,4 +1,4 @@
-package a_49_uglynumber;
+package main.java.a_49_uglynumber;
 
 /**
  * 寻找第n个丑数(只包含因子2，3，5的数)

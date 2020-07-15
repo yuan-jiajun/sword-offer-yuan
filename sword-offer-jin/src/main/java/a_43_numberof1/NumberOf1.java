@@ -1,4 +1,4 @@
-package a_43_numberof1;
+package main.java.a_43_numberof1;
 
 /**
  * 寻找1-n的整数中，1出现的次数，

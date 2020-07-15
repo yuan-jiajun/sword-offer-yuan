@@ -25,16 +25,16 @@
 
     <attribute name="className"
                description="Fully qualified class name of the managed object"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="defaultContextXml"
                description="The location of the default context file"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="defaultWebXml"
                description="The location of the default deployment descriptor"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
   </mbean>
 
@@ -46,7 +46,7 @@
 
     <attribute name="className"
                description="Fully qualified class name of the managed object"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
   </mbean>
@@ -60,17 +60,17 @@
 
     <attribute name="className"
                description="Fully qualified class name of the managed object"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="configBaseName"
                description="The base directory for Context configuration files"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false" />
 
     <attribute name="contextClass"
                description="The Java class name of the Context implementation we should use"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
      <attribute name="copyXML"
                description="The copy XML config file flag for this component"
@@ -93,7 +93,7 @@
                returnType="void">
       <parameter name="name"
                  description="Application name"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation name="check"
@@ -102,7 +102,7 @@
                returnType="void">
       <parameter name="name"
                  description="Application name"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation name="checkUndeploy"
@@ -117,7 +117,7 @@
                returnType="long">
       <parameter name="name"
                  description="Application name"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation name="isDeployed"
@@ -126,7 +126,7 @@
                returnType="boolean">
       <parameter name="name"
                  description="Application name"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation name="isServiced"
@@ -135,7 +135,7 @@
                returnType="boolean">
       <parameter name="name"
                  description="Application name"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation name="manageApp"
@@ -153,7 +153,7 @@
                returnType="void">
       <parameter name="name"
                  description="Application name"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation name="unmanageApp"
@@ -162,7 +162,7 @@
                returnType="void">
       <parameter name="contextPath"
                  description="The application path"
-                 type="java.lang.String" />
+                 type="java.java.lang.String" />
     </operation>
 
   </mbean>

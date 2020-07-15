@@ -1,4 +1,4 @@
-package a_16_power;
+package main.java.a_16_power;
 
 public class PowerOfInteger {
     //

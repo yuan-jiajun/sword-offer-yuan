@@ -58,7 +58,7 @@ Constant pool:
         Start  Length  Slot  Name   Signature
             0       5     0  this   Lcom/atguigu/java1/MethodAreaDemo;
 
-  public static void main(java.lang.String[]);
+  public static void main(java.String[]);
     descriptor: ([Ljava/lang/String;)V
     flags: ACC_PUBLIC, ACC_STATIC
     Code:

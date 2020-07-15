@@ -1,6 +1,4 @@
-package a_18_24_25_linkednodes;
-
-import javax.print.attribute.standard.NumberUp;
+package main.java.a_18_24_25_linkednodes;
 
 /**
  * 使用O（1）的时间删除节点：

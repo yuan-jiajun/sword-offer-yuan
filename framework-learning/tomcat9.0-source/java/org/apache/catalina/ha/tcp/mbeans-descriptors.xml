@@ -28,20 +28,20 @@
     <attribute
       name="channelSendOptions"
       description="This sets channel behaviour on sent messages."
-      type="java.lang.String"/>
+      type="java.java.lang.String"/>
     <attribute
       name="channelSendOptionsName"
       description="channelSendOptions name."
       writeable="false"
-      type="java.lang.String"/>
+      type="java.java.lang.String"/>
     <attribute
       name="channelStartOptions"
       description="This sets channel start behaviour."
-      type="java.lang.String"/>
+      type="java.java.lang.String"/>
     <attribute
       name="clusterName"
       description="name of cluster"
-      type="java.lang.String"/>
+      type="java.java.lang.String"/>
     <attribute
       name="heartbeatBackgroundEnabled"
       description="enable that container background thread call channel heartbeat, default is that channel manage heartbeat itself."
@@ -55,7 +55,7 @@
     <attribute
       name="stateName"
       description="The name of the LifecycleState that this component is currently in"
-      type="java.lang.String"
+      type="java.java.lang.String"
       writeable="false"/>
     <operation
       name="send"
@@ -98,7 +98,7 @@
     <attribute
       name="filter"
       description="resource filter to disable session replication check"
-      type="java.lang.String"/>
+      type="java.java.lang.String"/>
     <attribute
       name="lastSendTime"
       description="last replicated request time"
@@ -132,11 +132,11 @@
     <attribute
       name="primaryIndicatorName"
       description="Request attribute name to indicate that request processing is at primary session node"
-      type="java.lang.String"/>
+      type="java.java.lang.String"/>
     <attribute
       name="stateName"
       description="The name of the LifecycleState that this component is currently in"
-      type="java.lang.String"
+      type="java.java.lang.String"
       writeable="false"/>
     <attribute
       name="totalSendTime"

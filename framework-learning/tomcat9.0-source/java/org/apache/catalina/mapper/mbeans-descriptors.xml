@@ -25,7 +25,7 @@
 
     <attribute   name="stateName"
           description="The name of the LifecycleState that this component is currently in"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
                  writeable="false"/>
 
     <operation name="start" description="Start" impact="ACTION" returnType="void" />

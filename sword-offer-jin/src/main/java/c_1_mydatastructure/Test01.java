@@ -1,6 +1,7 @@
-package c_1_mydatastructure;
+package main.java.c_1_mydatastructure;
 
-import org.junit.jupiter.api.Test;
+
+import org.testng.annotations.Test;
 
 import java.util.HashSet;
 

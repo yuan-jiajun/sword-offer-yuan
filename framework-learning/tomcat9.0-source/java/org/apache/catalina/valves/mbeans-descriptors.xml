@@ -40,24 +40,24 @@
 
     <attribute name="className"
                description="Fully qualified class name of the managed object"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="condition"
                description="The value to look for conditional logging. The same as conditionUnless."
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="conditionIf"
                description="The value to look for conditional logging."
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="conditionUnless"
                description="The value to look for conditional logging."
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="directory"
                description="The directory in which log files are created"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="enabled"
                description="Enable Access Logging"
@@ -66,23 +66,23 @@
 
     <attribute name="encoding"
                description="Character set used to write the log file"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="fileDateFormat"
                description="The format for the date for date based log rotation"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="locale"
                description="The locale used to format timestamps in the access log lines"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="pattern"
                description="The pattern used to format our access log lines"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="prefix"
                description="The prefix that is added to log file filenames"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="rotatable"
                description="Flag to indicate automatic log rotation."
@@ -96,12 +96,12 @@
 
     <attribute name="stateName"
                description="The name of the LifecycleState that this component is currently in"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="suffix"
                description="The suffix that is added to log file filenames"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <operation name="rotate"
                description="Check if the log file is due to be rotated and rotate if it is"
@@ -115,7 +115,7 @@
                returnType="boolean">
       <parameter name="newFileName"
                  description="File name to move the log file to."
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
   </mbean>
@@ -133,7 +133,7 @@
 
     <attribute name="className"
                description="Fully qualified class name of the managed object"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="clientIpSessionId"
@@ -143,7 +143,7 @@
 
     <attribute name="crawlerUserAgents"
                description="Specify the regular expression used to identify crawlers based in the User-Agent header provided."
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="true"/>
 
     <attribute name="sessionInactiveInterval"
@@ -153,7 +153,7 @@
 
     <attribute name="stateName"
                description="The name of the LifecycleState that this component is currently in"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
   </mbean>
@@ -171,12 +171,12 @@
 
     <attribute name="className"
                description="Fully qualified class name of the managed object"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="stateName"
                description="The name of the LifecycleState that this component is currently in"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="showReport"
@@ -214,24 +214,24 @@
 
     <attribute name="className"
                description="Fully qualified class name of the managed object"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="condition"
                description="The value to look for conditional logging. The same as conditionUnless."
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="conditionIf"
                description="The value to look for conditional logging."
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="conditionUnless"
                description="The value to look for conditional logging."
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="directory"
                description="The directory in which log files are created"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="enabled"
                description="Enable Access Logging"
@@ -240,23 +240,23 @@
 
     <attribute name="encoding"
                description="Character set used to write the log file"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="fileDateFormat"
                description="The format for the date date based log rotation."
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="locale"
                description="The locale used to format timestamps in the access log lines"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute   name="pattern"
                description="The pattern used to format our access log lines"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="prefix"
                description="The prefix that is added to log file filenames"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="rotatable"
                description="Flag to indicate automatic log rotation."
@@ -270,7 +270,7 @@
 
     <attribute name="suffix"
                description="The suffix that is added to log file filenames"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <operation name="rotate"
                description="Check if the log file is due to be rotated and rotate if it is"
@@ -284,7 +284,7 @@
                returnType="boolean">
       <parameter name="newFileName"
                  description="File name to move the log file to."
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
   </mbean>
@@ -306,7 +306,7 @@
 
     <attribute name="className"
                description="Fully qualified class name of the managed object"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="concurrency"
@@ -323,7 +323,7 @@
 
     <attribute name="stateName"
                description="The name of the LifecycleState that this component is currently in"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
   </mbean>
@@ -340,7 +340,7 @@
 
     <attribute name="allow"
                description="The allow expression"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="allowValid"
                description="Becomes false if assigned value of allow expression is not syntactically correct"
@@ -355,12 +355,12 @@
 
     <attribute name="className"
                description="Fully qualified class name of the managed object"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="deny"
                description="The deny expression"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="denyStatus"
                description="HTTP response status code that is used when rejecting denied request"
@@ -378,7 +378,7 @@
 
     <attribute name="stateName"
                description="The name of the LifecycleState that this component is currently in"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <operation name="isAllowed"
@@ -387,7 +387,7 @@
                returnType="boolean">
       <parameter name="ipAddress"
           description="IP address to be tested"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
   </mbean>
 
@@ -403,7 +403,7 @@
 
     <attribute name="allow"
                description="The allow expression"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="allowValid"
                description="Becomes false if assigned value of allow expression is not syntactically correct"
@@ -418,12 +418,12 @@
 
     <attribute name="className"
                description="Fully qualified class name of the managed object"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="deny"
                description="The deny expression"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="denyStatus"
                description="HTTP response status code that is used when rejecting denied request"
@@ -441,7 +441,7 @@
 
     <attribute name="stateName"
                description="The name of the LifecycleState that this component is currently in"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <operation name="isAllowed"
@@ -450,7 +450,7 @@
                returnType="boolean">
       <parameter name="hostName"
           description="host name to be tested"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
   </mbean>
 
@@ -467,47 +467,47 @@
 
     <attribute name="httpServerPort"
                description="Value returned by ServletRequest.getServerPort() when the protocolHeader indicates http protocol"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false" />
 
     <attribute name="httpsServerPort"
                description="Value returned by ServletRequest.getServerPort() when the protocolHeader indicates https protocol"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false" />
 
     <attribute name="internalProxies"
                description="Regular expression that matches IP addresses of internal proxies"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false" />
 
     <attribute name="protocolHeader"
                description="The protocol header (e.g. &quot;X-Forwarded-Proto&quot;)"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false" />
 
     <attribute name="protocolHeaderHttpsValue"
                description="The value of the protocol header for incoming https request (e.g. &quot;https&quot;)"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false" />
 
     <attribute name="proxiesHeader"
                description="The proxies header name (e.g. &quot;X-Forwarded-By&quot;)"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false" />
 
     <attribute name="remoteIpHeader"
                description="The remote IP header name (e.g. &quot;X-Forwarded-For&quot;)"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false" />
 
     <attribute name="stateName"
                description="The name of the LifecycleState that this component is currently in"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="trustedProxies"
                description="Regular expression that matches IP addresses of trusted proxies"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false" />
 
   </mbean>
@@ -525,12 +525,12 @@
 
     <attribute name="className"
                description="Fully qualified class name of the managed object"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="stateName"
                description="The name of the LifecycleState that this component is currently in"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="stuckThreadCount"

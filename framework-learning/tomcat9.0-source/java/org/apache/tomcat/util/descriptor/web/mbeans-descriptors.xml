@@ -26,16 +26,16 @@
 
     <attribute name="className"
                description="Fully qualified class name of the managed object"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="description"
                description="The description of this environment entry"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="name"
                description="The name of this environment entry"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="override"
                description="Does this environment entry allow overrides by the
@@ -44,11 +44,11 @@
 
     <attribute name="type"
                description="The type of this environment entry"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="value"
                description="The value of this environment entry"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
   </mbean>
 
 
@@ -61,23 +61,23 @@
 
     <attribute   name="auth"
                description="The authorization requirement for this resource"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute   name="description"
                description="The description of this resource"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute   name="name"
                description="The name of this resource"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute   name="scope"
                description="The sharing scope of this resource factory"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute   name="type"
                description="The type of this environment entry"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
   </mbean>
 
 
@@ -90,19 +90,19 @@
 
     <attribute   name="global"
                description="The global name of this resource"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute   name="name"
                description="The name of this resource"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute   name="description"
                description="The description of this resource"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute   name="type"
                description="The type of this resource"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
   </mbean>
 

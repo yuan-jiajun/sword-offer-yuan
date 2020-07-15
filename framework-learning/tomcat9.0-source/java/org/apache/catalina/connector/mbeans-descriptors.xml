@@ -38,7 +38,7 @@
     <!-- Common -->
     <attribute   name="address"
           description="The IP address on which to bind"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="ajpFlush"
           description="Send AJP flush package for each explicit flush"
@@ -46,7 +46,7 @@
 
     <attribute   name="allowedRequestAttributesPattern"
           description="Regular expression that any custom request attributes muct match else the request will be rejected"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="allowTrace"
           description="Allow disabling TRACE method"
@@ -54,7 +54,7 @@
 
     <attribute   name="ciphers"
           description="Comma-separated list of requested cipher suites"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="ciphersUsed"
           description="Array of ciphers suites in use"
@@ -63,7 +63,7 @@
 
     <attribute   name="className"
           description="Fully qualified class name of the managed object"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <!-- Common -->
@@ -82,7 +82,7 @@
 
     <attribute   name="executorName"
           description="The name of the executor - if any - associated with this Connector"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <!-- Common -->
@@ -154,17 +154,17 @@
 
     <attribute   name="protocol"
           description="Coyote protocol handler in use"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <attribute   name="protocolHandlerClassName"
           description="Coyote Protocol handler class name"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
             writeable="false"/>
 
     <attribute   name="proxyName"
           description="The Server name to which we should pretend requests to this Connector"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="proxyPort"
           description="The Server port to which we should pretend requests to this Connector"
@@ -181,12 +181,12 @@
 
     <attribute   name="scheme"
           description="Protocol name for this Connector (http, https)"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="secret"
           description="Authentication secret"
             readable = "false"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="secretRequired"
           description="Must secret be set to a non-null, non-zero-length String?"
@@ -198,11 +198,11 @@
 
     <attribute   name="sslProtocols"
           description="Comma-separated list of SSL protocol variants to be enabled"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="stateName"
           description="The name of the LifecycleState that this component is currently in"
-                 type="java.lang.String"
+                 type="java.java.lang.String"
                  writeable="false"/>
 
     <!-- Common -->
@@ -217,7 +217,7 @@
 
     <attribute   name="URIEncoding"
           description="Character encoding used to decode the URI"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="useBodyEncodingForURI"
           description="Should the body encoding be used for URI query parameters"

@@ -55,13 +55,13 @@
            returnType="void">
       <parameter name="envName"
           description="New environment entry name"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
       <parameter name="type"
           description="New environment entry type"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
       <parameter name="value"
           description="New environment entry value"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="addResource"
@@ -70,10 +70,10 @@
            returnType="void">
       <parameter name="resourceName"
           description="New resource reference name"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
       <parameter name="type"
           description="New resource reference type"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="addResourceLink"
@@ -82,10 +82,10 @@
            returnType="void">
       <parameter name="resourceLinkName"
           description="New resource reference name"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
       <parameter name="type"
           description="New resource reference type"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="removeEnvironment"
@@ -94,7 +94,7 @@
            returnType="void">
       <parameter name="envName"
           description="Name of the environment entry to remove"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="removeResource"
@@ -103,7 +103,7 @@
            returnType="void">
       <parameter name="resourceName"
           description="Name of the resource reference to remove"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="removeResourceLink"
@@ -112,7 +112,7 @@
            returnType="void">
       <parameter name="resourceLinkName"
           description="Name of the resource reference to remove"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
   </mbean>

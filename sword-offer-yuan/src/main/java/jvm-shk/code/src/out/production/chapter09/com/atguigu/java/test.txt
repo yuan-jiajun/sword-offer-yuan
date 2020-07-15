@@ -2,9 +2,9 @@ Classfile /D:/workspace_idea5/JVMDemo/out/production/chapter09/com/atguigu/java/
   Last modified 2020-4-22; size 1626 bytes
   MD5 checksum 69643a16925bb67a96f54050375c75d0
   Compiled from "MethodInnerStrucTest.java"
-  //ÀàÐÍÐÅÏ¢
+  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 public class com.atguigu.java.MethodInnerStrucTest extends java.lang.Object 
-implements java.lang.Comparable<java.lang.String>, java.io.Serializable
+implements java.lang.Comparable<java.String>, java.io.Serializable
 
   minor version: 0
   major version: 51
@@ -24,7 +24,7 @@ Constant pool:
   #12 = Methodref          #11.#64        // java/lang/Exception.printStackTrace:()V
   #13 = Class              #65            // java/lang/String
   #14 = Methodref          #17.#66        // com/atguigu/java/MethodInnerStrucTest.compareTo:(Ljava/lang/String;)I
-  #15 = String             #67            // ²âÊÔ·½·¨µÄÄÚ²¿½á¹¹
+  #15 = String             #67            // ï¿½ï¿½ï¿½Ô·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½á¹¹
   #16 = Fieldref           #17.#68        // com/atguigu/java/MethodInnerStrucTest.str:Ljava/lang/String;
   #17 = Class              #69            // com/atguigu/java/MethodInnerStrucTest
   #18 = Class              #70            // java/lang/Object
@@ -76,7 +76,7 @@ Constant pool:
   #64 = NameAndType        #84:#26        // printStackTrace:()V
   #65 = Utf8               java/lang/String
   #66 = NameAndType        #43:#44        // compareTo:(Ljava/lang/String;)I
-  #67 = Utf8               ²âÊÔ·½·¨µÄÄÚ²¿½á¹¹
+  #67 = Utf8               ï¿½ï¿½ï¿½Ô·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½á¹¹
   #68 = NameAndType        #23:#24        // str:Ljava/lang/String;
   #69 = Utf8               com/atguigu/java/MethodInnerStrucTest
   #70 = Utf8               java/lang/Object
@@ -95,16 +95,16 @@ Constant pool:
   #83 = Utf8               (Ljava/lang/String;)V
   #84 = Utf8               printStackTrace
 {
-  //ÓòÐÅÏ¢
+  //ï¿½ï¿½ï¿½ï¿½Ï¢
   public int num;
     descriptor: I
     flags: ACC_PUBLIC
 
-  private static java.lang.String str;
+  private static java.String str;
     descriptor: Ljava/lang/String;
     flags: ACC_PRIVATE, ACC_STATIC
 
-  //·½·¨ÐÅÏ¢
+  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
   public com.atguigu.java.MethodInnerStrucTest();
     descriptor: ()V
     flags: ACC_PUBLIC
@@ -193,7 +193,7 @@ Constant pool:
           stack = [ class java/lang/Exception ]
         frame_type = 4 /* same */
 
-  public int compareTo(java.lang.String);
+  public int compareTo(java.String);
     descriptor: (Ljava/lang/String;)I
     flags: ACC_PUBLIC
     Code:
@@ -228,7 +228,7 @@ Constant pool:
     flags: ACC_STATIC
     Code:
       stack=1, locals=0, args_size=0
-         0: ldc           #15                 // String ²âÊÔ·½·¨µÄÄÚ²¿½á¹¹
+         0: ldc           #15                 // String ï¿½ï¿½ï¿½Ô·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½á¹¹
          2: putstatic     #16                 // Field str:Ljava/lang/String;
          5: return
       LineNumberTable:

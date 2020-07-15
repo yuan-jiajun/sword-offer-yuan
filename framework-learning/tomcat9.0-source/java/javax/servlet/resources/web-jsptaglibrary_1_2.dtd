@@ -317,7 +317,7 @@ name-from-attribute      The name of an attribute whose (translation
                          name-from-attribute is required.
 
 variable-class           Name of the class of the variable.
-                         java.lang.String is default.
+                         java.String is default.
 
 declare                  Whether the variable is declared or not.
                          True is the default.
@@ -352,7 +352,7 @@ is required.
 <!--
 
 The optional name of the class for the scripting variable.  The
-default is java.lang.String.
+default is java.String.
 -->
 
 <!ELEMENT variable-class (#PCDATA) >
@@ -448,7 +448,7 @@ has a static value
 
 Defines the Java type of the attributes value.  For static values
 (those determined at translation time) the type is always
-java.lang.String.
+java.String.
 -->
 
 <!ELEMENT type (#PCDATA) >

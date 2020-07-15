@@ -1,4 +1,4 @@
-package a_11_revolvedarray;
+package main.java.a_11_revolvedarray;
 
 public class MinInRevolvedArray {
     /**

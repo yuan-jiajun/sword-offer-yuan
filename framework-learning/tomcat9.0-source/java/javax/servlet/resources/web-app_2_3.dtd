@@ -252,7 +252,7 @@ The following are the legal values of env-entry-type:
     java.lang.Boolean
     java.lang.Byte
     java.lang.Character
-    java.lang.String
+    java.String
     java.lang.Short
     java.lang.Integer
     java.lang.Long

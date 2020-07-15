@@ -30,7 +30,7 @@
 
     <attribute   name="pathname"
           description="Relative or absolute pathname to database file"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
 
     <attribute   name="roles"
           description="MBean Names of all defined roles"
@@ -56,67 +56,67 @@
     <operation   name="createGroup"
           description="Create new group and return MBean name"
                impact="ACTION"
-           returnType="java.lang.String">
+           returnType="java.java.lang.String">
       <parameter name="groupname"
           description="Group name of the new group"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
       <parameter name="description"
           description="Description of the new group"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="createRole"
           description="Create new role and return MBean name"
                impact="ACTION"
-           returnType="java.lang.String">
+           returnType="java.java.lang.String">
       <parameter name="rolename"
           description="Role name of the new role"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
       <parameter name="description"
           description="Description of the new role"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="createUser"
           description="Create new user and return MBean name"
                impact="ACTION"
-           returnType="java.lang.String">
+           returnType="java.java.lang.String">
       <parameter name="username"
           description="User name of the new user"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
       <parameter name="password"
           description="Password of the new user"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
       <parameter name="fullName"
           description="Full name of the new user"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="findGroup"
           description="Return MBean Name of the specified group (if any)"
                impact="INFO"
-           returnType="java.lang.String">
+           returnType="java.java.lang.String">
       <parameter name="groupname"
           description="Group name of the requested group"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="findRole"
           description="Return MBean Name of the specified role (if any)"
                impact="INFO"
-           returnType="java.lang.String">
+           returnType="java.java.lang.String">
       <parameter name="rolename"
           description="Role name of the requested role"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="findUser"
           description="Return MBean Name of the specified user (if any)"
                impact="INFO"
-           returnType="java.lang.String">
+           returnType="java.java.lang.String">
       <parameter name="username"
           description="User name of the requested user"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="removeGroup"
@@ -125,7 +125,7 @@
            returnType="void">
       <parameter name="groupname"
           description="Group name of the group to remove"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="removeRole"
@@ -134,7 +134,7 @@
            returnType="void">
       <parameter name="rolename"
           description="Role name of the role to remove"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="removeUser"
@@ -143,7 +143,7 @@
            returnType="void">
       <parameter name="username"
           description="User name of the user to remove"
-                 type="java.lang.String"/>
+                 type="java.java.lang.String"/>
     </operation>
 
     <operation   name="save"

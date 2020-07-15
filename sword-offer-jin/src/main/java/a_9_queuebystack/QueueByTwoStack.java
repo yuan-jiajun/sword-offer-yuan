@@ -1,4 +1,4 @@
-package a_9_queuebystack;
+package main.java.a_9_queuebystack;
 
 import java.util.Stack;
 

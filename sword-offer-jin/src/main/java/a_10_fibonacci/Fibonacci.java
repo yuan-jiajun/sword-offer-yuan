@@ -1,4 +1,4 @@
-package a_10_fibonacci;
+package main.java.a_10_fibonacci;
 
 public class Fibonacci {
     //求斐波那契数列值

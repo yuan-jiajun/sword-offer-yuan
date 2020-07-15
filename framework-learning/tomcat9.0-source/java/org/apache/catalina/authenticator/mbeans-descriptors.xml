@@ -37,7 +37,7 @@
 
     <attribute name="className"
                description="Fully qualified class name of the managed object"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="disableProxyCaching"
@@ -50,19 +50,19 @@
 
     <attribute name="secureRandomAlgorithm"
                description="The name of the algorithm to use for SSO session ID generation"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="secureRandomClass"
                description="The name of the class to use for SSO session ID generation"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="secureRandomProvider"
                description="The name of the provider to use for SSO session ID generation"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="stateName"
                description="The name of the LifecycleState that this component is currently in"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="trimCredentials"
@@ -91,7 +91,7 @@
 
     <attribute name="className"
                description="Fully qualified class name of the managed object"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="cnonceCacheSize"
@@ -104,7 +104,7 @@
 
     <attribute name="key"
                description="The secret key used by digest authentication"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="nonceValidity"
                description="The time, in milliseconds, for which a server issued nonce will be valid"
@@ -112,7 +112,7 @@
 
     <attribute name="opaque"
                description="The opaque server string used by digest authentication"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="securePagesWithPragma"
                description="Controls the caching of pages that are protected by security constraints"
@@ -120,19 +120,19 @@
 
     <attribute name="secureRandomAlgorithm"
                description="The name of the algorithm to use for SSO session ID generation"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="secureRandomClass"
                description="The name of the class to use for SSO session ID generation"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="secureRandomProvider"
                description="The name of the provider to use for SSO session ID generation"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="stateName"
                description="The name of the LifecycleState that this component is currently in"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="validateUri"
@@ -152,11 +152,11 @@
 
     <attribute name="characterEncoding"
                description="Character encoding to use to read the username and password parameters from the request"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="className"
                description="Fully qualified class name of the managed object"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="disableProxyCaching"
@@ -165,7 +165,7 @@
 
     <attribute name="landingPage"
                description="Controls the behavior of the FORM authentication process if the process is misused, for example by directly requesting the login page or delaying logging in for so long that the session expires"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="securePagesWithPragma"
                description="Controls the caching of pages that are protected by security constraints"
@@ -173,19 +173,19 @@
 
     <attribute name="secureRandomAlgorithm"
                description="The name of the algorithm to use for SSO session ID generation"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="secureRandomClass"
                description="The name of the class to use for SSO session ID generation"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="secureRandomProvider"
                description="The name of the provider to use for SSO session ID generation"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="stateName"
                description="The name of the LifecycleState that this component is currently in"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
   </mbean>
 
@@ -205,7 +205,7 @@
 
     <attribute name="className"
                description="Fully qualified class name of the managed object"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="disableProxyCaching"
@@ -218,7 +218,7 @@
 
     <attribute name="stateName"
                description="The name of the LifecycleState that this component is currently in"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
   </mbean>
 
@@ -231,7 +231,7 @@
 
     <attribute name="className"
                description="Fully qualified class name of the managed object"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="requireReauthentication"
@@ -240,11 +240,11 @@
 
     <attribute name="cookieDomain"
                description="(Optional) Domain to be used by sso cookies"
-               type="java.lang.String" />
+               type="java.java.lang.String" />
 
     <attribute name="stateName"
                description="The name of the LifecycleState that this component is currently in"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
   </mbean>
 
@@ -265,7 +265,7 @@
 
     <attribute name="className"
                description="Fully qualified class name of the managed object"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
 
     <attribute name="disableProxyCaching"
@@ -278,19 +278,19 @@
 
     <attribute name="secureRandomAlgorithm"
                description="The name of the algorithm to use for SSO session ID generation"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="secureRandomClass"
                description="The name of the class to use for SSO session ID generation"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="secureRandomProvider"
                description="The name of the provider to use for SSO session ID generation"
-               type="java.lang.String"/>
+               type="java.java.lang.String"/>
 
     <attribute name="stateName"
                description="The name of the LifecycleState that this component is currently in"
-               type="java.lang.String"
+               type="java.java.lang.String"
                writeable="false"/>
   </mbean>
 

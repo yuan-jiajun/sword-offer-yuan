@@ -453,7 +453,7 @@ application's environment entry
 The env-entry-type element contains the fully qualified Java type
 of the environment entry value that is expected by the application
 code. The following are the legal values of env-entry-type:
-java.lang.Boolean, java.lang.String, java.lang.Integer,
+java.lang.Boolean, java.String, java.lang.Integer,
 java.lang.Double, java.lang.Float.
 -->
 
