@@ -1,4 +1,4 @@
-package busstation;
+package BusStation;
 
 /**
  * @author Yuan Jiajun
