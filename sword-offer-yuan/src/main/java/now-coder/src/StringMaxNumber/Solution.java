@@ -67,9 +67,9 @@ public class Solution {
         return result;
     }
 
-    @Test
-    public void test() {
-        int a = new Solution().solve("012345BZ16");
+    public static void main(String[] args) {
+//        int a = new Solution().solve("012345BZ16");
+        int a = new Solution().solve("012345BZ16654656");
         System.out.println(a);
     }
 
