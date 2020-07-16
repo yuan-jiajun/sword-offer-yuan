@@ -91,7 +91,7 @@ stored in the CVS repository, and {username} is your login username:</p>
 mkdir myapp <-- Assumed "project source directory"
 cd myapp
 mkdir docs
-mkdir src
+mkdir chapter05
 mkdir web
 mkdir web/WEB-INF
 cvs import -m "Initial Project Creation" {project} \
@@ -182,10 +182,10 @@ cvs add mypage.jsp
 cvs commit]]></source>
 
 <p>Java source code that is defined in packages must be organized in a
-directory hierarchy (under the <strong>src/</strong> subdirectory) that
+directory hierarchy (under the <strong>chapter05/</strong> subdirectory) that
 matches the package names.  For example, a Java class named
 <code>com.mycompany.mypackage.MyClass.java</code> should be stored in file
-<code>src/com/mycompany/mypackage/MyClass.java</code>.
+<code>chapter05/com/mycompany/mypackage/MyClass.java</code>.
 Whenever you create a new subdirectory, don't forget to
 register it with CVS.</p>
 

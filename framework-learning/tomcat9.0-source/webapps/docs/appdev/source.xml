@@ -71,7 +71,7 @@ is discussed below.  All of these components exist under a top level
 <ul>
 <li><strong>docs/</strong> - Documentation for your application, in whatever
     format your development team is using.<br/><br/></li>
-<li><strong>src/</strong> - Java source files that generate the servlets,
+<li><strong>chapter05/</strong> - Java source files that generate the servlets,
     beans, and other Java classes that are unique to your application.
     If your source code is organized in packages (<strong>highly</strong>
     recommended), the package hierarchy should be reflected as a directory

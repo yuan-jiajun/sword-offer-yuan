@@ -137,7 +137,7 @@
 
 <source>cd $CATALINA_HOME/bin
 tar xvfz commons-daemon-native.tar.gz
-cd commons-daemon-1.1.x-native-src/unix
+cd commons-daemon-1.1.x-native-chapter05/unix
 ./configure
 make
 cp jsvc ../..

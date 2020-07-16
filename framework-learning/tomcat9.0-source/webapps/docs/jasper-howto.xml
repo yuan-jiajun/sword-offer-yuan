@@ -297,7 +297,7 @@ download) to precompile a webapp:
              validateXml="false"
              uriroot="${webapp.path}"
              webXmlInclude="${webapp.path}/WEB-INF/generated_web.xml"
-             outputDir="${webapp.path}/WEB-INF/src" />
+             outputDir="${webapp.path}/WEB-INF/chapter05" />
 
   </target>
 
@@ -308,7 +308,7 @@ download) to precompile a webapp:
 
     <javac destdir="${webapp.path}/WEB-INF/classes"
            debug="on" failonerror="false"
-           srcdir="${webapp.path}/WEB-INF/src"
+           srcdir="${webapp.path}/WEB-INF/chapter05"
            excludes="**/*.smap">
       <classpath>
         <pathelement location="${webapp.path}/WEB-INF/classes"/>
@@ -334,7 +334,7 @@ download) to precompile a webapp:
 
   <target name="cleanup">
     <delete>
-        <fileset dir="${webapp.path}/WEB-INF/src"/>
+        <fileset dir="${webapp.path}/WEB-INF/chapter05"/>
         <fileset dir="${webapp.path}/WEB-INF/classes/org/apache/jsp"/>
     </delete>
   </target>
@@ -377,7 +377,7 @@ When you don't want to stop the JSP generation at first JSP syntax error, use
 <code>failOnError=&quot;false&quot;</code> and with
 <code>showSuccess=&quot;true&quot;</code> all successful <i>JSP to Java</i>
 generation are printed out. Sometimes it is very helpful, when you cleanup the
-generate java source files at <code>${webapp.path}/WEB-INF/src</code>
+generate java source files at <code>${webapp.path}/WEB-INF/chapter05</code>
 and the compile JSP servlet classes at
 <code>${webapp.path}/WEB-INF/classes/org/apache/jsp</code>.
 </p>

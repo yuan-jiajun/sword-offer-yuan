@@ -49,9 +49,9 @@
                     <location>java</location>
                 </source-folder>
                 <source-folder>
-                    <label>webapps/docs/appdev/sample/src</label>
+                    <label>webapps/docs/appdev/sample/chapter05</label>
                     <type>java</type>
-                    <location>webapps/docs/appdev/sample/src</location>
+                    <location>webapps/docs/appdev/sample/chapter05</location>
                 </source-folder>
                 <source-folder>
                     <label>modules/tomcat-lite/test</label>
@@ -142,8 +142,8 @@
                         <location>java</location>
                     </source-folder>
                     <source-folder style="packages">
-                        <label>webapps/docs/appdev/sample/src</label>
-                        <location>webapps/docs/appdev/sample/src</location>
+                        <label>webapps/docs/appdev/sample/chapter05</label>
+                        <location>webapps/docs/appdev/sample/chapter05</location>
                     </source-folder>
                     <source-folder style="packages">
                         <label>test</label>
@@ -182,7 +182,7 @@
                 <source-level>1.7</source-level>
             </compilation-unit>
             <compilation-unit>
-                <package-root>webapps/docs/appdev/sample/src</package-root>
+                <package-root>webapps/docs/appdev/sample/chapter05</package-root>
                 <classpath mode="compile">${base.path}/servletapi-2.3/servletapi-2.3.jar</classpath>
                 <source-level>1.7</source-level>
             </compilation-unit>

@@ -8,7 +8,19 @@
       <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/jvm-shk/code/src/chapter01" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/jvm-shk/code/src/chapter02" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sword-offer-jin/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/sword-offer/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/jvm-shk/code/src/chapter04" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/jvm-shk/code/src/chapter05" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/juc-jvm-zy-season2/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/now-coder/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sword-offer-book/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sword-offer-book/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/utils/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/utils" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/sword-offer-book/src/test/java/book" />
       <excludeFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/juc-jvm-zy-season1" />
+      <excludeFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/jvm-shk/code/src/chapter02/chapter02/java" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

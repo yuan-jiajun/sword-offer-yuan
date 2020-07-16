@@ -74,7 +74,7 @@
   <xsl:variable name="css-src">
     <xsl:value-of select="$relative-path"/><xsl:value-of select="$home-stylesheet"/>
   </xsl:variable>
-  <link href="{$css-src}" rel="stylesheet" type="text/css"/>
+  <link href="{$css-chapter05}" rel="stylesheet" type="text/css"/>
 
   <title><xsl:value-of select="$project/title"/> (<xsl:value-of select="$version"/>) - <xsl:value-of select="properties/title"/></title>
   <xsl:for-each select="properties/author">
@@ -101,7 +101,7 @@
             <xsl:value-of select="$relative-path"/><xsl:value-of select="$home-logo"/>
           </xsl:variable>
           <div class="logo noPrint">
-            <a href="{$project/@href}"><img alt="Tomcat Home" src="{$src}"/></a>
+            <a href="{$project/@href}"><img alt="Tomcat Home" src="{$chapter05}"/></a>
           </div>
         </xsl:if>
 
@@ -110,7 +110,7 @@
           <xsl:value-of select="$relative-path"/><xsl:value-of select="$apache-logo"/>
         </xsl:variable>
         <div class="asfLogo noPrint">
-          <a href="https://www.apache.org/" target="_blank"><img src="{$src}" alt="The Apache Software Foundation" style="width: 266px; height: 83px;"/></a>
+          <a href="https://www.apache.org/" target="_blank"><img src="{$chapter05}" alt="The Apache Software Foundation" style="width: 266px; height: 83px;"/></a>
         </div>
         <h1><xsl:value-of select="$project/title"/></h1>
         <div class="versionInfo">
@@ -354,42 +354,42 @@
   <xsl:template match="changelog/add">
     <xsl:variable name="src"><xsl:value-of select="$relative-path"/>/images/add.gif</xsl:variable>
     <li>
-    <img alt="Add: " class="icon" src="{$src}"/><xsl:apply-templates/>
+    <img alt="Add: " class="icon" src="{$chapter05}"/><xsl:apply-templates/>
   </li>
   </xsl:template>
 
   <xsl:template match="changelog/update">
     <xsl:variable name="src"><xsl:value-of select="$relative-path"/>/images/update.gif</xsl:variable>
     <li>
-    <img alt="Update: " class="icon" src="{$src}"/><xsl:apply-templates/>
+    <img alt="Update: " class="icon" src="{$chapter05}"/><xsl:apply-templates/>
   </li>
   </xsl:template>
 
   <xsl:template match="changelog/design">
     <xsl:variable name="src"><xsl:value-of select="$relative-path"/>/images/design.gif</xsl:variable>
     <li>
-    <img alt="Design: " class="icon" src="{$src}"/><xsl:apply-templates/>
+    <img alt="Design: " class="icon" src="{$chapter05}"/><xsl:apply-templates/>
   </li>
   </xsl:template>
 
   <xsl:template match="changelog/docs">
     <xsl:variable name="src"><xsl:value-of select="$relative-path"/>/images/docs.gif</xsl:variable>
     <li>
-    <img alt="Docs: " class="icon" src="{$src}"/><xsl:apply-templates/>
+    <img alt="Docs: " class="icon" src="{$chapter05}"/><xsl:apply-templates/>
   </li>
   </xsl:template>
 
   <xsl:template match="changelog/fix">
     <xsl:variable name="src"><xsl:value-of select="$relative-path"/>/images/fix.gif</xsl:variable>
     <li>
-    <img alt="Fix: " class="icon" src="{$src}"/><xsl:apply-templates/>
+    <img alt="Fix: " class="icon" src="{$chapter05}"/><xsl:apply-templates/>
   </li>
   </xsl:template>
 
   <xsl:template match="changelog/scode">
     <xsl:variable name="src"><xsl:value-of select="$relative-path"/>/images/code.gif</xsl:variable>
     <li>
-    <img alt="Code: " class="icon" src="{$src}"/><xsl:apply-templates/>
+    <img alt="Code: " class="icon" src="{$chapter05}"/><xsl:apply-templates/>
   </li>
   </xsl:template>
 

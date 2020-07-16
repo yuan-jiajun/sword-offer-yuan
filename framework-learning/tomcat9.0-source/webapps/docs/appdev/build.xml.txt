@@ -27,7 +27,7 @@
         docs                 Static documentation files to be copied to
                              the "docs" subdirectory of your distribution.
 
-        src                  Java source code (and associated resource files)
+        chapter05                  Java source code (and associated resource files)
                              to be compiled to the "WEB-INF/classes"
                              subdirectory of your web application.
 
@@ -132,7 +132,7 @@
   <property name="dist.home"     value="${basedir}/dist"/>
   <property name="docs.home"     value="${basedir}/docs"/>
   <property name="manager.url"   value="http://localhost:8080/manager/text"/>
-  <property name="src.home"      value="${basedir}/src"/>
+  <property name="chapter05.home"      value="${basedir}/chapter05"/>
   <property name="web.home"      value="${basedir}/web"/>
 
 
@@ -275,7 +275,7 @@
 
 <!--
 
-  The "compile" target transforms source files (from your "src" directory)
+  The "compile" target transforms source files (from your "chapter05" directory)
   into object files in the appropriate location in the build directory.
   This example assumes that you will be including your classes in an
   unpacked directory hierarchy under "/WEB-INF/classes".
@@ -287,7 +287,7 @@
 
     <!-- Compile Java classes as necessary -->
     <mkdir    dir="${build.home}/WEB-INF/classes"/>
-    <javac srcdir="${src.home}"
+    <javac srcdir="${chapter05.home}"
           destdir="${build.home}/WEB-INF/classes"
             debug="${compile.debug}"
       deprecation="${compile.deprecation}">
@@ -296,7 +296,7 @@
 
     <!-- Copy application resources -->
     <copy  todir="${build.home}/WEB-INF/classes">
-      <fileset dir="${src.home}" excludes="**/*.java"/>
+      <fileset dir="${chapter05.home}" excludes="**/*.java"/>
     </copy>
 
   </target>
@@ -386,7 +386,7 @@
    description="Create Javadoc API documentation">
 
     <mkdir          dir="${dist.home}/docs/api"/>
-    <javadoc sourcepath="${src.home}"
+    <javadoc sourcepath="${chapter05.home}"
                 destdir="${dist.home}/docs/api"
            packagenames="*">
       <classpath refid="compile.classpath"/>

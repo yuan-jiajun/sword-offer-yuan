@@ -46,7 +46,7 @@
 
   <property name="project"               value="apache-tomcat-jdbc-pool" />
   <property name="final.name"            value="${project}-${version}" />
-  <property name="final-src.name"        value="${project}-${version}-src" />
+  <property name="final-chapter05.name" value="${project}-${version}-src" />
 
   <!-- Build Defaults -->
   <property name="tomcat.pool" value="${basedir}/./output"/>
@@ -57,9 +57,9 @@
 
   <!-- JAR Artifacts -->
   <property name="tomcat-jdbc.jar" value="${tomcat.pool}/tomcat-jdbc.jar"/>
-  <property name="tomcat-jdbc-src.jar" value="${tomcat.pool}/tomcat-jdbc-src.jar"/>
+  <property name="tomcat-jdbc-chapter05.jar" value="${tomcat.pool}/tomcat-jdbc-src.jar"/>
   <property name="tomcat-jdbc-test.jar" value="${tomcat.pool}/tomcat-jdbc-test.jar"/>
-  <property name="tomcat-jdbc-test-src.jar" value="${tomcat.pool}/tomcat-jdbc-test-src.jar"/>
+  <property name="tomcat-jdbc-test-chapter05.jar" value="${tomcat.pool}/tomcat-jdbc-test-src.jar"/>
   <property name="tomcat-jdbc-api.jar" value="${tomcat.pool}/tomcat-jdbc-api.jar"/>
   <!-- Classpath -->
   <path id="tomcat.jdbc.classpath">
@@ -145,7 +145,7 @@
 
   <target name="build" depends="prepare,download,build-src">
     <!-- compile org.apache.tomcat.jdbc-->
-    <javac srcdir="${basedir}/src/main/java" destdir="${tomcat.classes}"
+    <javac srcdir="${basedir}/chapter05/main/java" destdir="${tomcat.classes}"
            debug="${compile.debug}"
            deprecation="${compile.deprecation}"
            source="${compile.source}"
@@ -169,7 +169,7 @@
     </jar>
   </target>
 
-  <target name="build-src">
+  <target name="build-chapter05">
     <!-- connection pool source file-->
     <jar jarfile="${tomcat-jdbc-src.jar}" update="true">
       <fileset dir="${basedir}/src/main/java">
@@ -182,7 +182,7 @@
   <target name="build-test" depends="prepare, build, download-test">
     <mkdir dir="${tomcat.pool}"/>
     <!-- compile org.apache.tomcat.jdbc-->
-    <javac srcdir="${basedir}/src/test/java" destdir="${tomcat.testclasses}"
+    <javac srcdir="${basedir}/chapter05/test/java" destdir="${tomcat.testclasses}"
            debug="${compile.debug}"
            deprecation="${compile.deprecation}"
            source="${compile.source}"
@@ -258,8 +258,8 @@
         <include name="NOTICE"/>
         <include name="tomcat-jdbc.jar"/>
         <include name="tomcat-jdbc-test.jar"/>
-        <include name="tomcat-jdbc-src.jar"/>
-        <include name="tomcat-jdbc-test-src.jar"/>
+        <include name="tomcat-jdbc-chapter05.jar"/>
+        <include name="tomcat-jdbc-test-chapter05.jar"/>
       </fileset>
       <fileset dir="${tomcat.home}/bin">
         <include name="tomcat-juli.jar"/>
@@ -273,8 +273,8 @@
         <include name="NOTICE"/>
         <include name="tomcat-jdbc.jar"/>
         <include name="tomcat-jdbc-test.jar"/>
-        <include name="tomcat-jdbc-src.jar"/>
-        <include name="tomcat-jdbc-test-src.jar"/>
+        <include name="tomcat-jdbc-chapter05.jar"/>
+        <include name="tomcat-jdbc-test-chapter05.jar"/>
       </fileset>
       <fileset dir="${tomcat.home}/bin">
         <include name="tomcat-juli.jar"/>

@@ -16,9 +16,9 @@
   limitations under the License.
 -->
 <classpath>
-    <classpathentry kind="src" path="java"/>
-    <classpathentry excluding="deployment/|tld/|webapp*/|webresources/" kind="src" path="test"/>
-    <classpathentry kind="src" path="webapps/examples/WEB-INF/classes"/>
+    <classpathentry kind="chapter05" path="java"/>
+    <classpathentry excluding="deployment/|tld/|webapp*/|webresources/" kind="chapter05" path="test"/>
+    <classpathentry kind="chapter05" path="webapps/examples/WEB-INF/classes"/>
     <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
     <classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
     <classpathentry kind="var" path="ANT_HOME/lib/ant.jar"/>

@@ -230,11 +230,11 @@
 
 ## 强引用
 
-使用`new`方法创造出来的对象，默认都是强引用。GC的时候，就算**内存不够**，抛出`OutOfMemoryError`也不会回收对象，**死了也不回收**。详见[Demos.jvm.StrongReferenceDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/jvm/Demos.jvm.StrongReferenceDemo.java)。
+使用`new`方法创造出来的对象，默认都是强引用。GC的时候，就算**内存不够**，抛出`OutOfMemoryError`也不会回收对象，**死了也不回收**。详见[Demos.jvm.StrongReferenceDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/chapter05/jvm/Demos.jvm.StrongReferenceDemo.java)。
 
 ## 软引用
 
-需要用`Object.Reference.SoftReference`来显示创建。**如果内存够**，GC的时候**不回收**。**内存不够**，**则回收**。常用于内存敏感的应用，比如高速缓存。详见[Demos.jvm.SoftReferenceDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/jvm/Demos.jvm.SoftReferenceDemo.java)。
+需要用`Object.Reference.SoftReference`来显示创建。**如果内存够**，GC的时候**不回收**。**内存不够**，**则回收**。常用于内存敏感的应用，比如高速缓存。详见[Demos.jvm.SoftReferenceDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/chapter05/jvm/Demos.jvm.SoftReferenceDemo.java)。
 
 ## 弱引用
 
@@ -242,29 +242,29 @@
 
 ### WeakHashMap
 
-传统的`HashMap`就算`key==null`了，也不会回收键值对。但是如果是`WeakHashMap`，一旦内存不够用时，且`key==null`时，会回收这个键值对。详见[Demos.jvm.WeakHashMapDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/jvm/Demos.jvm.WeakHashMapDemo.java)。
+传统的`HashMap`就算`key==null`了，也不会回收键值对。但是如果是`WeakHashMap`，一旦内存不够用时，且`key==null`时，会回收这个键值对。详见[Demos.jvm.WeakHashMapDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/chapter05/jvm/Demos.jvm.WeakHashMapDemo.java)。
 
 ## 虚引用
 
-软应用和弱引用可以通过`get()`方法获得对象，但是虚引用不行。虚引形同虚设，在任何时候都可能被GC，不能单独使用，必须配合**引用队列（ReferenceQueue）**来使用。设置虚引用的**唯一目的**，就是在这个对象被回收时，收到一个**通知**以便进行后续操作，有点像`Spring`的后置通知。详见[Demos.jvm.PhantomReferenceDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/jvm/Demos.jvm.PhantomReferenceDemo.java)。
+软应用和弱引用可以通过`get()`方法获得对象，但是虚引用不行。虚引形同虚设，在任何时候都可能被GC，不能单独使用，必须配合**引用队列（ReferenceQueue）**来使用。设置虚引用的**唯一目的**，就是在这个对象被回收时，收到一个**通知**以便进行后续操作，有点像`Spring`的后置通知。详见[Demos.jvm.PhantomReferenceDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/chapter05/jvm/Demos.jvm.PhantomReferenceDemo.java)。
 
 ## 引用队列
 
-弱引用、虚引用被回收后，会被放到引用队列里面，通过`poll`方法可以得到。关于引用队列和弱、虚引用的配合使用，见[Demos.jvm.ReferenceQueueDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/jvm/Demos.jvm.ReferenceQueueDemo.java)。
+弱引用、虚引用被回收后，会被放到引用队列里面，通过`poll`方法可以得到。关于引用队列和弱、虚引用的配合使用，见[Demos.jvm.ReferenceQueueDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/chapter05/jvm/Demos.jvm.ReferenceQueueDemo.java)。
 
 # OutOfMemoryError
 
 ## StackOverflowError
 
-栈满会抛出该错误。无限递归就会导致StackOverflowError，是`java.lang.Throwable`→`java.lang.Error`→`java.lang.VirtualMachineError`下的错误。详见[Demos.jvm.StackOverflowErrorDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/jvm/Demos.jvm.StackOverflowErrorDemo.java)。
+栈满会抛出该错误。无限递归就会导致StackOverflowError，是`java.lang.Throwable`→`java.lang.Error`→`java.lang.VirtualMachineError`下的错误。详见[Demos.jvm.StackOverflowErrorDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/chapter05/jvm/Demos.jvm.StackOverflowErrorDemo.java)。
 
 ## OOM—Java head space
 
-栈满会抛出该错误。详见[Demos.jvm.JavaHeapSpaceDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/jvm/Demos.jvm.JavaHeapSpaceDemo.java)。
+栈满会抛出该错误。详见[Demos.jvm.JavaHeapSpaceDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/chapter05/jvm/Demos.jvm.JavaHeapSpaceDemo.java)。
 
 ## OOM—GC overhead limit exceeded
 
-这个错误是指：GC的时候会有“Stop the World"，STW越小越好，正常情况是GC只会占到很少一部分时间。但是如果用超过98%的时间来做GC，而且收效甚微，就会被JVM叫停。下例中，执行了多次`Full GC`，但是内存回收很少，最后抛出了`OOM:GC overhead limit exceeded`错误。详见[Demos.jvm.GCOverheadDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/jvm/Demos.jvm.GCOverheadDemo.java)。
+这个错误是指：GC的时候会有“Stop the World"，STW越小越好，正常情况是GC只会占到很少一部分时间。但是如果用超过98%的时间来做GC，而且收效甚微，就会被JVM叫停。下例中，执行了多次`Full GC`，但是内存回收很少，最后抛出了`OOM:GC overhead limit exceeded`错误。详见[Demos.jvm.GCOverheadDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/chapter05/jvm/Demos.jvm.GCOverheadDemo.java)。
 
 ```java
 [GC (Allocation Failure) [PSYoungGen: 2048K->496K(2560K)] 2048K->960K(9728K), 0.0036555 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
@@ -289,7 +289,7 @@ java.lang.OutOfMemoryError: GC overhead limit exceeded
 
 ## OOM—GC Direct buffer memory
 
-在写`NIO`程序的时候，会用到`ByteBuffer`来读取和存入数据。与Java堆的数据不一样，`ByteBuffer`使用`native`方法，直接在**堆外分配内存**。当堆外内存（也即本地物理内存）不够时，就会抛出这个异常。详见[jvm.DirectBufferMemoryDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/src/jvm/jvm.DirectBufferMemoryDemo.java)。
+在写`NIO`程序的时候，会用到`ByteBuffer`来读取和存入数据。与Java堆的数据不一样，`ByteBuffer`使用`native`方法，直接在**堆外分配内存**。当堆外内存（也即本地物理内存）不够时，就会抛出这个异常。详见[jvm.DirectBufferMemoryDemo](https://github.com/MaJesTySA/JVM-JUC-Core/blob/master/chapter05/jvm/jvm.DirectBufferMemoryDemo.java)。
 
 ## OOM—unable to create new native thread
 

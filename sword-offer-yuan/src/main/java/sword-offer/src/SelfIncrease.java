@@ -1,5 +1,3 @@
-package swordoffer;
-
 /**
  * @author Yuan Jiajun
  * @description

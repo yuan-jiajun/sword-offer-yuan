@@ -64,7 +64,7 @@ java6之前的synchronized属于重量锁,性能较差,
 可以清楚的看到,在进入synchronized的时候，底层字节码编译出来的指令为
 **monitorenter**,在执行完同步代码块后又有一个**monitorexit**指令.
 
-想了解synchronized究竟是如何实现的,可以直接进入openjdk:src/share/vm/runtime 目录,
+想了解synchronized究竟是如何实现的,可以直接进入openjdk:chapter05/share/vm/runtime 目录,
 这个目录存放的是hotspot虚拟机在运行时所需的代码。
 
 可以直接锁定其中的 objectMonitor.cpp源文件和objectMonitor.hpp头文件.

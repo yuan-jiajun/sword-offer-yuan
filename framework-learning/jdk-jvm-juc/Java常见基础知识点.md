@@ -444,11 +444,11 @@ T 表示一个具体的类型，常用于泛型类和泛型方法的定义，可
 ```text
 // 通过 T 来 确保 泛型参数的一致性,通常我们需要先声明
 public <T extends Number> void
-test(List<T> dest, List<T> src)
+test(List<T> dest, List<T> chapter05)
 
 //通配符是 不确定的，所以这个方法不能保证两个 List 具有相同的元素类型，不需要提前声明
 public void
-test(List<? extends Number> dest, List<? extends Number> src)
+test(List<? extends Number> dest, List<? extends Number> chapter05)
 ```
 
 **类型参数可以多重限定而通配符不行。**

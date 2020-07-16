@@ -66,16 +66,16 @@
     <attribute name="groupId" default="org.apache.tomcat" />
     <attribute name="file" default="${tomcat.lib.path}/@{jarFileName}" />
     <attribute name="pom" default="@{artifactId}.pom" />
-    <attribute name="srcJarFileName" default="@{artifactId}-src.jar" />
-    <attribute name="src" default="${tomcat.src.path}/@{srcJarFileName}" />
+    <attribute name="srcJarFileName" default="@{artifactId}-chapter05.jar" />
+    <attribute name="chapter05" default="${tomcat.src.path}/@{srcJarFileName}" />
     <sequential>
       <antcall target="maven-install">
         <param name="file" value="@{file}"/>
         <param name="groupId" value="@{groupId}"/>
         <param name="artifactId" value="@{artifactId}"/>
         <param name="pom" value="${tomcat.pom.path}/@{pom}"/>
-        <param name="src" value="@{src}"/>
-        <param name="src.skip" value="@{src.skip}"/>
+        <param name="chapter05" value="@{src}"/>
+        <param name="chapter05.skip" value="@{src.skip}"/>
         <param name="maven.deploy.version" value="${maven.asf.release.deploy.version}-dev"/>
       </antcall>
     </sequential>
@@ -117,8 +117,8 @@
                         unless:set="maven.auth.useSettings" />
       </remoteRepository>
       <attach file="${file}.asc" type="jar.asc" if:set="gpg.passphrase"/>
-      <attach file="${src}" classifier="sources" type="jar"/>
-      <attach file="${src}.asc" classifier="sources" type="jar.asc" if:set="gpg.passphrase"/>
+      <attach file="${chapter05}" classifier="sources" type="jar"/>
+      <attach file="${chapter05}.asc" classifier="sources" type="jar.asc" if:set="gpg.passphrase"/>
       <attach file="${pom}.asc" type="pom.asc" if:set="gpg.passphrase"/>
     </artifact:deploy>
 
@@ -134,16 +134,16 @@
     <attribute name="groupId" default="org.apache.tomcat" />
     <attribute name="file" default="${tomcat.lib.path}/@{jarFileName}" />
     <attribute name="pom" default="@{artifactId}.pom" />
-    <attribute name="srcJarFileName" default="@{artifactId}-src.jar" />
-    <attribute name="src" default="${tomcat.src.path}/@{srcJarFileName}" />
+    <attribute name="srcJarFileName" default="@{artifactId}-chapter05.jar" />
+    <attribute name="chapter05" default="${tomcat.src.path}/@{srcJarFileName}" />
     <sequential>
       <antcall target="maven-deploy">
         <param name="file" value="@{file}"/>
         <param name="groupId" value="@{groupId}"/>
         <param name="artifactId" value="@{artifactId}"/>
         <param name="pom" value="${tomcat.pom.path}/@{pom}"/>
-        <param name="src" value="@{src}"/>
-        <param name="src.skip" value="@{src.skip}"/>
+        <param name="chapter05" value="@{src}"/>
+        <param name="chapter05.skip" value="@{src.skip}"/>
       </antcall>
     </sequential>
   </macrodef>
@@ -273,63 +273,63 @@
      <!-- Standard jars in lib directory -->
      <doMavenInstall artifactId="tomcat-annotations-api"
                    jarFileName="annotations-api.jar"
-                srcJarFileName="annotations-api-src.jar"/>
+                srcJarFileName="annotations-api-chapter05.jar"/>
 
      <doMavenInstall artifactId="tomcat-catalina"
                    jarFileName="catalina.jar"
-                srcJarFileName="catalina-src.jar"/>
+                srcJarFileName="catalina-chapter05.jar"/>
 
      <doMavenInstall artifactId="tomcat-catalina-ant"
                    jarFileName="catalina-ant.jar"
-                srcJarFileName="catalina-ant-src.jar"/>
+                srcJarFileName="catalina-ant-chapter05.jar"/>
 
      <doMavenInstall artifactId="tomcat-catalina-ha"
                    jarFileName="catalina-ha.jar"
-                srcJarFileName="catalina-ha-src.jar"/>
+                srcJarFileName="catalina-ha-chapter05.jar"/>
 
      <doMavenInstall artifactId="tomcat-tribes"
                    jarFileName="catalina-tribes.jar"
-                srcJarFileName="catalina-tribes-src.jar"/>
+                srcJarFileName="catalina-tribes-chapter05.jar"/>
 
      <doMavenInstall artifactId="tomcat-ssi"
                    jarFileName="catalina-ssi.jar"
-                srcJarFileName="catalina-ssi-src.jar"/>
+                srcJarFileName="catalina-ssi-chapter05.jar"/>
 
      <doMavenInstall artifactId="tomcat-storeconfig"
                    jarFileName="catalina-storeconfig.jar"
-                srcJarFileName="catalina-storeconfig-src.jar"/>
+                srcJarFileName="catalina-storeconfig-chapter05.jar"/>
 
      <doMavenInstall artifactId="tomcat-jdbc"
                    jarFileName="tomcat-jdbc.jar"
-                srcJarFileName="tomcat-jdbc-src.jar"/>
+                srcJarFileName="tomcat-jdbc-chapter05.jar"/>
 
      <doMavenInstall artifactId="tomcat-el-api"
                    jarFileName="el-api.jar"
-                srcJarFileName="el-api-src.jar"/>
+                srcJarFileName="el-api-chapter05.jar"/>
 
      <doMavenInstall artifactId="tomcat-jasper"
                    jarFileName="jasper.jar"
-                srcJarFileName="jasper-src.jar"/>
+                srcJarFileName="jasper-chapter05.jar"/>
 
      <doMavenInstall artifactId="tomcat-jasper-el"
                    jarFileName="jasper-el.jar"
-                srcJarFileName="jasper-el-src.jar"/>
+                srcJarFileName="jasper-el-chapter05.jar"/>
 
      <doMavenInstall artifactId="tomcat-jsp-api"
                    jarFileName="jsp-api.jar"
-                srcJarFileName="jsp-api-src.jar"/>
+                srcJarFileName="jsp-api-chapter05.jar"/>
 
      <doMavenInstall artifactId="tomcat-servlet-api"
                    jarFileName="servlet-api.jar"
-                srcJarFileName="servlet-api-src.jar"/>
+                srcJarFileName="servlet-api-chapter05.jar"/>
 
      <doMavenInstall artifactId="tomcat-websocket-api"
                    jarFileName="websocket-api.jar"
-                srcJarFileName="websocket-api-src.jar"/>
+                srcJarFileName="websocket-api-chapter05.jar"/>
 
      <doMavenInstall artifactId="tomcat-jaspic-api"
                    jarFileName="jaspic-api.jar"
-                srcJarFileName="jaspic-api-src.jar"/>
+                srcJarFileName="jaspic-api-chapter05.jar"/>
 
      <doMavenInstall artifactId="tomcat-api"/>
      <doMavenInstall artifactId="tomcat-jni"/>
@@ -344,22 +344,22 @@
          groupId="org.apache.tomcat.embed"
          file="${tomcat.embed.path}/tomcat-embed-core.jar"
          pom="tomcat-embed-core.pom"
-         src="${tomcat.embed.src.path}/tomcat-embed-core-src.jar"/>
+         src="${tomcat.embed.sort.path}/tomcat-embed-core-chapter05.jar"/>
      <doMavenInstall artifactId="tomcat-embed-jasper"
          groupId="org.apache.tomcat.embed"
          file="${tomcat.embed.path}/tomcat-embed-jasper.jar"
          pom="tomcat-embed-jasper.pom"
-         src="${tomcat.embed.src.path}/tomcat-embed-jasper-src.jar"/>
+         src="${tomcat.embed.sort.path}/tomcat-embed-jasper-chapter05.jar"/>
      <doMavenInstall artifactId="tomcat-embed-el"
          groupId="org.apache.tomcat.embed"
          file="${tomcat.embed.path}/tomcat-embed-el.jar"
          pom="tomcat-embed-el.pom"
-         src="${tomcat.embed.src.path}/tomcat-embed-el-src.jar"/>
+         src="${tomcat.embed.sort.path}/tomcat-embed-el-chapter05.jar"/>
      <doMavenInstall artifactId="tomcat-embed-websocket"
          groupId="org.apache.tomcat.embed"
          file="${tomcat.embed.path}/tomcat-embed-websocket.jar"
          pom="tomcat-embed-websocket.pom"
-         src="${tomcat.embed.src.path}/tomcat-embed-websocket-src.jar"/>
+         src="${tomcat.embed.sort.path}/tomcat-embed-websocket-chapter05.jar"/>
   </target>
 
   <target name="generic-deploy" depends="init-maven,init-gpg-1,init-gpg-2,init-ldap">
@@ -371,63 +371,63 @@
     <!-- Standard jars in lib directory -->
     <doMavenDeploy artifactId="tomcat-annotations-api"
                   jarFileName="annotations-api.jar"
-               srcJarFileName="annotations-api-src.jar"/>
+               srcJarFileName="annotations-api-chapter05.jar"/>
 
     <doMavenDeploy artifactId="tomcat-catalina"
                   jarFileName="catalina.jar"
-               srcJarFileName="catalina-src.jar"/>
+               srcJarFileName="catalina-chapter05.jar"/>
 
     <doMavenDeploy artifactId="tomcat-catalina-ant"
                   jarFileName="catalina-ant.jar"
-               srcJarFileName="catalina-ant-src.jar"/>
+               srcJarFileName="catalina-ant-chapter05.jar"/>
 
     <doMavenDeploy artifactId="tomcat-catalina-ha"
                   jarFileName="catalina-ha.jar"
-               srcJarFileName="catalina-ha-src.jar"/>
+               srcJarFileName="catalina-ha-chapter05.jar"/>
 
     <doMavenDeploy artifactId="tomcat-tribes"
                   jarFileName="catalina-tribes.jar"
-               srcJarFileName="catalina-tribes-src.jar"/>
+               srcJarFileName="catalina-tribes-chapter05.jar"/>
 
     <doMavenDeploy artifactId="tomcat-ssi"
                   jarFileName="catalina-ssi.jar"
-               srcJarFileName="catalina-ssi-src.jar"/>
+               srcJarFileName="catalina-ssi-chapter05.jar"/>
 
     <doMavenDeploy artifactId="tomcat-storeconfig"
                   jarFileName="catalina-storeconfig.jar"
-               srcJarFileName="catalina-storeconfig-src.jar"/>
+               srcJarFileName="catalina-storeconfig-chapter05.jar"/>
 
     <doMavenDeploy artifactId="tomcat-jdbc"
                   jarFileName="tomcat-jdbc.jar"
-               srcJarFileName="tomcat-jdbc-src.jar"/>
+               srcJarFileName="tomcat-jdbc-chapter05.jar"/>
 
     <doMavenDeploy artifactId="tomcat-el-api"
                   jarFileName="el-api.jar"
-               srcJarFileName="el-api-src.jar"/>
+               srcJarFileName="el-api-chapter05.jar"/>
 
     <doMavenDeploy artifactId="tomcat-jasper"
                   jarFileName="jasper.jar"
-               srcJarFileName="jasper-src.jar"/>
+               srcJarFileName="jasper-chapter05.jar"/>
 
     <doMavenDeploy artifactId="tomcat-jasper-el"
                   jarFileName="jasper-el.jar"
-               srcJarFileName="jasper-el-src.jar"/>
+               srcJarFileName="jasper-el-chapter05.jar"/>
 
     <doMavenDeploy artifactId="tomcat-jsp-api"
                   jarFileName="jsp-api.jar"
-               srcJarFileName="jsp-api-src.jar"/>
+               srcJarFileName="jsp-api-chapter05.jar"/>
 
     <doMavenDeploy artifactId="tomcat-servlet-api"
                   jarFileName="servlet-api.jar"
-               srcJarFileName="servlet-api-src.jar"/>
+               srcJarFileName="servlet-api-chapter05.jar"/>
 
     <doMavenDeploy artifactId="tomcat-websocket-api"
                   jarFileName="websocket-api.jar"
-               srcJarFileName="websocket-api-src.jar"/>
+               srcJarFileName="websocket-api-chapter05.jar"/>
 
     <doMavenDeploy artifactId="tomcat-jaspic-api"
                   jarFileName="jaspic-api.jar"
-               srcJarFileName="jaspic-api-src.jar"/>
+               srcJarFileName="jaspic-api-chapter05.jar"/>
 
     <doMavenDeploy artifactId="tomcat-api"/>
     <doMavenDeploy artifactId="tomcat-jni"/>
@@ -452,22 +452,22 @@
         groupId="org.apache.tomcat.embed"
         file="${tomcat.embed.path}/tomcat-embed-core.jar"
         pom="tomcat-embed-core.pom"
-        src="${tomcat.embed.src.path}/tomcat-embed-core-src.jar"/>
+        src="${tomcat.embed.sort.path}/tomcat-embed-core-chapter05.jar"/>
     <doMavenDeploy artifactId="tomcat-embed-jasper"
         groupId="org.apache.tomcat.embed"
         file="${tomcat.embed.path}/tomcat-embed-jasper.jar"
         pom="tomcat-embed-jasper.pom"
-        src="${tomcat.embed.src.path}/tomcat-embed-jasper-src.jar"/>
+        src="${tomcat.embed.sort.path}/tomcat-embed-jasper-chapter05.jar"/>
     <doMavenDeploy artifactId="tomcat-embed-el"
         groupId="org.apache.tomcat.embed"
         file="${tomcat.embed.path}/tomcat-embed-el.jar"
         pom="tomcat-embed-el.pom"
-        src="${tomcat.embed.src.path}/tomcat-embed-el-src.jar"/>
+        src="${tomcat.embed.sort.path}/tomcat-embed-el-chapter05.jar"/>
     <doMavenDeploy artifactId="tomcat-embed-websocket"
         groupId="org.apache.tomcat.embed"
         file="${tomcat.embed.path}/tomcat-embed-websocket.jar"
         pom="tomcat-embed-websocket.pom"
-        src="${tomcat.embed.src.path}/tomcat-embed-websocket-src.jar"/>
+        src="${tomcat.embed.sort.path}/tomcat-embed-websocket-chapter05.jar"/>
 
     <!-- Binaries -->
     <doMavenDeployBinaries

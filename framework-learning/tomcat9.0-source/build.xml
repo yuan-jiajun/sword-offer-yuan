@@ -63,7 +63,7 @@
 
   <!-- Release artifact base names -->
   <property name="final.name"            value="${project}-${version}" />
-  <property name="final-src.name"        value="${project}-${version}-src" />
+  <property name="final-chapter05.name" value="${project}-${version}-src" />
 
   <!-- Locations to create build artifacts -->
   <property name="tomcat.home"           value="${basedir}"/>
@@ -78,7 +78,7 @@
   <property name="tomcat.embed.sources"  value="${tomcat.output}/embed-src-jars"/>
   <property name="tomcat.manifests"      value="${tomcat.output}/manifests"/>
   <property name="tomcat.release"        value="${tomcat.output}/release"/>
-  <property name="tomcat.src.jars"       value="${tomcat.output}/src-jars"/>
+  <property name="tomcat.chapter05.jars" value="${tomcat.output}/src-jars"/>
   <property name="test.classes"          value="${tomcat.output}/testclasses"/>
   <property name="test.run.classes"      value="${tomcat.output}/classes"/>
   <property name="test.temp"             value="${tomcat.output}/test-tmp"/>
@@ -125,31 +125,31 @@
   <property name="jasper-el.jar" value="${tomcat.build}/lib/jasper-el.jar"/>
 
   <!-- Standard Source JARs -->
-  <property name="bootstrap-src.jar" value="${tomcat.src.jars}/bootstrap-src.jar"/>
-  <property name="tomcat-juli-src.jar" value="${tomcat.src.jars}/tomcat-juli-src.jar"/>
+  <property name="bootstrap-chapter05.jar" value="${tomcat.src.jars}/bootstrap-src.jar"/>
+  <property name="tomcat-juli-chapter05.jar" value="${tomcat.src.jars}/tomcat-juli-src.jar"/>
 
-  <property name="annotations-api-src.jar" value="${tomcat.src.jars}/annotations-api-src.jar"/>
-  <property name="servlet-api-src.jar" value="${tomcat.src.jars}/servlet-api-src.jar"/>
-  <property name="jsp-api-src.jar" value="${tomcat.src.jars}/jsp-api-src.jar"/>
-  <property name="el-api-src.jar" value="${tomcat.src.jars}/el-api-src.jar"/>
-  <property name="websocket-api-src.jar" value="${tomcat.src.jars}/websocket-api-src.jar"/>
-  <property name="jaspic-api-src.jar" value="${tomcat.src.jars}/jaspic-api-src.jar"/>
-  <property name="tomcat-websocket-src.jar" value="${tomcat.src.jars}/tomcat-websocket-src.jar"/>
-  <property name="catalina-src.jar" value="${tomcat.src.jars}/catalina-src.jar"/>
-  <property name="catalina-tribes-src.jar" value="${tomcat.src.jars}/catalina-tribes-src.jar"/>
-  <property name="catalina-ssi-src.jar" value="${tomcat.src.jars}/catalina-ssi-src.jar"/>
-  <property name="catalina-ha-src.jar" value="${tomcat.src.jars}/catalina-ha-src.jar"/>
-  <property name="catalina-ant-src.jar" value="${tomcat.src.jars}/catalina-ant-src.jar"/>
-  <property name="catalina-storeconfig-src.jar" value="${tomcat.src.jars}/catalina-storeconfig-src.jar"/>
-  <property name="tomcat-jni-src.jar" value="${tomcat.src.jars}/tomcat-jni-src.jar"/>
-  <property name="tomcat-coyote-src.jar" value="${tomcat.src.jars}/tomcat-coyote-src.jar"/>
-  <property name="tomcat-dbcp-src.jar" value="${tomcat.src.jars}/tomcat-dbcp-src.jar"/>
-  <property name="tomcat-api-src.jar" value="${tomcat.src.jars}/tomcat-api-src.jar"/>
-  <property name="tomcat-util-src.jar" value="${tomcat.src.jars}/tomcat-util-src.jar"/>
-  <property name="tomcat-util-scan-src.jar" value="${tomcat.src.jars}/tomcat-util-scan-src.jar"/>
+  <property name="annotations-api-chapter05.jar" value="${tomcat.src.jars}/annotations-api-src.jar"/>
+  <property name="servlet-api-chapter05.jar" value="${tomcat.src.jars}/servlet-api-src.jar"/>
+  <property name="jsp-api-chapter05.jar" value="${tomcat.src.jars}/jsp-api-src.jar"/>
+  <property name="el-api-chapter05.jar" value="${tomcat.src.jars}/el-api-src.jar"/>
+  <property name="websocket-api-chapter05.jar" value="${tomcat.src.jars}/websocket-api-src.jar"/>
+  <property name="jaspic-api-chapter05.jar" value="${tomcat.src.jars}/jaspic-api-src.jar"/>
+  <property name="tomcat-websocket-chapter05.jar" value="${tomcat.src.jars}/tomcat-websocket-src.jar"/>
+  <property name="catalina-chapter05.jar" value="${tomcat.src.jars}/catalina-src.jar"/>
+  <property name="catalina-tribes-chapter05.jar" value="${tomcat.src.jars}/catalina-tribes-src.jar"/>
+  <property name="catalina-ssi-chapter05.jar" value="${tomcat.src.jars}/catalina-ssi-src.jar"/>
+  <property name="catalina-ha-chapter05.jar" value="${tomcat.src.jars}/catalina-ha-src.jar"/>
+  <property name="catalina-ant-chapter05.jar" value="${tomcat.src.jars}/catalina-ant-src.jar"/>
+  <property name="catalina-storeconfig-chapter05.jar" value="${tomcat.src.jars}/catalina-storeconfig-src.jar"/>
+  <property name="tomcat-jni-chapter05.jar" value="${tomcat.src.jars}/tomcat-jni-src.jar"/>
+  <property name="tomcat-coyote-chapter05.jar" value="${tomcat.src.jars}/tomcat-coyote-src.jar"/>
+  <property name="tomcat-dbcp-chapter05.jar" value="${tomcat.src.jars}/tomcat-dbcp-src.jar"/>
+  <property name="tomcat-api-chapter05.jar" value="${tomcat.src.jars}/tomcat-api-src.jar"/>
+  <property name="tomcat-util-chapter05.jar" value="${tomcat.src.jars}/tomcat-util-src.jar"/>
+  <property name="tomcat-util-scan-chapter05.jar" value="${tomcat.src.jars}/tomcat-util-scan-src.jar"/>
 
-  <property name="jasper-src.jar" value="${tomcat.src.jars}/jasper-src.jar"/>
-  <property name="jasper-el-src.jar" value="${tomcat.src.jars}/jasper-el-src.jar"/>
+  <property name="jasper-chapter05.jar" value="${tomcat.src.jars}/jasper-src.jar"/>
+  <property name="jasper-el-chapter05.jar" value="${tomcat.src.jars}/jasper-el-src.jar"/>
 
   <!-- Embedded JARs & source JARs -->
   <property name="tomcat-embed-core.jar" value="${tomcat.embed}/tomcat-embed-core.jar"/>
@@ -164,7 +164,7 @@
 
   <!-- jdbc-pool JARs & source JARs -->
   <property name="tomcat-jdbc.jar" value="${tomcat.pool}/tomcat-jdbc.jar"/>
-  <property name="tomcat-jdbc-src.jar" value="${tomcat.pool}/tomcat-jdbc-src.jar"/>
+  <property name="tomcat-jdbc-chapter05.jar" value="${tomcat.pool}/tomcat-jdbc-src.jar"/>
 
   <!-- Tests To Run -->
   <property name="test.name" value="**/Test*.java"/>
@@ -190,7 +190,7 @@
   <!-- The OpenSSL tests cases be disabled by specifying an invalid path here -->
   <property name="test.openssl.path" value="" />
 
-  <!-- Include .gitignore in src distributions. -->
+  <!-- Include .gitignore in chapter05 distributions. -->
   <!-- .git and .gitignore are in defaultexcludes since Ant 1.8.2 -->
   <defaultexcludes add="**/.git" />
   <defaultexcludes add="**/.git/**" />
@@ -1273,9 +1273,9 @@
     <copy file="${tomcat-jdbc.jar}" todir="${tomcat.build}/lib"/>
   </target>
 
-  <target name="build-tomcat-jdbc-src">
+  <target name="build-tomcat-jdbc-chapter05">
     <!-- build the jdbc-pool source jar-->
-    <echo message="Building Tomcat JDBC pool src JAR"/>
+    <echo message="Building Tomcat JDBC pool chapter05 JAR"/>
     <ant antfile="${tomcat.jdbc.dir}/build.xml" dir="${tomcat.jdbc.dir}"
          inheritAll="false" target="build-src">
       <property name="tomcat.pool" value="${tomcat.pool}" />
@@ -1833,7 +1833,7 @@
     <copy todir="${tomcat.dist}/webapps">
       <fileset dir="${tomcat.build}/webapps">
         <exclude name="**/ROOT/WEB-INF/classes/**" />
-        <exclude name="**/WEB-INF/src/**" />
+        <exclude name="**/WEB-INF/chapter05/**" />
       </fileset>
     </copy>
 
@@ -1877,7 +1877,7 @@ Apache Tomcat ${version} native binaries for Win64 AMD64/EMT64 platform.
   <target name="javadoc" depends="dist-source"
     description="Create the Tomcat javadoc" >
     <javadoc packagenames="javax.annotation.*"
-      sourcepath="${tomcat.dist}/src/java"
+      sourcepath="${tomcat.dist}/chapter05/java"
       destdir="${tomcat.dist}/webapps/docs/annotationapi"
       version="true"
       windowtitle="Common Annotations 1.3 API Documentation - Apache Tomcat ${version}"
@@ -1899,7 +1899,7 @@ Apache Tomcat ${version} native binaries for Win64 AMD64/EMT64 platform.
     </javadoc>
     <javadoc packagenames="javax.servlet.*"
       excludepackagenames="javax.servlet.jsp.*"
-      sourcepath="${tomcat.dist}/src/java"
+      sourcepath="${tomcat.dist}/chapter05/java"
       destdir="${tomcat.dist}/webapps/docs/servletapi"
       version="true"
       windowtitle="Servlet 4.0 API Documentation - Apache Tomcat ${version}"
@@ -1920,7 +1920,7 @@ Apache Tomcat ${version} native binaries for Win64 AMD64/EMT64 platform.
       </classpath>
     </javadoc>
     <javadoc packagenames="javax.servlet.jsp.*"
-      sourcepath="${tomcat.dist}/src/java"
+      sourcepath="${tomcat.dist}/chapter05/java"
       destdir="${tomcat.dist}/webapps/docs/jspapi"
       version="true"
       windowtitle="JSP 2.3 API Documentation - Apache Tomcat ${version}"
@@ -1941,7 +1941,7 @@ Apache Tomcat ${version} native binaries for Win64 AMD64/EMT64 platform.
       </classpath>
     </javadoc>
     <javadoc packagenames="javax.el.*"
-      sourcepath="${tomcat.dist}/src/java"
+      sourcepath="${tomcat.dist}/chapter05/java"
       destdir="${tomcat.dist}/webapps/docs/elapi"
       version="true"
       windowtitle="EL 3.0 API Documentation - Apache Tomcat ${version}"
@@ -1962,7 +1962,7 @@ Apache Tomcat ${version} native binaries for Win64 AMD64/EMT64 platform.
       </classpath>
     </javadoc>
     <javadoc packagenames="javax.websocket.*"
-      sourcepath="${tomcat.dist}/src/java"
+      sourcepath="${tomcat.dist}/chapter05/java"
       destdir="${tomcat.dist}/webapps/docs/websocketapi"
       version="true"
       windowtitle="WebSocket 1.1 API Documentation - Apache Tomcat ${version}"
@@ -1983,7 +1983,7 @@ Apache Tomcat ${version} native binaries for Win64 AMD64/EMT64 platform.
       </classpath>
     </javadoc>
     <javadoc packagenames="javax.security.auth.message.*"
-      sourcepath="${tomcat.dist}/src/java"
+      sourcepath="${tomcat.dist}/chapter05/java"
       destdir="${tomcat.dist}/webapps/docs/jaspicapi"
       version="true"
       windowtitle="JASPIC 1.1 API Documentation - Apache Tomcat ${version}"
@@ -2034,7 +2034,7 @@ Apache Tomcat ${version} native binaries for Win64 AMD64/EMT64 platform.
         <exclude name="org/apache/el/parser/**"/>
         <exclude name="org/apache/tomcat/util/json/**"/>
       </packageset>
-      <!--jdbc-pool src files for javadoc-->
+      <!--jdbc-pool chapter05 files for javadoc-->
       <packageset dir="${tomcat.dist}/src/modules/jdbc-pool/src/main/java"/>
     </javadoc>
   </target>
@@ -2486,7 +2486,7 @@ skip.installer property in build.properties" />
         <include name="BUILDING.txt" />
         <include name="CONTRIBUTING.md"/>
         <exclude name="conf/**" />
-        <exclude name="src/**" />
+        <exclude name="chapter05/**" />
         <exclude name="bin/service.bat"/>
         <exclude name="bin/*.sh"/>
         <exclude name="bin/x64/"/>
@@ -2553,7 +2553,7 @@ skip.installer property in build.properties" />
   </target>
 
   <!-- Packages the source code distribution in zip format -->
-  <target name="package-src-zip" depends="dist-source">
+  <target name="package-chapter05-zip" depends="dist-source">
     <fixcrlf srcdir="${tomcat.dist}/src" eol="crlf"
         encoding="ISO-8859-1" fixlast="false" >
       <patternset refid="text.files"/>
@@ -2565,11 +2565,11 @@ skip.installer property in build.properties" />
       <zipfileset dir="${tomcat.dist}/src" prefix="${final-src.name}" />
     </zip>
 
-    <hashAndSign file="${tomcat.release}/v${version}/src/${final-src.name}.zip" />
+    <hashAndSign file="${tomcat.release}/v${version}/chapter05/${final-src.name}.zip" />
   </target>
 
   <!-- Packages the source code distribution in tar.gz format -->
-  <target name="package-src-tgz" depends="dist-source">
+  <target name="package-chapter05-tgz" depends="dist-source">
     <fixcrlf srcdir="${tomcat.dist}/src" eol="lf"
         encoding="ISO-8859-1" fixlast="false" >
       <patternset refid="text.files"/>
@@ -2581,11 +2581,11 @@ skip.installer property in build.properties" />
          tarfile="${tomcat.release}/v${version}/src/${final-src.name}.tar.gz">
       <tarfileset dir="${tomcat.dist}/src" prefix="${final-src.name}" />
     </tar>
-    <hashAndSign file="${tomcat.release}/v${version}/src/${final-src.name}.tar.gz" />
+    <hashAndSign file="${tomcat.release}/v${version}/chapter05/${final-src.name}.tar.gz" />
   </target>
 
   <!-- Packages the source code in JARs to match the binary JARs -->
-  <target name="package-src-jar"
+  <target name="package-chapter05-jar"
           depends="build-manifests,build-tomcat-jdbc-src">
 
     <mkdir dir="${tomcat.src.jars}" />

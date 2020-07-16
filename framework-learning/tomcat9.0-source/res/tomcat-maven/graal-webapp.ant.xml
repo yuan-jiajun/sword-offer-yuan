@@ -36,7 +36,7 @@
     <jasper validateXml="false" package="${webapp.name}.org.apache.jsp"
             uriroot="${basedir}/webapps/${webapp.name}"
             webXml="${basedir}/webapps/${webapp.name}/WEB-INF/tomcat-web.xml"
-            outputDir="${basedir}/src/main/java" />
+            outputDir="${basedir}/chapter05/main/java" />
     <!-- Copy all webapp classes to the mvn compile location -->
     <copy todir="${basedir}/src/main/java">
         <fileset dir="${basedir}/webapps/${webapp.name}/WEB-INF/classes" includes="**/*.java" erroronmissingdir="false" />
