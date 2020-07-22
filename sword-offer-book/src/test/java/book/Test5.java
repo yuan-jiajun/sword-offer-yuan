@@ -1,9 +1,7 @@
-package java.book;
+package book;
 
-import book.PrintListReversing5;
-import com.so.Common.ListNode;
+import book.Common.ListNode;
 import org.testng.annotations.Test;
-
 
 /**
  * 第5题 从尾到头打印链表

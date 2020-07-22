@@ -1,9 +1,7 @@
-package java.book;
+package book;
 
-
-import book.IsSymmetrical59;
-import com.so.Common.TreeNode;
 import org.testng.annotations.Test;
+import book.Common.TreeNode;
 
 /**
  * 第59题

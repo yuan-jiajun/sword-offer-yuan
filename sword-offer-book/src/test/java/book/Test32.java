@@ -1,5 +1,4 @@
-package java.book;
-
+package book;
 
 import org.testng.annotations.Test;
 

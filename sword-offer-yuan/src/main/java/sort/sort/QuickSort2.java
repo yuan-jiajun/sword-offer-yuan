@@ -8,7 +8,7 @@ package sort;
  * @author shkstart
  * 2018-12-17
  */
-public class QuickSort {
+public class QuickSort2 {
     private static void swap(int[] data, int i, int j) {
         int temp = data[i];
         data[i] = data[j];
@@ -16,10 +16,8 @@ public class QuickSort {
     }
 
     //left 和 right 都是数组的下标
-    private static void subSort(int[] data, int left, int right) {
+    private static int getIndex(int[] data, int left, int right) {
         //如果left等于right，即数组只有一个元素，直接返回
-        if (left > right)
-            return;
 
         int pivot = data[left];
         int i = left;//是否加1 都可以
@@ -35,22 +33,24 @@ public class QuickSort {
         }
         swap(data, left, j);
 
-        subSort(data, left, j - 1);//递归调用
-        subSort(data, j + 1, right);
+        return j;
     }
 
 
-    public static void quickSort(int[] data) {
-        subSort(data, 0, data.length - 1);
+    public static void quickSort(int[] data, int left, int right) {
+        if (left < right) {
+            int index = getIndex(data, left, right);
+            quickSort(data, left, index - 1);//递归调用
+            quickSort(data, index + 1, right);
+        }
     }
 
 
     public static void main(String[] args) {
 //        int[] data = {9, -16, 30, 23, -30, -49, 25, 21, 30};
         int[] data = {293, 108, 161, 783, 376, 265, 330, 598, 646, 812};
-
         System.out.println("排序之前：\n" + java.util.Arrays.toString(data));
-        quickSort(data);
+        quickSort(data, 0, data.length - 1);
         System.out.println("排序之后：\n" + java.util.Arrays.toString(data));
     }
 }

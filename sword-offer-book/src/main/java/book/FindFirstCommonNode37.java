@@ -12,17 +12,18 @@ public class FindFirstCommonNode37 {
     /**
      * 链表
      */
-    static class ListNode {
-        int val;
-        ListNode next = null;
+    public static class ListNode {
+        public int val;
+        public ListNode next = null;
 
-        ListNode(int val) {
+        public ListNode(int val) {
             this.val = val;
         }
     }
 
     /**
      * 解法一：长链表先走，需要遍历链表
+     *
      * @param pHead1
      * @param pHead2
      * @return
@@ -60,6 +61,7 @@ public class FindFirstCommonNode37 {
 
     /**
      * 获取链表长度
+     *
      * @param root
      * @return
      */
@@ -78,6 +80,7 @@ public class FindFirstCommonNode37 {
 
     /**
      * 解法二：不需要遍历链表
+     *
      * @param pHead1
      * @param pHead2
      * @return

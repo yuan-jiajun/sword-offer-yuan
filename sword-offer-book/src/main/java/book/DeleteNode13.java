@@ -12,14 +12,15 @@ public class DeleteNode13 {
     /**
      * 自定义链表
      */
-    static class ListNode {
-        int data;
-        ListNode nextNode;
+    public static class ListNode {
+        public int data;
+        public ListNode nextNode;
     }
 
     /**
      * 删除链表的某个节点
-     * @param head 头指针
+     *
+     * @param head       头指针
      * @param deListNode 待删除的节点
      */
     public static void deleteNode(ListNode head, ListNode deListNode) {

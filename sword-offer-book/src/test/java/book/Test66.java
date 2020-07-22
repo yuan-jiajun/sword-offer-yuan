@@ -1,7 +1,5 @@
-package java.book;
+package book;
 
-
-import book.HasPath66;
 import org.testng.annotations.Test;
 
 /**

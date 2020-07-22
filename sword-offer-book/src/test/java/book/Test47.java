@@ -1,6 +1,6 @@
-package java.book;
+package book;
 
-
+import org.testng.annotations.Test;
 
 /**
  * 第47题

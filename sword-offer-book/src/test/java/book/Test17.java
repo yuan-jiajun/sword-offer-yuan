@@ -1,9 +1,7 @@
-package java.book;
+package book;
 
-
-import book.MergeLinked17;
-import com.so.Common.ListNode;
 import org.testng.annotations.Test;
+import book.Common.ListNode;
 
 /**
  * 第17题

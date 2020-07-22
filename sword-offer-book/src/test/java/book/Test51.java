@@ -1,8 +1,6 @@
-package java.book;
+package book;
 
-
-
-import static com.so.MinCParent50.*;
+import org.testng.annotations.Test;
 
 /**
  * 第51题

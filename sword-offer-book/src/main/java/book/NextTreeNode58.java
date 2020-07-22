@@ -11,13 +11,13 @@ public class NextTreeNode58 {
     /**
      * 二叉树
      */
-    static class TreeLinkNode {
-        int val;
-        TreeLinkNode left = null;
-        TreeLinkNode right = null;
-        TreeLinkNode next = null;
+    public static class TreeLinkNode {
+        public int val;
+        public TreeLinkNode left = null;
+        public TreeLinkNode right = null;
+        public TreeLinkNode next = null;
 
-        TreeLinkNode(int val) {
+        public TreeLinkNode(int val) {
             this.val = val;
         }
     }

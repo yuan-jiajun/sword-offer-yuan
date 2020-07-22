@@ -11,14 +11,15 @@ public class BinaryToLinked27 {
     /**
      * 二叉树
      */
-    static class BinaryTreeNode {
-        int data;
-        BinaryTreeNode leftNode;
-        BinaryTreeNode rightNode;
+    public static class BinaryTreeNode {
+        public int data;
+        public BinaryTreeNode leftNode;
+        public BinaryTreeNode rightNode;
     }
 
     /**
      * 二叉树的转换
+     *
      * @param root
      * @return
      */

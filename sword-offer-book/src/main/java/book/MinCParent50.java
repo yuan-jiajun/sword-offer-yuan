@@ -11,7 +11,7 @@ import java.util.Stack;
  */
 public class MinCParent50 {
 
-    static class BinaryTreeNode {
+    public static class BinaryTreeNode {
         public int value;
         public BinaryTreeNode leftNode;
         public BinaryTreeNode rightNode;

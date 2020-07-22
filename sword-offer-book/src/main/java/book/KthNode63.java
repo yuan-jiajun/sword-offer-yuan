@@ -18,11 +18,11 @@ public class KthNode63 {
      * @return
      */
     private int count = 0;
-    public TreeNode KthNode(TreeNode pRoot, int k) {
+    public Common.TreeNode KthNode(Common.TreeNode pRoot, int k) {
         if(pRoot == null) {
             return null;
         }
-        TreeNode node = KthNode(pRoot.left, k);
+        Common.TreeNode node = KthNode(pRoot.left, k);
         if(node != null) {
             return node;
         }
@@ -41,13 +41,13 @@ public class KthNode63 {
      * @param k
      * @return
      */
-    public TreeNode getKthNode2(TreeNode pRoot, int k) {
+    public Common.TreeNode getKthNode2(Common.TreeNode pRoot, int k) {
         if (pRoot == null || k < 1) {
             return null;
         }
         int index = 0;
-        TreeNode root = pRoot;
-        Stack<TreeNode> s = new Stack<>();
+        Common.TreeNode root = pRoot;
+        Stack<Common.TreeNode> s = new Stack<>();
         while (root != null || !s.isEmpty()) {
             while (root != null) {
                 s.push(root);

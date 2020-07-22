@@ -1,9 +1,7 @@
-package java.book;
+package book;
 
-import book.KthNode63;
-import com.so.Common.TreeNode;
+import book.Common.TreeNode;
 import org.testng.annotations.Test;
-
 
 /**
  * 第63题

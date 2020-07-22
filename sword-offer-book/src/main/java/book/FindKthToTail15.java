@@ -16,12 +16,12 @@ public class FindKthToTail15 {
      * @param k
      * @return
      */
-    public static ListNode findKthToTail(ListNode head, int k) {
+    public static Common.ListNode findKthToTail(Common.ListNode head, int k) {
         if (head == null || k < 1) {
             return null;
         }
-        ListNode fast = head;
-        ListNode slow = head;
+        Common.ListNode fast = head;
+        Common.ListNode slow = head;
         while (k-- > 1) {
             if (fast.next == null) {
                 return null;
@@ -42,14 +42,14 @@ public class FindKthToTail15 {
      * @param k
      * @return
      */
-    public static ListNode findKthToTail2(ListNode head, int k) {
+    public static Common.ListNode findKthToTail2(Common.ListNode head, int k) {
         int length = 0;
-        ListNode p = head;
+        Common.ListNode p = head;
         while (p != null) {
             length++;
             p = p.next;
         }
-        ListNode target = null;
+        Common.ListNode target = null;
         if (length == k) {
             target = head;
         }

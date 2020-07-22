@@ -12,17 +12,18 @@ public class CloneCLinkedList26 {
      * 复杂链表
      */
     public static class RandomListNode {
-        int label;
-        RandomListNode next = null;
-        RandomListNode random = null;
+        public int label;
+        public RandomListNode next = null;
+        public RandomListNode random = null;
 
-        RandomListNode(int label) {
+        public RandomListNode(int label) {
             this.label = label;
         }
     }
 
     /**
      * 解法一
+     *
      * @param pHead
      * @return
      */
@@ -63,6 +64,7 @@ public class CloneCLinkedList26 {
 
     /**
      * 解法二
+     *
      * @param pHead
      * @return
      */

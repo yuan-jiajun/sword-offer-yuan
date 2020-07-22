@@ -1,7 +1,5 @@
-package java.book;
+package book;
 
-
-import book.FindNumber3;
 import org.testng.annotations.Test;
 
 /**

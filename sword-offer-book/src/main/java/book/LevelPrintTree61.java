@@ -2,7 +2,6 @@ package book;
 
 import java.util.*;
 
-
 /**
  * 第61题
  * 把二叉树打印成多行，从上到下按层打印二叉树，同一层结点从左至右输出。
@@ -16,19 +15,19 @@ public class LevelPrintTree61 {
      * @param pRoot
      * @return
      */
-    public static ArrayList<ArrayList<Integer>> printTreeNodeByLeftToRight(TreeNode pRoot) {
+    public static ArrayList<ArrayList<Integer>> printTreeNodeByLeftToRight(Common.TreeNode pRoot) {
         ArrayList<ArrayList<Integer>> res = new ArrayList<>();
         if (pRoot == null) {
             return res;
         }
-        Queue<TreeNode> queue = new LinkedList<>();
+        Queue<Common.TreeNode> queue = new LinkedList<>();
         queue.add(pRoot);
         ArrayList<Integer> tmp = new ArrayList<>();
         int start = 0;
         int end = 1;
 
         while (!queue.isEmpty()) {
-            TreeNode node = queue.poll();
+            Common.TreeNode node = queue.poll();
             tmp.add(node.val);
             start++;
             if (node.left != null) {

@@ -8,11 +8,11 @@ package book;
  * @date 2017/08/30
  */
 public class DeleteDuplication57 {
-    static class ListNode {
-        int val;
-        ListNode next = null;
+    public static class ListNode {
+        public int val;
+        public ListNode next = null;
 
-        ListNode(int val) {
+        public ListNode(int val) {
             this.val = val;
         }
     }
@@ -37,7 +37,7 @@ public class DeleteDuplication57 {
                 }
                 // 赋值:相当于删除
                 preNode.next = p;
-            }else {
+            } else {
                 // 如果当前节点和下一个节点值不等，则向后移动一位
                 preNode = p;
                 p = p.next;

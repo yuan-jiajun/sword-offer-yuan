@@ -1,7 +1,5 @@
-package java.book;
+package book;
 
-
-import book.OddEvenNumber14;
 import org.testng.annotations.Test;
 
 import java.util.Arrays;

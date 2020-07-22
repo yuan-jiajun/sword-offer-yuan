@@ -1,5 +1,7 @@
 package book;
 
+import book.Common.ListNode;
+
 /**
  * 第17题
  * 输入两个递增的链表，合并这两个链表并使新链表仍然是递增的

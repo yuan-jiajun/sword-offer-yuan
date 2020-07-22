@@ -1,8 +1,6 @@
-package java.book;
+package book;
 
-import book.IsNumber54;
 import org.testng.annotations.Test;
-
 
 /**
  * 第54题
@@ -20,6 +18,6 @@ public class Test54 {
         System.out.println("解法一：逐个字符进行判断 是否表示数值：" + IsNumber54.isNumber1(str.toCharArray()));
         System.out.println("解法二：用正则表达式判断 是否表示数值：" + IsNumber54.isNumber2(str.toCharArray()));
 
-//        Assert.assertTrue(book.IsNumber54.isNumber1(str.toCharArray()));
+//        Assert.assertTrue(IsNumber54.isNumber1(str.toCharArray()));
     }
 }

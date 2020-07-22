@@ -15,7 +15,7 @@ public class DoesTreeHave18 {
      * @param target
      * @return
      */
-    public static boolean hasSubTree(TreeNode source, TreeNode target) {
+    public static boolean hasSubTree(Common.TreeNode source, Common.TreeNode target) {
         if (target == null) {
             return true;
         }
@@ -36,7 +36,7 @@ public class DoesTreeHave18 {
      * @param target
      * @return
      */
-    public static boolean doesTree1HaveTree2(TreeNode source, TreeNode target) {
+    public static boolean doesTree1HaveTree2(Common.TreeNode source, Common.TreeNode target) {
         if (source == null && target == null) {
             return true;
         }

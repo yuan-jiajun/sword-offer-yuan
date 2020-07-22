@@ -1,7 +1,5 @@
-package java.book;
+package book;
 
-
-import book.StackWithMin21;
 import org.testng.annotations.Test;
 
 /**

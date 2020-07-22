@@ -8,10 +8,10 @@ package book;
  * @date 2017/08/15
  */
 public class TreePath39 {
-    static class BinaryTreeNode {
-        int data;
-        BinaryTreeNode leftNode;
-        BinaryTreeNode rightNode;
+    public static class BinaryTreeNode {
+        public int data;
+        public BinaryTreeNode leftNode;
+        public BinaryTreeNode rightNode;
     }
 
     /**

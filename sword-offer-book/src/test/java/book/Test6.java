@@ -1,9 +1,6 @@
-package java.book;
+package book;
 
-
-import book.BinaryTreeSearch6;
-import book.PrintFromTopToBottom23;
-import book.TreeNode;
+import book.Common.TreeNode;
 import org.testng.annotations.Test;
 
 /**

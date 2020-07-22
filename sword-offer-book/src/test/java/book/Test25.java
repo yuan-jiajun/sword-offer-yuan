@@ -1,9 +1,7 @@
-package java.book;
+package book;
 
-
-import book.FindPath25;
-import com.so.Common.TreeNode;
 import org.testng.annotations.Test;
+import book.Common.TreeNode;
 
 /**
  * 第25题

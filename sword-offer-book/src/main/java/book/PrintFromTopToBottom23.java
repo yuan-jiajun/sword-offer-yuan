@@ -2,7 +2,6 @@ package book;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
-
 import java.util.Queue;
 
 /**
@@ -20,16 +19,16 @@ public class PrintFromTopToBottom23 {
      * @param root
      * @return
      */
-    public ArrayList<Integer> PrintFromTopToBottom(TreeNode root) {
+    public ArrayList<Integer> PrintFromTopToBottom(Common.TreeNode root) {
         ArrayList<Integer> list = new ArrayList<>();
         if (root == null) {
             return list;
         }
-        Queue<TreeNode> queue = new LinkedList<>();
+        Queue<Common.TreeNode> queue = new LinkedList<>();
         queue.offer(root);
 
         while (!queue.isEmpty()) {
-            TreeNode node = queue.poll();
+            Common.TreeNode node = queue.poll();
             list.add(node.val);
             if (node.left != null) {
                 queue.offer(node.left);
@@ -48,7 +47,7 @@ public class PrintFromTopToBottom23 {
      * @param root
      * @return
      */
-    public ArrayList<Integer> PrintFromTopToBottom2(TreeNode root) {
+    public ArrayList<Integer> PrintFromTopToBottom2(Common.TreeNode root) {
         ArrayList<Integer> list = new ArrayList<Integer>();
         if (root == null) {
             return list;
@@ -59,7 +58,7 @@ public class PrintFromTopToBottom23 {
         return list;
     }
 
-    public void levelOrder(TreeNode root, ArrayList<Integer> list) {
+    public void levelOrder(Common.TreeNode root, ArrayList<Integer> list) {
         if (root == null) {
             return;
         }

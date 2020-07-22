@@ -3,7 +3,6 @@ package book;
 import java.util.ArrayList;
 import java.util.Stack;
 
-
 /**
  * 第5题 从尾到头打印链表
  * 输入一个链表，从尾到头打印链表每个节点的值
@@ -17,9 +16,9 @@ public class PrintListReversing5 {
      * 解法一：利用栈输出
      * @param headNode
      */
-    public static ArrayList<Integer> printListReverse1(ListNode headNode) {
+    public static ArrayList<Integer> printListReverse1(Common.ListNode headNode) {
         ArrayList<Integer> list = new ArrayList<>();
-        Stack<ListNode> stack = new Stack<>();
+        Stack<Common.ListNode> stack = new Stack<>();
         while (headNode != null) {
             stack.push(headNode);
             headNode = headNode.next;
@@ -36,7 +35,7 @@ public class PrintListReversing5 {
      * @param headNode
      * @return
      */
-    public static ArrayList<Integer> printListReverse2(ListNode headNode) {
+    public static ArrayList<Integer> printListReverse2(Common.ListNode headNode) {
         ArrayList<Integer> list = new ArrayList<Integer>();
 
         if (headNode != null) {

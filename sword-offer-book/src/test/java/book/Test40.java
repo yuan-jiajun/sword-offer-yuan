@@ -1,7 +1,5 @@
-package java.book;
+package book;
 
-
-import book.FindNumAppearOnce40;
 import org.testng.annotations.Test;
 
 import java.util.Arrays;

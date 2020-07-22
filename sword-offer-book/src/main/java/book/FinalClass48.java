@@ -12,7 +12,7 @@ public class FinalClass48 {
     /**
      * 解法一：被final修饰的类不能被继承
      */
-//    public final class book.FinalClass48 {
+//    public final class FinalClass48 {
 
     /**
      * 解法二：私有构造器的类不能继承

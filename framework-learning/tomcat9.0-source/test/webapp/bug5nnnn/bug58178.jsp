@@ -24,7 +24,7 @@
 <body>
 
 <tags:bug58178>
-   <fmt:parseNumber var="parsedNum" value="aaa" />
+   <fmt:parseNumber var="parsedNum" value="book" />
 </tags:bug58178>
 Parsed value: <c:out value="${parsedNum}"/>
 </html>

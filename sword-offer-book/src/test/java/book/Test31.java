@@ -1,8 +1,6 @@
-package java.book;
+package book;
 
-
-
-import java.util.Arrays;
+import org.testng.annotations.Test;
 
 /**
  * 第31题

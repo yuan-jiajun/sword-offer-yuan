@@ -2,8 +2,6 @@ package book;
 
 import java.util.*;
 
-
-
 /**
  * 第25题
  * 输入一个二叉树和一个整数，打印出二叉树中节点值的和为输入整数的所有路径
@@ -22,7 +20,7 @@ public class FindPath25 {
      * @param target
      * @return
      */
-    public ArrayList<ArrayList<Integer>> FindPath(TreeNode root, int target) {
+    public ArrayList<ArrayList<Integer>> FindPath(Common.TreeNode root, int target) {
         if (root == null) {
             return listAll;
         }

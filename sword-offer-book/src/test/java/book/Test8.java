@@ -1,7 +1,5 @@
-package java.book;
+package book;
 
-
-import book.MinNumber8;
 import org.testng.annotations.Test;
 
 /**

@@ -2,8 +2,6 @@ package book;
 
 import java.util.Arrays;
 
-
-
 /**
  * 第6题
  * 输入二叉树的前序遍历和中序遍历结果,重建该二叉树。
@@ -21,7 +19,7 @@ public class BinaryTreeSearch6 {
      * @param in
      * @return
      */
-    public static TreeNode reConstructBinaryTree(int[] pre, int[] in) {
+    public static Common.TreeNode reConstructBinaryTree(int[] pre, int[] in) {
         if (pre == null || in == null || pre.length == 0 || in.length == 0) {
             return null;
         }
@@ -29,7 +27,7 @@ public class BinaryTreeSearch6 {
             return null;
         }
 
-        TreeNode root = new TreeNode(pre[0]);
+        Common.TreeNode root = new Common.TreeNode(pre[0]);
         for (int i = 0; i < pre.length; i++) {
             if (pre[0] == in[i]) {
                 root.left = reConstructBinaryTree(Arrays.copyOfRange(pre, 1, i + 1), Arrays.copyOfRange(in, 0, i));
@@ -47,14 +45,14 @@ public class BinaryTreeSearch6 {
      * @param inorder
      * @return
      */
-    public TreeNode reConstructBinaryTree2(int[] preorder, int[] inorder) {
+    public Common.TreeNode reConstructBinaryTree2(int[] preorder, int[] inorder) {
         if (preorder == null || preorder.length == 0 ||
                 inorder == null || inorder.length == 0) return null;
         return helper(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1);
     }
 
 
-    private TreeNode helper(int[] preorder, int preL, int preR, int[] inorder, int inL, int inR) {
+    private Common.TreeNode helper(int[] preorder, int preL, int preR, int[] inorder, int inL, int inR) {
         if (preL > preR || inL > inR) {
             return null;
         }
@@ -63,7 +61,7 @@ public class BinaryTreeSearch6 {
         while (index <= inR && inorder[index] != rootVal) {
             index++;
         }
-        TreeNode root = new TreeNode(rootVal);
+        Common.TreeNode root = new Common.TreeNode(rootVal);
         root.left = helper(preorder, preL + 1, preL - inL + index, inorder, inL, index);
         root.right = helper(preorder, preL - inL + index + 1, preR, inorder, index + 1, inR);
         return root;

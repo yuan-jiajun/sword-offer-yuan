@@ -16,7 +16,7 @@ public class IsSymmetrical59 {
      * @param pRoot
      * @return
      */
-    public static boolean isSymmetrical(TreeNode pRoot){
+    public static boolean isSymmetrical(Common.TreeNode pRoot){
         return pRoot == null || isCommon(pRoot.left, pRoot.right);
     }
 
@@ -26,7 +26,7 @@ public class IsSymmetrical59 {
      * @param rightNode
      * @return
      */
-    public static boolean isCommon(TreeNode leftNode, TreeNode rightNode) {
+    public static boolean isCommon(Common.TreeNode leftNode, Common.TreeNode rightNode) {
         if (leftNode == null && rightNode == null) {
             return true;
         }
@@ -44,13 +44,13 @@ public class IsSymmetrical59 {
      * @param root
      * @return
      */
-    public static boolean isSymmetric2(TreeNode root) {
-        Stack<TreeNode> stack = new Stack<>();
+    public static boolean isSymmetric2(Common.TreeNode root) {
+        Stack<Common.TreeNode> stack = new Stack<>();
         stack.push(root);
         stack.push(root);
         while (!stack.isEmpty()) {
-            TreeNode t1 = stack.pop();
-            TreeNode t2 = stack.pop();
+            Common.TreeNode t1 = stack.pop();
+            Common.TreeNode t2 = stack.pop();
             if (t1 == null && t2 == null) {
                 continue;
             }
