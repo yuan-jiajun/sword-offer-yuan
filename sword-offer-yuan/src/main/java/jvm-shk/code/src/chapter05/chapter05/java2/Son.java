@@ -76,6 +76,7 @@ public class Son extends Father {
         //invokevirtual
         showFinal();//因为此方法声明有final，不能被子类重写，所以也认为此方法是非虚方法。
 
+
         //虚方法如下：
         //invokevirtual
         showCommon();
