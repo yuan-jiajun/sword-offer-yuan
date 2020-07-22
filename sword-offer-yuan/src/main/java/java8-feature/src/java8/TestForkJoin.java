@@ -4,7 +4,7 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.ForkJoinTask;
 import java.util.stream.LongStream;
 
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class TestForkJoin {
 	

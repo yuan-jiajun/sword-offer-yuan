@@ -1,12 +1,11 @@
-package com.atguigu.java;
+package chapter08.java;
 
 /**
- * -Xms10m -Xmx10m
- *
+ * -Xms20m -Xmx20m
  * @author shkstart  shkstart@126.com
- * @create 2020  16:41
+ * @create 2020  16:42
  */
-public class HeapDemo {
+public class HeapDemo1 {
     public static void main(String[] args) {
         System.out.println("start...");
         try {
@@ -17,5 +16,4 @@ public class HeapDemo {
 
         System.out.println("end...");
     }
-
 }

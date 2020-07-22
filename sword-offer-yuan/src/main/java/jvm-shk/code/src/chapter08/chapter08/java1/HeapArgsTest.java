@@ -1,4 +1,4 @@
-package com.atguigu.java1;
+package chapter08.java1;
 
 /**
  * 测试堆空间常用的jvm参数：

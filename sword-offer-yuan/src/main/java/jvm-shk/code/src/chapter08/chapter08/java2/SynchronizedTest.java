@@ -1,4 +1,4 @@
-package com.atguigu.java2;
+package chapter08.java2;
 
 /**
  * 同步省略说明

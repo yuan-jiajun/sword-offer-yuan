@@ -1,4 +1,4 @@
-package com.atguigu.java;
+package chapter08.java;
 
 /**
  * @author shkstart  shkstart@126.com
@@ -14,6 +14,7 @@ public class SimpleHeap {
     public void show() {
         System.out.println("My ID is " + id);
     }
+
     public static void main(String[] args) {
         SimpleHeap sl = new SimpleHeap(1);
         SimpleHeap s2 = new SimpleHeap(2);

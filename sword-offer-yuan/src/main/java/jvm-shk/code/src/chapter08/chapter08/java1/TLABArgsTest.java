@@ -1,19 +1,18 @@
-package com.atguigu.java;
+package chapter08.java1;
 
 /**
- * -Xms20m -Xmx20m
+ * 测试-XX:UseTLAB参数是否开启的情况:默认情况是开启的
+ *
  * @author shkstart  shkstart@126.com
- * @create 2020  16:42
+ * @create 2020  16:16
  */
-public class HeapDemo1 {
+public class TLABArgsTest {
     public static void main(String[] args) {
-        System.out.println("start...");
+        System.out.println("我只是来打个酱油~");
         try {
             Thread.sleep(1000000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
-        System.out.println("end...");
     }
 }

@@ -1,4 +1,4 @@
-package com.atguigu.java1;
+package chapter08.java1;
 
 /** 测试：大对象直接进入老年代
  * -Xms60m -Xmx60m -XX:NewRatio=2 -XX:SurvivorRatio=8 -XX:+PrintGCDetails

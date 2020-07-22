@@ -1,4 +1,4 @@
-package com.atguigu.java2;
+package chapter08.java2;
 
 /**
  * 标量替换测试

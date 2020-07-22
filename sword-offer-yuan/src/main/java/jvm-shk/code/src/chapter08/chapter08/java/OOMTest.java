@@ -1,4 +1,4 @@
-package com.atguigu.java;
+package chapter08.java;
 
 import java.util.ArrayList;
 import java.util.Random;
