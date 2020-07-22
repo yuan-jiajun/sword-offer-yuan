@@ -133,7 +133,7 @@ void LambdaParameters() #LambdaParameters : {}
 }
 
 /*
- * Possible invocation of lambda expression. Invocations must be bracketed but
+ * Possible invocation of lambdaDemo expression. Invocations must be bracketed but
  * being bracketed does not mean it is an invocation.
  */
 void LambdaExpressionOrInvocation() #LambdaExpression : {}

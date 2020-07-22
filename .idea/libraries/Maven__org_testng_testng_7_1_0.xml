@@ -8,6 +8,7 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../../Maven_Home/org/testng/testng/7.1.0/testng-7.1.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.ideaLibSources/testng-7.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
