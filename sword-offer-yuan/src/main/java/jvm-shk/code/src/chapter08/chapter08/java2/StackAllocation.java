@@ -16,12 +16,13 @@ public class StackAllocation {
         // 查看执行时间
         long end = System.currentTimeMillis();
         System.out.println("花费的时间为： " + (end - start) + " ms");
-        // 为了方便查看堆内存中对象个数，线程sleep
-        try {
-            Thread.sleep(1000000);
-        } catch (InterruptedException e1) {
-            e1.printStackTrace();
-        }
+
+//        // 为了方便查看堆内存中对象个数，线程sleep
+//        try {
+//            Thread.sleep(1000000);
+//        } catch (InterruptedException e1) {
+//            e1.printStackTrace();
+//        }
     }
 
     private static void alloc() {

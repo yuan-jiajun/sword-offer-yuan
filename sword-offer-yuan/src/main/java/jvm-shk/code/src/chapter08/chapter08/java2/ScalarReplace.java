@@ -2,10 +2,12 @@ package chapter08.java2;
 
 /**
  * 标量替换测试
- *  -Xmx100m -Xms100m -XX:+DoEscapeAnalysis -XX:+PrintGC -XX:-EliminateAllocations
+ * -Xmx100m -Xms100m -XX:+DoEscapeAnalysis -XX:+PrintGC -XX:-EliminateAllocations
+ *
  * @author shkstart  shkstart@126.com
  * @create 2020  12:01
  */
+
 public class ScalarReplace {
     public static class User {
         public int id;

@@ -22,6 +22,7 @@
       <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/jvm-shk/code/src/chapter06" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/java8-feature/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/jvm-shk/code/src/chapter08" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/jvm-shk/code/src/chapter09" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/juc-jvm-zy-season1" />
       <excludeFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/jvm-shk/code/src/chapter02/chapter02/java" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
