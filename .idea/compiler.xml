@@ -10,7 +10,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="offer" target="1.8" />
       <module name="sword-offer" target="1.8" />
     </bytecodeTargetLevel>
   </component>

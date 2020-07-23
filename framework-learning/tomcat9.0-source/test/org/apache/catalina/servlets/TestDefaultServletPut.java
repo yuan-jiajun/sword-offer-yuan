@@ -125,7 +125,7 @@ public class TestDefaultServletPut extends TomcatBaseTest {
         PutClient putClient = new PutClient(getPort());
 
         putClient.setRequest(new String[] {
-                "PUT /test.txt HTTP/1.1" + CRLF +
+                "PUT /MethodInnerStrucTest.txt HTTP/1.1" + CRLF +
                 "Host: localhost:" + getPort() + CRLF +
                 "Content-Length: " + START_LEN + CRLF +
                 CRLF +
@@ -141,7 +141,7 @@ public class TestDefaultServletPut extends TomcatBaseTest {
         // Partial PUT
         putClient.connect();
         putClient.setRequest(new String[] {
-                "PUT /test.txt HTTP/1.1" + CRLF +
+                "PUT /MethodInnerStrucTest.txt HTTP/1.1" + CRLF +
                 "Host: localhost:" + getPort() + CRLF +
                 contentRangeHeader +
                 "Content-Length: " + PATCH_LEN + CRLF +
@@ -161,7 +161,7 @@ public class TestDefaultServletPut extends TomcatBaseTest {
         }
 
         // Check for the final resource
-        String path = "http://localhost:" + getPort() + "/test.txt";
+        String path = "http://localhost:" + getPort() + "/MethodInnerStrucTest.txt";
         ByteChunk responseBody = new ByteChunk();
 
         int rc = getUrl(path, responseBody, null);

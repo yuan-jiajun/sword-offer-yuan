@@ -2,12 +2,14 @@ package chapter09.java1;
 
 /**
  * 结论：
- * 静态引用对应的对象实体始终都存在堆空间
+ * 静态引用对应的对象实体始终    都存在堆空间
+ * 静态引用变量 在jdk版本更替中有变化！！！！！
  *
  * jdk7：
  * -Xms200m -Xmx200m -XX:PermSize=300m -XX:MaxPermSize=300m -XX:+PrintGCDetails
  * jdk 8：
  * -Xms200m -Xmx200m -XX:MetaspaceSize=300m -XX:MaxMetaspaceSize=300m -XX:+PrintGCDetails
+ *
  * @author shkstart  shkstart@126.com
  * @create 2020  21:20
  */

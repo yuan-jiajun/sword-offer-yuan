@@ -8,6 +8,7 @@ import java.util.Random;
  * @author shkstart  shkstart@126.com
  * @create 2020  21:12
  */
+
 public class OOMTest {
     public static void main(String[] args) {
         ArrayList<Picture> list = new ArrayList<>();
@@ -17,6 +18,7 @@ public class OOMTest {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+
             list.add(new Picture(new Random().nextInt(1024 * 1024)));
         }
     }

@@ -1,17 +1,14 @@
-Classfile /D:/workspace_idea5/JVMDemo/out/production/chapter09/com/atguigu/java/MethodInnerStrucTest.class
-  Last modified 2020-4-22; size 1626 bytes
-  MD5 checksum 69643a16925bb67a96f54050375c75d0
+Classfile /F:/workspace/sword-offer/target/classes/chapter09/java/MethodInnerStrucTest.class
+  Last modified 2020-7-24; size 1625 bytes
+  MD5 checksum 6b35c167b6c83e1107c5a7a229558ac1
   Compiled from "MethodInnerStrucTest.java"
-  //������Ϣ
-public class com.atguigu.java.MethodInnerStrucTest extends java.lang.Object 
-implements java.lang.Comparable<java.String>, java.io.Serializable
-
+public class chapter09.java.MethodInnerStrucTest extends java.lang.Object implements java.lang.Comparable<java.lang.String>, java.io.Serializable
   minor version: 0
-  major version: 51
+  major version: 52
   flags: ACC_PUBLIC, ACC_SUPER
 Constant pool:
    #1 = Methodref          #18.#52        // java/lang/Object."<init>":()V
-   #2 = Fieldref           #17.#53        // com/atguigu/java/MethodInnerStrucTest.num:I
+   #2 = Fieldref           #17.#53        // chapter09/java/MethodInnerStrucTest.num:I
    #3 = Fieldref           #54.#55        // java/lang/System.out:Ljava/io/PrintStream;
    #4 = Class              #56            // java/lang/StringBuilder
    #5 = Methodref          #4.#52         // java/lang/StringBuilder."<init>":()V
@@ -23,10 +20,10 @@ Constant pool:
   #11 = Class              #63            // java/lang/Exception
   #12 = Methodref          #11.#64        // java/lang/Exception.printStackTrace:()V
   #13 = Class              #65            // java/lang/String
-  #14 = Methodref          #17.#66        // com/atguigu/java/MethodInnerStrucTest.compareTo:(Ljava/lang/String;)I
-  #15 = String             #67            // ���Է������ڲ��ṹ
-  #16 = Fieldref           #17.#68        // com/atguigu/java/MethodInnerStrucTest.str:Ljava/lang/String;
-  #17 = Class              #69            // com/atguigu/java/MethodInnerStrucTest
+  #14 = Methodref          #17.#66        // chapter09/java/MethodInnerStrucTest.compareTo:(Ljava/lang/String;)I
+  #15 = String             #67            // ���Է��������ڲ��ṹ
+  #16 = Fieldref           #17.#68        // chapter09/java/MethodInnerStrucTest.str:Ljava/lang/String;
+  #17 = Class              #69            // chapter09/java/MethodInnerStrucTest
   #18 = Class              #70            // java/lang/Object
   #19 = Class              #71            // java/lang/Comparable
   #20 = Class              #72            // java/io/Serializable
@@ -40,7 +37,7 @@ Constant pool:
   #28 = Utf8               LineNumberTable
   #29 = Utf8               LocalVariableTable
   #30 = Utf8               this
-  #31 = Utf8               Lcom/atguigu/java/MethodInnerStrucTest;
+  #31 = Utf8               Lchapter09/java/MethodInnerStrucTest;
   #32 = Utf8               test1
   #33 = Utf8               count
   #34 = Utf8               test2
@@ -76,9 +73,9 @@ Constant pool:
   #64 = NameAndType        #84:#26        // printStackTrace:()V
   #65 = Utf8               java/lang/String
   #66 = NameAndType        #43:#44        // compareTo:(Ljava/lang/String;)I
-  #67 = Utf8               ���Է������ڲ��ṹ
+  #67 = Utf8               ���Է��������ڲ��ṹ
   #68 = NameAndType        #23:#24        // str:Ljava/lang/String;
-  #69 = Utf8               com/atguigu/java/MethodInnerStrucTest
+  #69 = Utf8               chapter09/java/MethodInnerStrucTest
   #70 = Utf8               java/lang/Object
   #71 = Utf8               java/lang/Comparable
   #72 = Utf8               java/io/Serializable
@@ -95,17 +92,11 @@ Constant pool:
   #83 = Utf8               (Ljava/lang/String;)V
   #84 = Utf8               printStackTrace
 {
-  //����Ϣ
   public int num;
     descriptor: I
     flags: ACC_PUBLIC
 
-  private static java.String str;
-    descriptor: Ljava/lang/String;
-    flags: ACC_PRIVATE, ACC_STATIC
-
-  //������Ϣ
-  public com.atguigu.java.MethodInnerStrucTest();
+  public chapter09.java.MethodInnerStrucTest();
     descriptor: ()V
     flags: ACC_PUBLIC
     Code:
@@ -117,11 +108,11 @@ Constant pool:
          7: putfield      #2                  // Field num:I
         10: return
       LineNumberTable:
-        line 10: 0
-        line 12: 4
+        line 11: 0
+        line 13: 4
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
-            0      11     0  this   Lcom/atguigu/java/MethodInnerStrucTest;
+            0      11     0  this   Lchapter09/java/MethodInnerStrucTest;
 
   public void test1();
     descriptor: ()V
@@ -142,12 +133,12 @@ Constant pool:
         25: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
         28: return
       LineNumberTable:
-        line 17: 0
-        line 18: 3
-        line 19: 28
+        line 19: 0
+        line 20: 3
+        line 21: 28
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
-            0      29     0  this   Lcom/atguigu/java/MethodInnerStrucTest;
+            0      29     0  this   Lchapter09/java/MethodInnerStrucTest;
             3      26     1 count   I
 
   public static int test2(int);
@@ -173,13 +164,13 @@ Constant pool:
          from    to  target type
              2     9    12   Class java/lang/Exception
       LineNumberTable:
-        line 21: 0
-        line 23: 2
-        line 24: 5
-        line 27: 9
-        line 25: 12
-        line 26: 13
-        line 28: 17
+        line 24: 0
+        line 26: 2
+        line 27: 5
+        line 30: 9
+        line 28: 12
+        line 29: 13
+        line 31: 17
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
             5       4     2 value   I
@@ -193,7 +184,7 @@ Constant pool:
           stack = [ class java/lang/Exception ]
         frame_type = 4 /* same */
 
-  public int compareTo(java.String);
+  public int compareTo(java.lang.String);
     descriptor: (Ljava/lang/String;)I
     flags: ACC_PUBLIC
     Code:
@@ -201,10 +192,10 @@ Constant pool:
          0: iconst_0
          1: ireturn
       LineNumberTable:
-        line 33: 0
+        line 36: 0
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
-            0       2     0  this   Lcom/atguigu/java/MethodInnerStrucTest;
+            0       2     0  this   Lchapter09/java/MethodInnerStrucTest;
             0       2     1     o   Ljava/lang/String;
 
   public int compareTo(java.lang.Object);
@@ -218,21 +209,21 @@ Constant pool:
          5: invokevirtual #14                 // Method compareTo:(Ljava/lang/String;)I
          8: ireturn
       LineNumberTable:
-        line 10: 0
+        line 11: 0
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
-            0       9     0  this   Lcom/atguigu/java/MethodInnerStrucTest;
+            0       9     0  this   Lchapter09/java/MethodInnerStrucTest;
 
   static {};
     descriptor: ()V
     flags: ACC_STATIC
     Code:
       stack=1, locals=0, args_size=0
-         0: ldc           #15                 // String ���Է������ڲ��ṹ
+         0: ldc           #15                 // String ���Է��������ڲ��ṹ
          2: putstatic     #16                 // Field str:Ljava/lang/String;
          5: return
       LineNumberTable:
-        line 13: 0
+        line 14: 0
 }
 Signature: #49                          // Ljava/lang/Object;Ljava/lang/Comparable<Ljava/lang/String;>;Ljava/io/Serializable;
 SourceFile: "MethodInnerStrucTest.java"
