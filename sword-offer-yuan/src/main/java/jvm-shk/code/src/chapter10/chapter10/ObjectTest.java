@@ -1,4 +1,4 @@
-package com.atguigu.java;
+package chapter10;
 
 /**
  * @author shkstart  shkstart@126.com

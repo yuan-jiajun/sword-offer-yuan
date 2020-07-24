@@ -1,4 +1,4 @@
-package com.atguigu.java;
+package chapter11;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

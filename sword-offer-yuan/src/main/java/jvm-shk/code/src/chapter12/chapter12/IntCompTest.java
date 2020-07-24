@@ -1,4 +1,4 @@
-package com.atguigu.java;
+package chapter12;
 
 /**
  * 测试解释器模式和JIT编译模式
