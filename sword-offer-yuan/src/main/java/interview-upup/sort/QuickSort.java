@@ -16,7 +16,7 @@ public class QuickSort {
     }
 
     //left 和 right 都是数组的下标
-    private static void subSort(int[] data, int left, int right) {
+    private static void partition(int[] data, int left, int right) {
         //如果left等于right，即数组只有一个元素，直接返回
         if (left > right)
             return;
@@ -35,13 +35,13 @@ public class QuickSort {
         }
         swap(data, left, j);
 
-        subSort(data, left, j - 1);//递归调用
-        subSort(data, j + 1, right);
+        partition(data, left, j - 1);//递归调用
+        partition(data, j + 1, right);
     }
 
 
     public static void quickSort(int[] data) {
-        subSort(data, 0, data.length - 1);
+        partition(data, 0, data.length - 1);
     }
 
 
