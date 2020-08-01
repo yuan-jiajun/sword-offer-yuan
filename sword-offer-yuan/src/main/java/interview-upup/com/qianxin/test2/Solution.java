@@ -44,7 +44,7 @@ public class Solution {
             return 0;
         }
         if (digit.length == 1) {
-            return digit[0] == 7 ? 1 : 0;
+            return digit[0] % 7 == 0 ? 1 : 0;
         }
 
         ArrayList<Integer> arrayList = new ArrayList<>();
