@@ -1,4 +1,4 @@
-package com.atguigu.java1;
+package chapter13.java1;
 
 import org.junit.Test;
 
@@ -22,6 +22,7 @@ public class StringTest4 {
         System.out.println("8");
         System.out.println("9");
         System.out.println("10");//2303
+
         //如下的字符串"1" 到 "10"不会再次加载
         System.out.println("1");//2304
         System.out.println("2");//2304

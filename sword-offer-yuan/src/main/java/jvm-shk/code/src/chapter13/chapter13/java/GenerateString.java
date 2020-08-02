@@ -1,4 +1,4 @@
-package com.atguigu.java;
+package chapter13.java;
 
 import java.io.FileWriter;
 import java.io.IOException;

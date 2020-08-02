@@ -12,7 +12,6 @@
       <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/jvm-shk/code/src/chapter04" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/jvm-shk/code/src/chapter05" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/juc-jvm-zy-season2/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/now-coder/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sword-offer-book/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/interview-upup" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/utils/src" isTestSource="false" />
@@ -28,7 +27,11 @@
       <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/jvm-shk/code/src/chapter12" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/jvm-shk/code/src/chapter13" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/jvm-shk/code/src/chapter15" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/leet-code/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/jvm-shk/code/src/chapter16" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/jvm-shk/code/src/chapter17" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/leet-code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/now-coder" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/server-deploy" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/juc-jvm-zy-season1" />
       <excludeFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/jvm-shk/code/src/chapter02/chapter02/java" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
