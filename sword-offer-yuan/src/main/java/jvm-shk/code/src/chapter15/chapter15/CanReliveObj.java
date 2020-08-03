@@ -1,4 +1,4 @@
-package com.atguigu.java;
+package chapter15;
 
 /**
  * 测试Object类中finalize()方法，即对象的finalization机制。

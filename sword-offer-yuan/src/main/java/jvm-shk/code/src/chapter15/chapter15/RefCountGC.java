@@ -1,4 +1,4 @@
-package com.atguigu.java;
+package chapter15;
 
 /**
  * -XX:+PrintGCDetails
@@ -23,12 +23,12 @@ public class RefCountGC {
         obj2 = null;
         //显式的执行垃圾回收行为
         //这里发生GC，obj1和obj2能否被回收？
-        System.gc();
+//        System.gc();
 
-        try {
-            Thread.sleep(1000000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(1000000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
 }
