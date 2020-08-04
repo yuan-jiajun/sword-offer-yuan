@@ -38,6 +38,10 @@ public class LocalVarGC {
 
     public static void main(String[] args) {
         LocalVarGC local = new LocalVarGC();
+//        local.localvarGC1();
+//        local.localvarGC2();
+//        local.localvarGC3();
+//        local.localvarGC4();
         local.localvarGC5();
     }
 }

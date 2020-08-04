@@ -20,7 +20,7 @@ public class StopTheWorldDemo {
                         list.add(buffer);
                     }
 
-                    if(list.size() > 10000){
+                    if(list.size() > 10){
                         list.clear();
                         System.gc();//会触发full gc，进而会出现STW事件
                     }

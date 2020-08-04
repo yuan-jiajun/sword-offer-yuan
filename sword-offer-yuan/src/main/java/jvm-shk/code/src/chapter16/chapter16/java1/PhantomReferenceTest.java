@@ -44,8 +44,8 @@ public class PhantomReferenceTest {
         t.setDaemon(true);//设置为守护线程：当程序中没有非守护线程时，守护线程也就执行结束。
         t.start();
 
-        phantomQueue = new ReferenceQueue<PhantomReferenceTest>();
         obj = new PhantomReferenceTest();
+        phantomQueue = new ReferenceQueue<PhantomReferenceTest>();
         //构造了 PhantomReferenceTest 对象的虚引用，并指定了引用队列
         PhantomReference<PhantomReferenceTest> phantomRef = new PhantomReference<PhantomReferenceTest>(obj, phantomQueue);
 
