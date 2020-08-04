@@ -14,6 +14,7 @@ import java.util.ArrayList;
  *  说明：二者可以相互激活
  *
  *  -XX:+UseConcMarkSweepGC：表明老年代使用CMS GC。同时，年轻代会触发对ParNew 的使用
+ *
  * @author shkstart  shkstart@126.com
  * @create 2020  0:10
  */
