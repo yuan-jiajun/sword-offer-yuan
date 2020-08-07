@@ -17,11 +17,8 @@ public class QuickSort2 {
 
 /*    //left 和 right 都是数组的下标
     private static int partition(int[] data, int left, int right) {
-        //如果left等于right，即数组只有一个元素，直接返回
-
         int pivot = data[left];
-        int i = left;//是否加1 都可以
-       *//* int i = left + 1;*//*
+        int i = left + 1;
         int j = right;
 
         while (true) {

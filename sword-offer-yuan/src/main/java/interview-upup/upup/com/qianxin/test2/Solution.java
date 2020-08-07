@@ -16,12 +16,13 @@ public class Solution {
             return nums;
         } else {
             for (int i = 0; i < list.size(); i++) {
-                Integer delete = list.remove(i);
+                Integer remove = list.remove(i);
                 ArrayList<String> nums1 = getNums(list);
+
                 for (String s : nums1) {
-                    nums.add(delete + s);
+                    nums.add(remove + s);
                 }
-                list.add(i, delete);
+                list.add(i, remove);
             }
             return nums;
         }
@@ -38,7 +39,7 @@ public class Solution {
         return res;
     }
 
-    public int reletive_7(int[] digit) {
+    public static int reletive_7(int[] digit) {
         // write code here
         if (digit == null || digit.length == 0) {
             return 0;
@@ -60,5 +61,9 @@ public class Solution {
 
         }
         return res;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(reletive_7(new int[]{1,2,3,4,5,6,7}));
     }
 }

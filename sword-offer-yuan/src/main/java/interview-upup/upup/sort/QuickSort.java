@@ -22,8 +22,7 @@ public class QuickSort {
             return;
 
         int pivot = data[left];
-        int i = left;//是否加1 都可以
-//        int i = left + 1;
+        int i = left + 1;//left是否加1 都可以
         int j = right;
 
         while (true) {

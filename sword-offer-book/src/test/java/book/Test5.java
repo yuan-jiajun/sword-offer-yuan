@@ -1,7 +1,7 @@
 package book;
 
 import book.Common.ListNode;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 /**
  * 第5题 从尾到头打印链表

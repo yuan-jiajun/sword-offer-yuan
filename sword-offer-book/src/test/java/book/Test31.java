@@ -1,6 +1,6 @@
 package book;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 /**
  * 第31题

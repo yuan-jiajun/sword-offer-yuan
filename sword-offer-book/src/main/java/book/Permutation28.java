@@ -56,7 +56,8 @@ public class Permutation28 {
         if (str == null || str.length() == 0) {
             return res;
         }
-        helper(res, 0, str.toCharArray());
+//        helper(res, 0, str.toCharArray());
+        dfs(res, 0, str.toCharArray());
         // 符合结果的输出顺序
         Collections.sort(res);
         return res;
@@ -75,6 +76,23 @@ public class Permutation28 {
                 helper(res, index + 1, s);
                 swap(s, index, i);
             }
+        }
+    }
+
+
+    static void dfs(ArrayList<String> res, int index, char[] s) {
+        if (index == s.length - 1) {
+            res.add(String.valueOf(s)); // 添加排列方案
+            return;
+        }
+
+        HashSet<Character> set = new HashSet<>();
+        for (int i = index; i < s.length; i++) {
+            if (set.contains(s[i])) continue; // 重复，因此剪枝
+            set.add(s[i]);
+            swap(s, i, index); // 交换，将 s[i] 固定在第 index 位
+            dfs(res, index + 1, s); // 开启固定第 index + 1 位字符
+            swap(s, i, index); // 恢复交换
         }
     }
 

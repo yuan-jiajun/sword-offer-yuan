@@ -1,7 +1,7 @@
 package book;
 
 import book.Common.TreeNode;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 /**
  * 第62题

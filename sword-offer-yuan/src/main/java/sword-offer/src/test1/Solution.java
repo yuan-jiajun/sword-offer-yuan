@@ -1,4 +1,4 @@
-package book.test1;
+package test1;
 
 /**
  * @author yuanjiajun

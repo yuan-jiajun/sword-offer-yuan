@@ -1,6 +1,6 @@
 package book;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 /**
  * 第28题
@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class Test28 {
     @Test
     public void test28() throws Exception {
-        String testStr = "try";
+        String testStr = "abc";
         System.out.println("解法一：while循环，结果：" + Permutation28.permutation1(testStr));
         System.out.println("解法二：递归，结果：" + Permutation28.Permutation(testStr));
     }
