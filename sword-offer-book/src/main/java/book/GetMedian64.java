@@ -68,15 +68,16 @@ public class GetMedian64 {
      * @param num
      */
     private static void insertByHeapSort(Integer num) {
-        count++;
-        // 当数据的个数为奇数时，进入大根堆
+        // 当数据的个数为奇数时，进入大根堆(保存较小的一半)
         if ((count & 1) == 1) {
             minHeap.offer(num);
             maxHeap.offer(minHeap.poll());
         } else {
+            // 当数据的个数为偶数时，进入小根堆(保存较大的一半)
             maxHeap.offer(num);
             minHeap.offer(maxHeap.poll());
         }
+        count++;
     }
 
     /**
