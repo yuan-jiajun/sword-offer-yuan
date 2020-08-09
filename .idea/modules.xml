@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/sword-offer.iml" filepath="$PROJECT_DIR$/sword-offer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sword-offer-jin/swordofferjava.iml" filepath="$PROJECT_DIR$/sword-offer-jin/swordofferjava.iml" />
     </modules>
   </component>
 </project>
