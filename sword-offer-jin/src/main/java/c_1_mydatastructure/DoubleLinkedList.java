@@ -1,4 +1,4 @@
-package main.java.c_1_mydatastructure;
+package c_1_mydatastructure;
 
 /**
  * @program: swordofferjava

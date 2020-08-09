@@ -33,7 +33,8 @@
       <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/now-coder" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/server-deploy" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/framework-learning" type="java-resource" />
-      <excludeFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/juc-jvm-zy-season1" />
+      <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/sword-offer/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/juc-jvm-zy-season1/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/sword-offer-yuan/src/main/java/jvm-shk/code/src/chapter02/chapter02/java" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
