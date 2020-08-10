@@ -5,7 +5,15 @@
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java/interview-upup" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java/java8-feature/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java/juc-jvm-zy-season2/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java/jvm-shk/code/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java/leet-code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java/now-coder" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java/server-deploy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java/sword-offer/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java/sword-offer/test" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
