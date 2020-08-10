@@ -20,5 +20,4 @@ public class SelfIncrease {
         int k = i + ++i * i++;
         System.out.println("");
     }
-
 }
