@@ -9,7 +9,7 @@ package yuan.test4_findNumberIn2DArray;
  * 运行时间：99ms
  * 占用内存：17400k
  */
-public class findNumberIn2DArray {
+public class FindNumberIn2DArray {
     public boolean findNumberIn2DArray1(int target, int[][] array) {
         if (array == null || array.length == 0)
             return false;

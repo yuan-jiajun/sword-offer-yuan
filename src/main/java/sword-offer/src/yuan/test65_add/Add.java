@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/
  * @date 2020/8/11 15:48
  */
-public class add {
+public class Add {
     public static int add1(int num1, int num2) {
         while (num2 != 0) {//每次需要判定是否有进位，直到不产生进位为止
             int temp = num1 ^ num2;//不进位求和， 相同位置0，相反位置1
@@ -27,7 +27,7 @@ public class add {
 
 
     @Test
-    public void test47() throws Exception {
+    public void test() throws Exception {
         int num1 = 5;
         int num2 = 11;
         System.out.println("求和：" + num1 + " + " + num2 + " = " + add1(num1, num2));

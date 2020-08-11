@@ -8,7 +8,7 @@ import org.junit.Test;
  * https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/
  * @date 2020/8/11 15:32
  */
-public class replaceSpace {
+public class ReplaceSpace {
     /**
      * 解法一：使用StringBuffer，线程安全
      * @param input
@@ -85,7 +85,7 @@ public class replaceSpace {
     }
 
     @Test
-    public void test4() {
+    public void test() {
         String beforeStr = " ab g gt r ";
         System.out.println("解法一：使用StringBuffer， 替换前：" + beforeStr + " 替换后：" + replaceSpace1(beforeStr));
         System.out.println("解法二：使用StringBuilder，替换前：" + beforeStr + " 替换后：" + replaceSpace2(beforeStr));

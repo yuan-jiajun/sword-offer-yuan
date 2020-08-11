@@ -10,7 +10,7 @@ import java.util.Set;
  * https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/
  * @date 2020/8/11 14:45
  */
-public class findRepeatNumber {
+public class FindRepeatNumber {
     public int findRepeatNumber1(int[] nums) {
         int temp;
         for (int i = 0; i < nums.length; i++) {
