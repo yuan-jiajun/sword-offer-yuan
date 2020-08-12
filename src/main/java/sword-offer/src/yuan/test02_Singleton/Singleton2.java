@@ -1,4 +1,4 @@
-package yuan.test2_singleton;
+package yuan.test02_Singleton;
 
 /**
  * 基于静态内部类实现单例模式，懒汉模式

@@ -1,4 +1,4 @@
-package yuan.test51_reversePairs;
+package yuan.test51_ReversePairs;
 
 import org.junit.Test;
 

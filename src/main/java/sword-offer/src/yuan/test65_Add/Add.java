@@ -1,4 +1,4 @@
-package yuan.test65_add;
+package yuan.test65_Add;
 
 import org.junit.Test;
 

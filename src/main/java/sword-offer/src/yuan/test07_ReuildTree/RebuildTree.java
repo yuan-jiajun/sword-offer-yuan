@@ -1,4 +1,4 @@
-package yuan.test7_buildTree;
+package yuan.test07_ReuildTree;
 
 import org.junit.Test;
 
@@ -9,7 +9,7 @@ import java.util.Arrays;
  * @description
  * @date 2020/8/12 0:50
  */
-public class BuildTree {
+public class RebuildTree {
     static class TreeNode {
         int val;
         TreeNode left;

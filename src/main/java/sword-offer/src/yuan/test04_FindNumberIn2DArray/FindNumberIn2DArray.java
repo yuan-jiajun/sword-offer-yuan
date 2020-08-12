@@ -1,4 +1,4 @@
-package yuan.test4_findNumberIn2DArray;
+package yuan.test04_FindNumberIn2DArray;
 
 /**
  * @author yuanjiajun

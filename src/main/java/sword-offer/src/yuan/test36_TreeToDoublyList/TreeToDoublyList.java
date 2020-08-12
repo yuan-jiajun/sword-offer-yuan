@@ -1,4 +1,4 @@
-package yuan.test36_treeToDoublyList;
+package yuan.test36_TreeToDoublyList;
 
 import org.junit.Test;
 

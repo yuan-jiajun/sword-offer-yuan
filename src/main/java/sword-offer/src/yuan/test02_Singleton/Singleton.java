@@ -1,4 +1,4 @@
-package yuan.test2_singleton;
+package yuan.test02_Singleton;
 
 public class Singleton { //懒汉式实现，第一次调用getInstance时才会创建对象，饿汉式：直接声明时创建
 

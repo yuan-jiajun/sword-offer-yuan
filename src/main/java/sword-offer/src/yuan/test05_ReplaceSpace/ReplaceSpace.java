@@ -1,4 +1,4 @@
-package yuan.test5_replaceSpace;
+package yuan.test05_ReplaceSpace;
 
 import org.junit.Test;
 

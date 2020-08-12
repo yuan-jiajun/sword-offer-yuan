@@ -1,4 +1,4 @@
-package yuan.test64_sumNums;
+package yuan.test64_SumNums;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package yuan.test3_findRepeatNumber;
+package yuan.test03_FindRepeatNumber;
 
 import java.util.Arrays;
 import java.util.HashSet;
