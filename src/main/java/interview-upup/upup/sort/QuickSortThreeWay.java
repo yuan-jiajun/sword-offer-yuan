@@ -29,7 +29,7 @@ import org.junit.Test;
  * <p>
  * f、迭代排序位置gt + 1到位置end的部分。
  */
-public class ThreeWayQuickSort<T extends Comparable<T>> extends QuickSort3<T> {
+public class QuickSortThreeWay<T extends Comparable<T>> extends QuickSort3<T> {
     @Override
     public void sort(T[] nums, int l, int h) {
         if (h <= l) {
@@ -49,7 +49,8 @@ public class ThreeWayQuickSort<T extends Comparable<T>> extends QuickSort3<T> {
             int cmp = nums[i].compareTo(v);
             if (cmp < 0) {          // 当前元素小于参照物
                 swap(nums, lt++, i++);
-            } else if (cmp > 0) {   // 当前元素大于参照物
+            } else if (cmp > 0) {
+                /** 当前元素大于参照物,将当前元素后移，与gt位置的元素与i交换，并且马上进行下一次比较，将原gt位置的元素和参照物比较*/
                 swap(nums, i, gt--);
             } else {                // 当前元素等于参照物
                 i++;
@@ -65,7 +66,7 @@ public class ThreeWayQuickSort<T extends Comparable<T>> extends QuickSort3<T> {
     @Test
     public void test() {
 //        Integer[] data = {9, -16, 30, 23, -30, -49, 25, 21, 30, 293, 108, 161, 783, 376, 265, 330, 598, 646, 812};
-        Integer[] data = {10, 10, 10, 10, 10, 10, 10, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 12, 12, 12, 12, 12};
+        Integer[] data = {10, 10, 9, 9, 12, 12, 8, 8};
         System.out.println("排序之前：\n" + java.util.Arrays.toString(data));
         sort((T[]) data, 0, data.length - 1);
         System.out.println("排序之后：\n" + java.util.Arrays.toString(data));
