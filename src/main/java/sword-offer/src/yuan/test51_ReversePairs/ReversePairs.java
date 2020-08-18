@@ -4,7 +4,7 @@ import org.junit.Test;
 
 /**
  * @author Yuan Jiajun
- * @description
+ * @description 解法很像归并排序
  * @date 2020/8/9 20:24
  */
 public class ReversePairs {
@@ -27,12 +27,6 @@ public class ReversePairs {
 
     /**
      * nums[left..right] 计算逆序对个数并且排序
-     *
-     * @param nums
-     * @param left
-     * @param right
-     * @param temp
-     * @return
      */
     private static int reversePairs(int[] nums, int left, int right, int[] temp) {
         if (left == right) {
@@ -53,13 +47,6 @@ public class ReversePairs {
 
     /**
      * nums[left..mid] 有序，nums[mid + 1..right] 有序
-     *
-     * @param nums
-     * @param left
-     * @param mid
-     * @param right
-     * @param temp
-     * @return
      */
     private static int mergeAndCount(int[] nums, int left, int mid, int right, int[] temp) {
         for (int i = left; i <= right; i++) {
@@ -70,11 +57,11 @@ public class ReversePairs {
         int j = mid + 1;
 
         int count = 0;
-        for (int k = left; k <= right; k++) {
-            if (i == mid + 1) {
+        for (int k = left; k <= right; k++) {/**每一轮归并一个数据回去，temp[i]和temp[j]谁小谁被归并到结果数组*/
+            if (i == mid + 1) {/**当left有序子数组归并完毕，只剩下right的待归并数组*/
                 nums[k] = temp[j];
                 j++;
-            } else if (j == right + 1) {
+            } else if (j == right + 1) {/**当right有序子数组归并完毕，只剩下left的待归并数组*/
                 nums[k] = temp[i];
                 i++;
             } else if (temp[i] <= temp[j]) {

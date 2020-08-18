@@ -2,8 +2,6 @@ package upup.sort;
 
 /**
  * 堆排序
- * 
- * @author shkstart 2018-12-17
  */
 public class HeapSort {
 	public static void heapSort(int[] data) {

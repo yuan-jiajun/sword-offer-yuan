@@ -1,12 +1,11 @@
 package upup.sort;
 
+import org.junit.Test;
+
 /**
  * 快速排序
  * 通过一趟排序将待排序记录分割成独立的两部分，其中一部分记录的关键字均比另一部分关键字小，
  * 则分别对这两部分继续进行排序，直到整个序列有序。
- *
- * @author shkstart
- * 2018-12-17
  */
 public class QuickSort {
     private static void swap(int[] data, int i, int j) {
@@ -44,10 +43,9 @@ public class QuickSort {
     }
 
 
-    public static void main(String[] args) {
-//        int[] data = {9, -16, 30, 23, -30, -49, 25, 21, 30};
-        int[] data = {293, 108, 161, 783, 376, 265, 330, 598, 646, 812};
-
+    @Test
+    public void test() {
+        int[] data = {9, -16, 30, 23, -30, -49, 25, 21, 30, 293, 108, 161, 783, 376, 265, 330, 598, 646, 812};
         System.out.println("排序之前：\n" + java.util.Arrays.toString(data));
         quickSort(data);
         System.out.println("排序之后：\n" + java.util.Arrays.toString(data));
