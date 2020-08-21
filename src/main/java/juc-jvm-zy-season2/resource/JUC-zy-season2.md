@@ -132,7 +132,7 @@ iadd		//加操作
 putfield	//写操作
 ```
 
-假设有3个线程，分别执行number++，都先从主内存中拿到最开始的值，number=0，然后三个线程分别进行操作。假设线程0执行完毕，number=1，也立刻通知到了其它线程，但是此时线程1、2已经拿到了number=0，所以结果就是写覆盖，线程1、2将number变成1。
+假设有3个线程，分别执行number++，都先从主内存中拿到最开始的值，number=0，然后三个线程分别进行操作。假设线程0执行完毕，number=1，也立刻通知到了其它线程，但是此时线程1、2已经拿到了number=0，所以结果就是导致写覆盖，线程1、2将number还是变成1。
 
 解决的方式就是：
 
@@ -221,7 +221,7 @@ public class Demos.juc.SingletonDemo {
 这个漏洞比较tricky，很难捕捉，但是是存在的。`instance=new Demos.juc.SingletonDemo();`可以大致分为三步
 
 ```java
-memory = allocate();     //1.分配内存
+memory = allocate(); //1.分配内存
 instance(memory);	 //2.初始化对象
 instance = memory;	 //3.设置引用地址
 ```

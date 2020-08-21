@@ -76,6 +76,7 @@ class ShareData {
             //2 干活
             number--;
             System.out.println(Thread.currentThread().getName() + "\t" + number);
+
             //3 通知唤醒
             condition.signalAll();
         } catch (Exception e) {

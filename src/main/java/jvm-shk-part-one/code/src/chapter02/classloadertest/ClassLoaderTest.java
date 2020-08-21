@@ -19,7 +19,7 @@ public class ClassLoaderTest {
         ClassLoader bootstrapClassLoader = extClassLoader.getParent();
         System.out.println("bootstrapClassLoader: " + bootstrapClassLoader);//null
 
-        //对于用户自定义类来说：默认使用系统类加载器进行加载
+        //对于用户自定义类来说：默认使用应用类加载器进行加载
         ClassLoader userClassLoader = ClassLoaderTest.class.getClassLoader();
         System.out.println("userClassLoader: " + userClassLoader);//sun.misc.Launcher$AppClassLoader@18b4aac2
 

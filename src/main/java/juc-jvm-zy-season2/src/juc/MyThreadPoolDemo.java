@@ -45,10 +45,10 @@ public class MyThreadPoolDemo {
                         TimeUnit.SECONDS,
                         new LinkedBlockingQueue<Runnable>(3),
                         Executors.defaultThreadFactory(),
-                        new ThreadPoolExecutor.AbortPolicy()
+//                        new ThreadPoolExecutor.AbortPolicy()
 //                        new ThreadPoolExecutor.CallerRunsPolicy()
 //                        new ThreadPoolExecutor.DiscardOldestPolicy()
-//                        new ThreadPoolExecutor.DiscardPolicy()
+                        new ThreadPoolExecutor.DiscardPolicy()
                 );
 
         try {

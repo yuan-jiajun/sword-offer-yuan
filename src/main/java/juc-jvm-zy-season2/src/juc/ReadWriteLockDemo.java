@@ -26,7 +26,7 @@ public class ReadWriteLockDemo {
     }
 }
 
-/*
+/**
  * 多个线程同时读一个资源类没有问题，所以为了满足并发量，读取共享资源应该可以同时进行。
  * 但是写共享资源只能有一个线程。
  *
@@ -65,7 +65,7 @@ class MyCache {
     }
 
     public void get(String key) {
-//        rwLock.readLock().lock();
+        rwLock.readLock().lock();
         try {
             System.out.println(Thread.currentThread().getName() + "\t" + "正在读取： " + key);
             //模拟网络传输
