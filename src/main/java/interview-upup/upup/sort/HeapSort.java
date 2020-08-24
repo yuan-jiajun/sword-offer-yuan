@@ -14,6 +14,7 @@ public class HeapSort {
         // 循环建堆
         for (int i = 0; i < arrayLength - 1; i++) {
             int lastIndex = arrayLength - 1 - i;
+
             // 建堆
             buildMaxdHeap(data, lastIndex);
 
@@ -27,7 +28,7 @@ public class HeapSort {
     // 对data数组从0到lastIndex建大顶堆
     private static void buildMaxdHeap(int[] data, int lastIndex) {
         // 从lastIndex处节点（最后一个节点）的父节点开始堆化
-        for (int i = (lastIndex - 1) / 2; i >= 0; i--) {
+        for (int i = (lastIndex - 1) / 2; i >= 0; i--) {/**从 x 为根节点开始建堆这里的判定条件就是大于等于 x */
 
             // k保存当前正在判断的节点
             int k = i;
@@ -56,6 +57,7 @@ public class HeapSort {
                     /** 将biggerIndex赋给 k，可能因为上面的交换导致原来以biggerIndex为堆顶的结构需要重新堆化，
                      开始while循环的下一次循环，重新保证 k节点的值大于其左、右节点的值*/
                     k = biggerIndex;
+
                 } else {
                     //已经满足堆的结构，跳出循环
                     break;
