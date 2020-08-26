@@ -24,9 +24,12 @@ public class ShellSort<T extends Comparable<T>> extends Sort<T> {
                 int temp = data[i];
                 if (data[i] < data[i - h]) {
                     int j = i - h;
+
+                    /*元素后移*/
                     for (; j >= 0 && data[j] > temp; j -= h) {
                         data[j + h] = data[j];
                     }
+
                     data[j + h] = temp;
                 }
 //                System.out.println(java.util.Arrays.toString(data));

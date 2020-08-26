@@ -59,7 +59,9 @@ public class DicesProbability {
         return probabilityMap;
     }
 
-
+    /**
+     * chose
+     */
     public static double[] printProbability2(int number) {
         int[][] dp = new int[number + 1][number * 6];
 

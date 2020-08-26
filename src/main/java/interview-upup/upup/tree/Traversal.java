@@ -108,6 +108,9 @@ public class Traversal {
                 node = node.left;
             }
 
+            //上面的代码基本上是一样的
+
+
             //查看当前栈顶元素
             node = treeNodeStack.peek();/**这一步很重要*/
 
