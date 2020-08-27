@@ -4,6 +4,7 @@ package yuan.test24_ReverseList;
  * @author Yuan Jiajun
  * @date 2020/8/26 17:27
  * @description
+ * 反转链表
  */
 public class ReverseList {
 
@@ -43,6 +44,7 @@ public class ReverseList {
         while (head != null) {
             ListNode p = head.next;
             head.next = pre;
+
             pre = head;
             head = p;
         }
@@ -50,11 +52,8 @@ public class ReverseList {
     }
 
     /**
-     * 解法三：递归
+     * 解法三：递归，不太好理解啊
      * 时间复杂度：O(n)，空间复杂度：O(n)
-     *
-     * @param head
-     * @return
      */
     public static ListNode reverseList3(ListNode head) {
         if (head == null || head.next == null) {
