@@ -4,15 +4,12 @@ import org.junit.Test;
 
 /**
  * @author Yuan Jiajun
- * @description
- * https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/
+ * @description https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/
  * @date 2020/8/11 15:32
  */
 public class ReplaceSpace {
     /**
      * 解法一：使用StringBuffer，线程安全
-     * @param input
-     * @return
      */
     public static String replaceSpace1(String input) {
         if (input == null) {
@@ -32,8 +29,6 @@ public class ReplaceSpace {
 
     /**
      * 解法二：使用StringBuilder,非线程安全
-     * @param input
-     * @return
      */
     public static String replaceSpace2(String input) {
         if (input == null) {
@@ -53,8 +48,6 @@ public class ReplaceSpace {
 
     /**
      * 解法三：先计算新的字符串长度，再从后往前复制
-     * @param input
-     * @return
      */
     public static String replaceSpace3(String input) {
         if (input == null) {

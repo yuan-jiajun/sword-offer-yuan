@@ -1,4 +1,4 @@
-package upup.com.jd;
+package upup.com.jingdong;
 
 import java.util.Scanner;
 
