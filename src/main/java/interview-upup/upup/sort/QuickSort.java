@@ -20,7 +20,12 @@ public class QuickSort {
         if (left > right)
             return;
 
-        int pivot = data[left];
+//        int pivot = data[left];
+
+        int mid = (left + right) / 2;
+        int pivot = data[mid];
+
+
         int i = left + 1;//left是否加1 都可以
         int j = right;
 
@@ -32,6 +37,7 @@ public class QuickSort {
             } else break;
         }
         swap(data, left, j);
+        System.out.println(java.util.Arrays.toString(data));
 
         partition(data, left, j - 1);//递归调用
         partition(data, j + 1, right);
@@ -49,5 +55,7 @@ public class QuickSort {
         System.out.println("排序之前：\n" + java.util.Arrays.toString(data));
         quickSort(data);
         System.out.println("排序之后：\n" + java.util.Arrays.toString(data));
+
+
     }
 }

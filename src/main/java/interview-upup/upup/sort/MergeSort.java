@@ -23,6 +23,8 @@ public class MergeSort<T extends Comparable<T>> extends Sort<T> {
 
             //合并
             merge(data, left, mid, right);
+
+//            System.out.println(Arrays.toString(data));
         }
     }
 
@@ -51,7 +53,6 @@ public class MergeSort<T extends Comparable<T>> extends Sort<T> {
         while (j == right + 1 && i <= mid) {
             data[k++] = tempArr[i++];
         }
-
     }
 
 
@@ -99,15 +100,19 @@ public class MergeSort<T extends Comparable<T>> extends Sort<T> {
 
     @Test
     public void test() {
-        int[] data = {9, -16, 30, 23, -30, -49, 25, 21, 30, 293, 108, 161, 783, 376, 265, 330, 598, 646, 812};
-        System.out.println("排序之前：\n" + java.util.Arrays.toString(data));
-        mergeSort(data);
-        System.out.println("排序之后：\n" + java.util.Arrays.toString(data));
+//        int[] data = {9, -16, 30, 23, -30, -49, 25, 21, 30, 293, 108, 161, 783, 376, 265, 330, 598, 646, 812};
+//        System.out.println("排序之前：\n" + java.util.Arrays.toString(data));
+//        mergeSort(data);
+//        System.out.println("排序之后：\n" + java.util.Arrays.toString(data));
+//
+//        System.out.println("********* 泛型 **************");
+//        Integer[] data2 = {9, -16, 30, 23, -30, -49, 25, 21, 30, 293, 108, 161, 783, 376, 265, 330, 598, 646, 812};
+////        System.out.println("排序之前：\n" + java.util.Arrays.toString(data2));
+//        sort((T[]) data2);
+//        System.out.println(java.util.Arrays.toString(data2));
 
-        System.out.println("********* 泛型 **************");
-        Integer[] data2 = {9, -16, 30, 23, -30, -49, 25, 21, 30, 293, 108, 161, 783, 376, 265, 330, 598, 646, 812};
-//        System.out.println("排序之前：\n" + java.util.Arrays.toString(data2));
-        sort((T[]) data2);
-        System.out.println(java.util.Arrays.toString(data2));
+        int[] data3 = {25, 84, 21, 47, 15, 27, 68, 35, 20};
+        mergeSort(data3);
+        System.out.println("排序之后：\n" + java.util.Arrays.toString(data3));
     }
 }

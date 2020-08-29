@@ -9,9 +9,15 @@ import java.util.HashMap;
  */
 public class Map {
     public static void main(String[] args) {
-        HashMap map = new HashMap();
+        HashMap<Integer, String> map = new HashMap<Integer, String>();
 
-//        map.put();
+        map.put(1, "yuan");
+        map.put(2, "jia");
+        map.put(3, "jun");
+
+        map.put(1, "jin");
+
+        map.forEach((key, value) -> System.out.println(value));
 
 
     }

@@ -32,7 +32,7 @@ public class ShellSort<T extends Comparable<T>> extends Sort<T> {
 
                     data[j + h] = temp;
                 }
-//                System.out.println(java.util.Arrays.toString(data));
+                System.out.println(java.util.Arrays.toString(data));
             }
             h = (h - 1) / 3;
         }
@@ -71,5 +71,10 @@ public class ShellSort<T extends Comparable<T>> extends Sort<T> {
 //        System.out.println("排序之前：\n" + java.util.Arrays.toString(data2));
         sort((T[]) data2);
         System.out.println(java.util.Arrays.toString(data2));
+
+
+        int[] data3 = {25, 84, 21, 47, 15, 27, 68, 35, 20};
+        ShellSort(data3);
+        System.out.println("排序之后：\n" + java.util.Arrays.toString(data3));
     }
 }
