@@ -10,14 +10,17 @@ import java.util.HashMap;
 public class Map {
     public static void main(String[] args) {
         HashMap<Integer, String> map = new HashMap<Integer, String>();
+//        HashMap<Integer, String> map = new LinkedHashMap<Integer, String>();
+//        TreeMap<Integer, String> map = new TreeMap<Integer, String>();
 
-        map.put(1, "yuan");
-        map.put(2, "jia");
-        map.put(3, "jun");
+//        map.put(null, "null");
+        map.put(1, "1");
+        map.put(2, "2");
+        map.put(3, "3");
+        map.put(4, "4");
+        map.put(5, "5");
 
-        map.put(1, "jin");
-
-        map.forEach((key, value) -> System.out.println(value));
+        map.forEach((key, value) -> System.out.println(key + "--->" + value));
 
 
     }
