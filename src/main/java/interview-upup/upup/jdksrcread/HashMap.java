@@ -138,6 +138,7 @@ import java.util.function.Function;
 public class HashMap<K, V> extends AbstractMap<K, V>
         implements Map<K, V>, Cloneable, Serializable {
 
+    // 序列号
     private static final long serialVersionUID = 362498820763181265L;
 
     /*
@@ -233,6 +234,7 @@ public class HashMap<K, V> extends AbstractMap<K, V>
     /**
      * The default initial capacity - MUST be a power of two.
      */
+    // 默认的初始容量是16
     static final int DEFAULT_INITIAL_CAPACITY = 1 << 4; // aka 16
 
     /**
@@ -240,11 +242,13 @@ public class HashMap<K, V> extends AbstractMap<K, V>
      * by either of the constructors with arguments.
      * MUST be a power of two <= 1<<30.
      */
+    // 最大容量
     static final int MAXIMUM_CAPACITY = 1 << 30;
 
     /**
      * The load factor used when none specified in constructor.
      */
+    // 默认的填充因子
     static final float DEFAULT_LOAD_FACTOR = 0.75f;
 
     /**
@@ -255,6 +259,7 @@ public class HashMap<K, V> extends AbstractMap<K, V>
      * tree removal about conversion back to plain bins upon
      * shrinkage.
      */
+    // 当桶(bucket)上的结点数大于这个值时会转成红黑树
     static final int TREEIFY_THRESHOLD = 8;
 
     /**
@@ -262,6 +267,7 @@ public class HashMap<K, V> extends AbstractMap<K, V>
      * resize operation. Should be less than TREEIFY_THRESHOLD, and at
      * most 6 to mesh with shrinkage detection under removal.
      */
+    // 当桶(bucket)上的结点数小于这个值时树转链表
     static final int UNTREEIFY_THRESHOLD = 6;
 
     /**
@@ -270,6 +276,7 @@ public class HashMap<K, V> extends AbstractMap<K, V>
      * Should be at least 4 * TREEIFY_THRESHOLD to avoid conflicts
      * between resizing and treeification thresholds.
      */
+    // 桶中结构转化为红黑树对应的table的最小大小
     static final int MIN_TREEIFY_CAPACITY = 64;
 
     /**
@@ -404,17 +411,20 @@ public class HashMap<K, V> extends AbstractMap<K, V>
      * (We also tolerate length zero in some operations to allow
      * bootstrapping mechanics that are currently not needed.)
      */
+    // 存储元素的数组，总是2的幂次倍
     transient Node<K, V>[] table;
 
     /**
      * Holds cached entrySet(). Note that AbstractMap fields are used
      * for keySet() and values().
      */
+    // 存放具体元素的集
     transient Set<Map.Entry<K, V>> entrySet;
 
     /**
      * The number of key-value mappings contained in this map.
      */
+    // 存放元素的个数，注意这个不等于数组的长度。
     transient int size;
 
     /**
@@ -424,6 +434,7 @@ public class HashMap<K, V> extends AbstractMap<K, V>
      * rehash).  This field is used to make iterators on Collection-views of
      * the HashMap fail-fast.  (See ConcurrentModificationException).
      */
+    // 每次扩容和更改map结构的计数器
     transient int modCount;
 
     /**
@@ -435,6 +446,8 @@ public class HashMap<K, V> extends AbstractMap<K, V>
     // Additionally, if the table array has not been allocated, this
     // field holds the initial array capacity, or zero signifying
     // DEFAULT_INITIAL_CAPACITY.)
+
+    // 临界值 当实际大小(容量*填充因子)超过临界值时，会进行扩容
     int threshold;
 
     /**
@@ -442,6 +455,7 @@ public class HashMap<K, V> extends AbstractMap<K, V>
      *
      * @serial
      */
+    // 填充因子
     final float loadFactor;
 
     /* ---------------- Public operations -------------- */
@@ -794,8 +808,10 @@ public class HashMap<K, V> extends AbstractMap<K, V>
             else if ((newCap = oldCap << 1) < MAXIMUM_CAPACITY &&
                     oldCap >= DEFAULT_INITIAL_CAPACITY)
                 newThr = oldThr << 1; // double threshold 双倍扩容阀值threshold
+
         } else if (oldThr > 0) // initial capacity was placed in threshold
             newCap = oldThr;
+
         else {               // zero initial threshold signifies using defaults
             newCap = DEFAULT_INITIAL_CAPACITY;
             newThr = (int) (DEFAULT_LOAD_FACTOR * DEFAULT_INITIAL_CAPACITY);
@@ -806,31 +822,42 @@ public class HashMap<K, V> extends AbstractMap<K, V>
             newThr = (newCap < MAXIMUM_CAPACITY && ft < (float) MAXIMUM_CAPACITY ?
                     (int) ft : Integer.MAX_VALUE);
         }
+
         threshold = newThr;
+
         @SuppressWarnings({"rawtypes", "unchecked"})
         Node<K, V>[] newTab = (Node<K, V>[]) new Node[newCap];//新建hash桶数组
         table = newTab;//将新数组的值复制给旧的hash桶数组
+
         if (oldTab != null) {//进行扩容操作，复制Node对象值到新的hash桶数组
             for (int j = 0; j < oldCap; ++j) {
                 Node<K, V> e;
+
                 if ((e = oldTab[j]) != null) {//如果旧的hash桶数组在j结点处不为空，复制给e
                     oldTab[j] = null;//将旧的hash桶数组在j结点处设置为空，方便gc
+
                     if (e.next == null)//如果e后面没有Node结点
                         newTab[e.hash & (newCap - 1)] = e;//直接对e的hash值对新的数组长度求模获得存储位置
+
                     else if (e instanceof TreeNode)//如果e是红黑树的类型，那么添加到红黑树中
                         ((TreeNode<K, V>) e).split(this, newTab, j, oldCap);
+
+                    //e是链表类型
                     else { // preserve order
                         Node<K, V> loHead = null, loTail = null;
                         Node<K, V> hiHead = null, hiTail = null;
                         Node<K, V> next;
+
                         do {
                             next = e.next;//将Node结点的next赋值给next
                             if ((e.hash & oldCap) == 0) {//如果结点e的hash值与原hash桶数组的长度作与运算为0
+                                //尾插法
                                 if (loTail == null)//如果loTail为null
                                     loHead = e;//将e结点赋值给loHead
                                 else
                                     loTail.next = e;//否则将e赋值给loTail.next
                                 loTail = e;//然后将e复制给loTail
+
                             } else {//如果结点e的hash值与原hash桶数组的长度作与运算不为0
                                 if (hiTail == null)//如果hiTail为null
                                     hiHead = e;//将e赋值给hiHead
@@ -839,14 +866,18 @@ public class HashMap<K, V> extends AbstractMap<K, V>
                                 hiTail = e;//将e复制个hiTail
                             }
                         } while ((e = next) != null);//直到e为空
+
+
                         if (loTail != null) {//如果loTail不为空
                             loTail.next = null;//将loTail.next设置为空
                             newTab[j] = loHead;//将loHead赋值给新的hash桶数组[j]处
                         }
+
                         if (hiTail != null) {//如果hiTail不为空
                             hiTail.next = null;//将hiTail.next赋值为空
                             newTab[j + oldCap] = hiHead;//将hiHead赋值给新的hash桶数组[j+旧hash桶数组长度]
                         }
+
                     }
                 }
             }
