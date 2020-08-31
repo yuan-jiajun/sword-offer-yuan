@@ -37,7 +37,7 @@ public class TestLRU {
 
         System.out.println("=============================");
 
-        LRUCache<Integer, String> lruCache = new LRUCache<>(10);
+        LinkedListHahMapLRUCache<Integer, String> lruCache = new LinkedListHahMapLRUCache<>(10);
         lruCache.put(1, "11");
         lruCache.put(2, "22");
         lruCache.put(3, "33");

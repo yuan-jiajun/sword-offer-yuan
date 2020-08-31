@@ -1,4 +1,4 @@
-package upup.test;
+package upup.demos;
 
 import java.util.HashMap;
 

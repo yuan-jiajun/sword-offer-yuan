@@ -8,7 +8,7 @@ import java.util.HashMap;
  * @description
  */
 
-public class LRUCache<K, V> {
+public class LinkedListHahMapLRUCache<K, V> {
     static class Node<K, V> {
         K k;
         V v;
@@ -32,7 +32,7 @@ public class LRUCache<K, V> {
 
     //构造器，这里初始化哨兵节点
 
-    public LRUCache(int capacity) {
+    public LinkedListHahMapLRUCache(int capacity) {
         this.size = 0;
         this.capacity = capacity;
         hashMap = new HashMap<>(capacity * 3 / 4 + 1); //初始化hashMap，避免扩容，直接给初始容量

@@ -1,4 +1,4 @@
-package yuan.test8_NextTreeNode;
+package yuan.test08_NextTreeNode;
 
 /**
  * @author yuanjiajun

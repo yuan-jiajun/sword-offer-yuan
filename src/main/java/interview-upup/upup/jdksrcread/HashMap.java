@@ -260,6 +260,7 @@ public class HashMap<K, V> extends AbstractMap<K, V>
      * shrinkage.
      */
     // 当桶(bucket)上的结点数大于这个值时会转成红黑树
+    //桶的树化阈值：即 链表转成红黑树的阈值，在存储数据时，当链表长度 > 该值时，则将链表转换成红黑树
     static final int TREEIFY_THRESHOLD = 8;
 
     /**
@@ -268,6 +269,9 @@ public class HashMap<K, V> extends AbstractMap<K, V>
      * most 6 to mesh with shrinkage detection under removal.
      */
     // 当桶(bucket)上的结点数小于这个值时树转链表
+    //桶的链表还原阈值：即 红黑树转为链表的阈值，当在扩容（resize（））时
+    // （此时HashMap的数据存储位置会重新计算），在重新计算存储位置后，
+    // 当原有的红黑树内数量 < 6时，则将 红黑树转换成链表
     static final int UNTREEIFY_THRESHOLD = 6;
 
     /**
@@ -277,6 +281,7 @@ public class HashMap<K, V> extends AbstractMap<K, V>
      * between resizing and treeification thresholds.
      */
     // 桶中结构转化为红黑树对应的table的最小大小
+    //最小树形化容量阈值：即 当哈希表中的容量 > 该值时，才允许树形化链表 （即 将链表 转换成红黑树）
     static final int MIN_TREEIFY_CAPACITY = 64;
 
     /**
@@ -889,9 +894,13 @@ public class HashMap<K, V> extends AbstractMap<K, V>
      * Replaces all linked nodes in bin at index for given hash unless
      * table is too small, in which case resizes instead.
      */
+    //可以看出，链表长度大于8而且整个map中的键值对大于等于MIN_TREEIFY_CAPACITY (64)时，
+    // 才进行链表到红黑树的转换。
     final void treeifyBin(Node<K, V>[] tab, int hash) {
         int n, index;
         Node<K, V> e;
+        //判断capacity是否小于最小树形化容量阈值
+        //这里还有一个限制条件，当table的长度小于MIN_TREEIFY_CAPACITY（64）时，只是进行扩容
         if (tab == null || (n = tab.length) < MIN_TREEIFY_CAPACITY)
             resize();
         else if ((e = tab[index = (n - 1) & hash]) != null) {
@@ -906,8 +915,8 @@ public class HashMap<K, V> extends AbstractMap<K, V>
                 }
                 tl = p;
             } while ((e = e.next) != null);
-            if ((tab[index] = hd) != null)
-                hd.treeify(tab);
+            if ((tab[index] = hd) != null)  //将新的树结点链表赋给第index个桶
+                hd.treeify(tab);            //执行 TreeNode中的treeify()方法
         }
     }
 
