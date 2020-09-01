@@ -1,6 +1,7 @@
 package upup.com.oj.pdd;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * @author Yuan Jiajun
@@ -14,27 +15,51 @@ import java.util.Arrays;
  */
 public class PrintMatrix2 {
     public static void main(String[] args) {
-//        Scanner in = new Scanner(System.in);
-//        int n = in.nextInt();
-        int n = 4;
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
         int[][] arr = new int[n][n];
         for (int[] ints : arr) {
             Arrays.fill(ints, 0);
         }
 
-
-        int vertical = n / 2;
-        int horizon = vertical;
+        double mid = (n + 0.0) / 2;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                if (i < vertical && j < horizon && i < j)
-                    arr[i][j] = 2;
-                if (i < vertical && j > horizon&&)
+
+                if (i <= mid && j >= mid && isKMoreThan45(i, j, n) && (i + j) != n - 1)
                     arr[i][j] = 1;
 
+                if (i <= mid && j < mid && i < j)
+                    arr[i][j] = 2;
+
+                if (i < mid && j < mid && i > j)
+                    arr[i][j] = 3;
+
+                if (i >= mid && j < mid && isKMoreThan45(i, j, n) && (i + j) != n - 1)
+                    arr[i][j] = 4;
+
+                if (i >= mid && j < mid && !isKMoreThan45(i, j, n) && (i + j) != n - 1)
+                    arr[i][j] = 5;
+
+                if (i > mid && j >= mid && !isKMoreThan45(i, j, n) && i != j)
+                    arr[i][j] = 6;
+
+                if (i >= mid && j >= mid && i < j)
+                    arr[i][j] = 7;
+
+                if (i < mid && j > mid && !isKMoreThan45(i, j, n) && (i + j) != n - 1)
+                    arr[i][j] = 8;
             }
         }
 
+        if (n % 2 == 1) {
+            for (int i = 0; i < n; i++) {
+                arr[i][n / 2] = 0;
+            }
+            for (int j = 0; j < n; j++) {
+                arr[n / 2][j] = 0;
+            }
+        }
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
@@ -44,5 +69,8 @@ public class PrintMatrix2 {
         }
     }
 
-
+    static boolean isKMoreThan45(int i, int j, int n) {
+        int yLength = n - i;
+        return yLength > j;
+    }
 }
