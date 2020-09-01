@@ -36,6 +36,7 @@ public class QuickSort {
                 swap(data, i, j);
             } else break;
         }
+
         swap(data, left, j);
         System.out.println(java.util.Arrays.toString(data));
 

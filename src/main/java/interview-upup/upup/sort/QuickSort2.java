@@ -14,6 +14,22 @@ public class QuickSort2 {
         data[j] = temp;
     }
 
+    //left 和 right 都是数组的下标，个人推荐下面这种partition方法
+    public static int partition(int[] a, int left, int right) {
+        int pivot = a[right];
+        int i, j;
+
+        for (i = left, j = left; j < right; j++) {
+            if (a[j] <= pivot) {
+                swap(a, i++, j);
+            }
+        }
+
+        swap(a, i, right);
+
+        return i;
+    }
+
     //left 和 right 都是数组的下标
     private static int partition2(int[] data, int left, int right) {
         int pivot = data[left];
@@ -32,23 +48,6 @@ public class QuickSort2 {
 
         return j;
     }
-
-
-    //left 和 right 都是数组的下标
-    public static int partition(int[] a, int left, int right) {
-        int pivot = a[right];
-        int i, j;
-
-        for (i = left, j = left; j < right; j++) {
-            if (a[j] <= pivot) {
-                swap(a, i++, j);
-            }
-        }
-        swap(a, i, right);
-
-        return i;
-    }
-
 
     public static void quickSort(int[] data, int left, int right) {
         if (left < right) {

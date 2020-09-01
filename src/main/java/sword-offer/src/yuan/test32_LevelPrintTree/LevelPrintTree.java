@@ -30,6 +30,7 @@ public class LevelPrintTree {
 
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
+
         ArrayList<Integer> tmp = new ArrayList<>();
         int start = 0;
         int end = 1;

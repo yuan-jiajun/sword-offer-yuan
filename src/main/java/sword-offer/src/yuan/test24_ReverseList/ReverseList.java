@@ -18,7 +18,7 @@ public class ReverseList {
     }
 
     /**
-     * 解法一：迭代：两个指针，反向输出
+     * 解法一：迭代：两个指针，反向输出,chose
      * 时间复杂度：O(n)，空间复杂度：O(1)
      */
     public static ListNode reverseList1(ListNode head) {
@@ -27,6 +27,7 @@ public class ReverseList {
 
         while (curr != null) {
             ListNode tmp = curr.next;
+
             curr.next = pre;
             pre = curr;
             curr = tmp;

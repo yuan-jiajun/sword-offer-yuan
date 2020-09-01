@@ -21,7 +21,7 @@ import java.util.List;
  * 三向切分快速排序对于有大量重复元素的随机数组可以在线性时间内完成排序。
  */
 
-public class QuickSort3<T extends Comparable<T>> extends Sort<T> {
+public class QuickSortGeneric<T extends Comparable<T>> extends Sort<T> {
     @Override
     public void sort(T[] nums) {
         shuffle(nums);
@@ -67,7 +67,7 @@ public class QuickSort3<T extends Comparable<T>> extends Sort<T> {
     /**
      * 快速排序的 partition() 方法，会返回一个整数 j
      * 使得 a[l..j-1] 小于等于 a[j]，且 a[j+1..h] 大于等于 a[j]，此时 a[j] 就是数组的第 j 大元素。
-     * 可以利用这个特性找出数组的第 k 个元素。
+     * 可以利用这个特性找出数组的第 k 大的元素。
      * 该算法是线性级别的，假设每次能将数组二分，那么比较的总次数为 (N+N/2+N/4+..)，直到找到第 k 个元素，这个和显然小于 2N。
      */
     public T select(T[] nums, int k) {

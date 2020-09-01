@@ -29,7 +29,7 @@ import org.junit.Test;
  * <p>
  * f、迭代排序位置gt + 1到位置end的部分。
  */
-public class QuickSortThreeWay<T extends Comparable<T>> extends QuickSort3<T> {
+public class QuickSortThreeWay<T extends Comparable<T>> extends QuickSortGeneric<T> {
     @Override
     public void sort(T[] nums, int l, int h) {
         if (h <= l) {
