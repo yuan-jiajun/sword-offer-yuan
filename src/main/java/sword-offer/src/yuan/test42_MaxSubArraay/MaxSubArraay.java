@@ -4,6 +4,7 @@ package yuan.test42_MaxSubArraay;
  * @author yuanjiajun
  * @description
  * https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/
+ * 输入一个整型数组，数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。
  * @date 2020/8/18 0:48
  */
 public class MaxSubArraay {

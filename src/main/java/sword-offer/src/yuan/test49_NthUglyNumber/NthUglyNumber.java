@@ -1,4 +1,4 @@
-package yuan.test48_NthUglyNumber;
+package yuan.test49_NthUglyNumber;
 
 /**
  * @author yuanjiajun

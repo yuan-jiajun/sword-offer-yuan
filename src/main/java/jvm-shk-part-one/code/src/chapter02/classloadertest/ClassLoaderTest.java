@@ -27,6 +27,14 @@ public class ClassLoaderTest {
         ClassLoader StringClassLoader = String.class.getClassLoader();
         System.out.println("StringClassLoader: " + StringClassLoader);//null
 
+//        Object obj;
+//        try {
+//             obj = Class.forName("src/main/java/jvm-shk-part-one/code/src/chapter02/classloadertest/ClassLoaderTest.java");
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        }
 
+
+        System.out.println("");
     }
 }
