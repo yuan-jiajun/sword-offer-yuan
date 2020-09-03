@@ -1,20 +1,18 @@
-package yuan.test38_PermutationString;
+package leetcode.GenerateParenthesis22;
 
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.Stack;
 
 /**
  * @author Yuan Jiajun
- * @date 2020/9/1 10:12
+ * @date 2020/9/3 16:44
  * @description
  */
-public class permutation {
-    /**
-     * 递归
-     */
+public class GenerateParenthesis {
     public static ArrayList<String> permutation(String str) {
         ArrayList<String> res = new ArrayList<>();
         if (str == null || str.length() == 0) {
@@ -56,20 +54,27 @@ public class permutation {
         output[chose] = temp;
     }
 
+    public void isValid(ArrayList<String> res) {
+        for (String re : res) {
+            int length = re.length();
+            Stack<String> stack = new Stack<>();
+            for (int i = 0; i < length; i++) {
+                if (re.charAt(i) == '(') {
+                    stack.push("(");
+                } else {
+                    if (!stack.empty() && stack.peek().equals("(")) {
+                        stack.pop();
+                    }
+                }
+            }
+            if (stack.empty()) {
+                System.out.println(re);
+            }
+        }
+    }
+
     @Test
     public void test() {
-        long a1 = System.currentTimeMillis();
-        System.out.println();
-        for (int i = 0; i < 100000; i++) {
-            permutation("abb");
-            permutation("787");
-
-//            permutation1("abb");
-//            permutation1("787");
-        }
-        long a2 = System.currentTimeMillis();
-        System.out.println(a2 - a1);
-
-
+        isValid(permutation("((()))"));
     }
 }

@@ -9,7 +9,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @description
  */
 
-public class Main2 {
+public class PrintOddEven2 {
 
     public static void main(String[] args) {
         ReentrantLock lock = new ReentrantLock();

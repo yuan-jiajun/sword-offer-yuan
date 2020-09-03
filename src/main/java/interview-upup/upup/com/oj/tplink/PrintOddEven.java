@@ -17,7 +17,7 @@ import java.util.Arrays;
 //该方法自动查找到数组中第一个等于key的值的索引（假设arr中有key），返回该索引；如果没有则会找到第一个大于key的值的索引x。并返回: - x - 1。
 //若数组中元素均小于key则返回: - len - 1。也就是可以利用返回值找到一个大于或等于key的值的索引。
 //最好自己画图看看，很容易看出来。给一个设计好的测试用例 { 9,10,11,12, 8, 4, 15, -5, -4, -3, 7 }。
-public class Main1 {
+public class PrintOddEven {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());

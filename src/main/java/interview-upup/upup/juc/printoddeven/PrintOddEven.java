@@ -6,7 +6,7 @@ package upup.juc.printoddeven;
  * @description
  */
 
-public class Main1 {
+public class PrintOddEven {
     static class Counter {
         private Integer count;
 
