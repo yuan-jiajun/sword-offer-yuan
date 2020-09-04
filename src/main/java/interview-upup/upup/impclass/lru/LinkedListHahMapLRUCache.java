@@ -1,4 +1,4 @@
-package upup.impclass.lru1;
+package upup.impclass.lru;
 
 import java.util.HashMap;
 
