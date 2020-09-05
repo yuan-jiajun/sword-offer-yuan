@@ -6,7 +6,6 @@ import javax.annotation.processing.SupportedSourceVersion;
 import java.sql.SQLOutput;
 
 /**
- * @author shkstart  shkstart@126.com
  * @create 2020  0:49
  */
 public class StringTest4 {

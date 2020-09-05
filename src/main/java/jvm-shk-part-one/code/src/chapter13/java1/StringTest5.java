@@ -5,7 +5,6 @@ import org.junit.Test;
 /**
  * 字符串拼接操作
  *
- * @author shkstart  shkstart@126.com
  * @create 2020  0:59
  */
 public class StringTest5 {

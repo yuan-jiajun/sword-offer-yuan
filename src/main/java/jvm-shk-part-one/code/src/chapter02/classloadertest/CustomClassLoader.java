@@ -5,7 +5,6 @@ import java.io.FileNotFoundException;
 /**
  * 自定义用户类加载器
  *
- * @author shkstart
  * @create 2019 下午 12:21
  */
 public class CustomClassLoader extends ClassLoader {

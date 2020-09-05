@@ -1,7 +1,6 @@
 package chapter04;
 
 /**
- * @author shkstart
  * @create 2020 下午 6:46
  */
 public class PCRegisterTest {

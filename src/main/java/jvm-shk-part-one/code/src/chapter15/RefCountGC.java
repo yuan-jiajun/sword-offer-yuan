@@ -3,7 +3,7 @@ package chapter15;
 /**
  * -XX:+PrintGCDetails
  * 证明：java使用的不是引用计数算法
- * @author shkstart
+ *
  * @create 2020 下午 2:38
  */
 public class RefCountGC {

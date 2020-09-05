@@ -5,7 +5,6 @@ import java.lang.ref.WeakReference;
 /**
  * 弱引用的测试
  *
- * @author shkstart  shkstart@126.com
  * @create 2020  16:06
  */
 public class WeakReferenceTest {

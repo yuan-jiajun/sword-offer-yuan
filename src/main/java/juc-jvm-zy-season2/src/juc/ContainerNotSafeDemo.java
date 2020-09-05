@@ -55,7 +55,7 @@ public class ContainerNotSafeDemo {
      *
      * 4 优化建议
      * */
-    
+
     @Test
     public static void listNotSafe() {
 //        List<String> list = new ArrayList<>();

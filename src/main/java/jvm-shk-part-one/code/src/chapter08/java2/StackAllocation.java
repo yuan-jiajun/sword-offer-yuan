@@ -3,7 +3,7 @@ package chapter08.java2;
 /**
  * 栈上分配测试
  * -Xmx1G -Xms1G -XX:-DoEscapeAnalysis -XX:+PrintGCDetails
- * @author shkstart  shkstart@126.com
+ *
  * @create 2020  10:31
  */
 public class StackAllocation {

@@ -3,6 +3,7 @@ package juc;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class ReadWriteLockDemo {
@@ -42,7 +43,7 @@ public class ReadWriteLockDemo {
 class MyCache {
     //缓存更新快，需要用volatile修饰
     private volatile Map<String, Object> map = new HashMap<>();
-    private ReentrantReadWriteLock rwLock = new ReentrantReadWriteLock();
+    private ReadWriteLock rwLock = new ReentrantReadWriteLock();
 
     public void put(String key, Object value) {
         rwLock.writeLock().lock();

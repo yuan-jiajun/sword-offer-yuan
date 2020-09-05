@@ -1,14 +1,11 @@
 package chapter13.java2;
 
 
-import java.util.Random;
-
 /**
  * 使用intern()测试执行效率：空间使用上
  *
  * 结论：对于程序中大量存在存在的字符串，尤其其中存在很多重复字符串时，使用intern()可以节省内存空间。
  *
- * @author shkstart  shkstart@126.com
  * @create 2020  21:17
  */
 public class StringIntern2 {

@@ -20,7 +20,6 @@ package chapter08.java1;
  * 打印gc简要信息：① -XX:+PrintGC   ② -verbose:gc
  * -XX:HandlePromotionFailure：是否设置空间分配担保
  *
- * @author shkstart  shkstart@126.com
  * @create 2020  17:18
  */
 public class HeapArgsTest {

@@ -13,7 +13,6 @@ package chapter05.java2;
  * <p>
  * invokestatic指令和invokespecial指令调用的方法称为非虚方法
  *
- * @author shkstart
  * @create 2020 下午 12:07
  */
 class Father {

@@ -4,7 +4,7 @@ package chapter08.java1;
  * -Xms60m -Xmx60m -XX:NewRatio=2 -XX:SurvivorRatio=8 -XX:+PrintGCDetails
  *
  *   16：2：2：40
- * @author shkstart  shkstart@126.com
+ *
  * @create 2020  21:48
  */
 public class YoungOldAreaTest {

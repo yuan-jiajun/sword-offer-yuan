@@ -1,7 +1,6 @@
 package java.lang;
 
 /**
- * @author shkstart
  * @create 2020 下午 12:00
  */
 

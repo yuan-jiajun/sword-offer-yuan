@@ -1,7 +1,6 @@
 package chapter05.java;
 
 /**
- * @author shkstart
  * @create 2020 下午 10:24
  */
 public class SlotTest {

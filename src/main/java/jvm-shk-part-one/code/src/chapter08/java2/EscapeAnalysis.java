@@ -7,7 +7,6 @@ package chapter08.java2;
  *
  * 大家就看new的 对象实体 是否有可能在方法外被调用。
  *
- * @author shkstart
  * @create 2020 下午 4:00
  */
 public class EscapeAnalysis {

@@ -3,7 +3,6 @@ package chapter12;
 import java.util.ArrayList;
 
 /**
- * @author shkstart  shkstart@126.com
  * @create 2020  10:35
  */
 public class JITTest {

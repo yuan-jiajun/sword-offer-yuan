@@ -3,7 +3,6 @@ package chapter05.java1;
 import java.util.Date;
 
 /**
- * @author shkstart
  * @create 2020 下午 6:13
  */
 public class LocalVariablesTest {

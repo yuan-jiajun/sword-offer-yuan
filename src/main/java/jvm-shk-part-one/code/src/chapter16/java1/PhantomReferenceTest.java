@@ -6,7 +6,6 @@ import java.lang.ref.ReferenceQueue;
 /**
  * 虚引用的测试
  *
- * @author shkstart  shkstart@126.com
  * @create 2020  16:07
  */
 public class PhantomReferenceTest {

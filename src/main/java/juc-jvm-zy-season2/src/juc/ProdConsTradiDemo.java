@@ -43,7 +43,7 @@ class ShareData {
     private Lock lock = new ReentrantLock();
     private Condition condition = lock.newCondition();
 
-    public void increment() throws InterruptedException {
+    public void increment() throws InterruptedException {//一定不加synchronized
         lock.lock();
         try {
             //1 判断
@@ -65,7 +65,7 @@ class ShareData {
         }
     }
 
-    public void decrement() throws InterruptedException {
+    public void decrement() throws InterruptedException {//一定不加synchronized
         lock.lock();
         try {
             //1 判断,多线程判断必须用while()判断，不能用if（）

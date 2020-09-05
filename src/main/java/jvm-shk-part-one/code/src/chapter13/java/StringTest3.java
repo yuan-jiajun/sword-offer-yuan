@@ -9,7 +9,7 @@ import java.util.Set;
  *
  * jdk8中：
  * -XX:MetaspaceSize=6m -XX:MaxMetaspaceSize=6m -Xms6m -Xmx6m
- * @author shkstart  shkstart@126.com
+ *
  * @create 2020  0:36
  */
 public class StringTest3 {

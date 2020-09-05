@@ -6,12 +6,11 @@ import org.junit.Test;
 /**
  * 如何保证变量s指向的是字符串常量池中的数据呢？
  * 有两种方式：
- * 方式一： String s = "shkstart";//字面量定义的方式
+ * 方式一： String s = "";//字面量定义的方式
  * 方式二： 调用intern()
- * String s = new String("shkstart").intern();
- * String s = new StringBuilder("shkstart").toString().intern();
+ * String s = new String("").intern();
+ * String s = new StringBuilder("").toString().intern();
  *
- * @author shkstart  shkstart@126.com
  * @create 2020  18:49
  */
 public class StringIntern {

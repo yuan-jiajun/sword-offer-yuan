@@ -1,7 +1,6 @@
 package chapter05.java1;
 
 /**
- * @author shkstart
  * @create 2020 下午 10:25
  */
 public class DynamicLinkingTest {

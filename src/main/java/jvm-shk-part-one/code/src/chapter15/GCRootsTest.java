@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * @author shkstart  shkstart@126.com
  * @create 2020  16:28
  */
 public class GCRootsTest {

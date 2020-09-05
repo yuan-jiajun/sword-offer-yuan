@@ -10,7 +10,6 @@ package chapter09.java1;
  * jdk 8：
  * -Xms200m -Xmx200m -XX:MetaspaceSize=300m -XX:MaxMetaspaceSize=300m -XX:+PrintGCDetails
  *
- * @author shkstart  shkstart@126.com
  * @create 2020  21:20
  */
 public class StaticFieldTest {

@@ -3,7 +3,6 @@ package chapter15;
 /**
  * 测试Object类中finalize()方法，即对象的finalization机制。
  *
- * @author shkstart
  * @create 2020 下午 2:57
  */
 public class CanReliveObj {

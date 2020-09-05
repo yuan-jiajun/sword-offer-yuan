@@ -5,7 +5,7 @@ package chapter12;
  *  -Xint  : 6520ms
  *  -Xcomp : 950ms
  *  -Xmixed : 936ms
- * @author shkstart  shkstart@126.com
+ *
  * @create 2020  12:40
  */
 public class IntCompTest {

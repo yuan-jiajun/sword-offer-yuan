@@ -1,7 +1,6 @@
 package chapter02.init;
 
 /**
- * @author shkstart
  * @create 2020 下午 8:12
  */
 public class HelloLoader {

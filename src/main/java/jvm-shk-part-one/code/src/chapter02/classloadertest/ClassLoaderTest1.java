@@ -6,7 +6,6 @@ import java.net.URL;
 import java.security.Provider;
 
 /**
- * @author shkstart
  * @create 2020 上午 12:02
  */
 public class ClassLoaderTest1 {

@@ -1,7 +1,6 @@
 package chapter16.java;
 
 /**
- * @author shkstart  shkstart@126.com
  * @create 2020  14:57
  */
 public class LocalVarGC {

@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * @author shkstart  shkstart@126.com
  * @create 2020  15:50
  */
 public class StopTheWorldDemo {

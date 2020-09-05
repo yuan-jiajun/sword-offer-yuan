@@ -5,7 +5,6 @@ import java.lang.ref.SoftReference;
 /**
  * 软引用的测试：内存不足即回收
  *
- * @author shkstart  shkstart@126.com
  * @create 2020  16:06
  */
 public class SoftReferenceTest {

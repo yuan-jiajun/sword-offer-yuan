@@ -18,7 +18,6 @@ package chapter08.java;
  * 4. 查看设置的参数：方式一： jps   /  jstat -gc 进程id
  *                 方式二：-XX:+PrintGCDetails
  *
- * @author shkstart  shkstart@126.com
  * @create 2020  20:15
  */
 public class HeapSpaceInitial {

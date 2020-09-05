@@ -2,7 +2,7 @@ package chapter05.java;
 
 /**
  * 演示栈中的异常:StackOverflowError
- * @author shkstart
+ *
  * @create 2020 下午 9:08
  *
  *  默认情况下：count : 11420

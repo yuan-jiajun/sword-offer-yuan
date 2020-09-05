@@ -1,7 +1,6 @@
 package chapter09.java1;
 
 /**
- * @author shkstart  shkstart@126.com
  * @create 2020  14:28
  */
 public class MethodAreaDemo {

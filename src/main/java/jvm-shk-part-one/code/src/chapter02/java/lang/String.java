@@ -1,8 +1,7 @@
 package chapter02.java.lang;
 
 /**
- * @author shkstart
- * @create 2020 上午 11:40
+ *Main3* @create 2020 上午 11:40
  */
 public class String {
 

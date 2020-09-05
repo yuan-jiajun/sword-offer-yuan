@@ -5,7 +5,6 @@ import java.io.Serializable;
 /**
  * 测试方法区的内部构成
  *
- * @author shkstart  shkstart@126.com
  * @create 2020  23:39
  */
 public class MethodInnerStrucTest extends Object implements Comparable<String>, Serializable {

@@ -3,7 +3,6 @@ package chapter05.java2;
 /**
  * 体会 invoke dynamic指令
  *
- * @author shkstart
  * @create 2020 下午 3:09
  */
 

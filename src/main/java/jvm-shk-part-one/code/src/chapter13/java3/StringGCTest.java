@@ -5,7 +5,6 @@ package chapter13.java3;
  * String的垃圾回收:
  * -Xms15m -Xmx15m -XX:+PrintStringTableStatistics -XX:+PrintGCDetails
  *
- * @author shkstart  shkstart@126.com
  * @create 2020  21:27
  */
 public class StringGCTest {

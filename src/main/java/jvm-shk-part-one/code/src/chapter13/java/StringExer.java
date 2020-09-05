@@ -1,7 +1,6 @@
 package chapter13.java;
 
 /**
- * @author shkstart  shkstart@126.com
  * @create 2020  23:44
  */
 public class StringExer {

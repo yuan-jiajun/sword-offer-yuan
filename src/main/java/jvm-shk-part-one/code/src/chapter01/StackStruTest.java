@@ -1,7 +1,6 @@
 package chapter01;
 
 /**
- * @author shkstart
  * @create 2020 下午 12:11
  */
 public class StackStruTest {

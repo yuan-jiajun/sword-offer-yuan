@@ -1,7 +1,6 @@
 package chapter06;
 
 /**
- * @author shkstart
  * @create 2020 下午 8:53
  */
 public class IHaveNatives {

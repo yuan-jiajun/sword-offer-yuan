@@ -2,7 +2,6 @@ package chapter13.java2;
 
 
 /**
- * @author shkstart  shkstart@126.com
  * @create 2020  22:10
  */
 public class StringIntern1 {

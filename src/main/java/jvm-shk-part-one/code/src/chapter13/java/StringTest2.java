@@ -6,7 +6,7 @@ import java.io.IOException;
 
 /**
  *  -XX:StringTableSize=1009
- * @author shkstart  shkstart@126.com
+ *
  * @create 2020  23:53
  */
 public class StringTest2 {

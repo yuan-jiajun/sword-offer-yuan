@@ -3,7 +3,6 @@ package chapter16.java1;
 /**
  *  强引用的测试
  *
- * @author shkstart  shkstart@126.com
  * @create 2020  16:05
  */
 public class StrongReferenceTest {

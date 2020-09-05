@@ -10,7 +10,6 @@ import java.util.Scanner;
  * <p>
  * 查看直接内存的占用与释放
  *
- * @author shkstart  shkstart@126.com
  * @create 2020  0:22
  */
 public class BufferTest {

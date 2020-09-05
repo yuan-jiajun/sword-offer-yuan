@@ -9,7 +9,6 @@ package chapter09.java;
  *  jdk8及以后：
  *  -XX:MetaspaceSize=100m  -XX:MaxMetaspaceSize=100m
  *
- * @author shkstart  shkstart@126.com
  * @create 2020  12:16
  */
 

@@ -3,7 +3,6 @@ package chapter05.java1;
 import org.testng.annotations.Test;
 
 /**
- * @author shkstart
  * @create 2020 下午 10:25
  */
 public class OperandStackTest {

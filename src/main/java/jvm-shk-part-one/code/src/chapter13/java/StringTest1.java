@@ -5,7 +5,6 @@ import org.junit.Test;
 /**
  * String的基本使用:体现String的不可变性
  *
- * @author shkstart  shkstart@126.com
  * @create 2020  23:42
  */
 public class StringTest1 {

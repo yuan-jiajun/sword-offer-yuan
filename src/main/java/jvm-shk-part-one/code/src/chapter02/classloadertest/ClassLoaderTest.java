@@ -1,7 +1,6 @@
 package chapter02.classloadertest;
 
 /**
- * @author shkstart
  * @create 2020 上午 9:22
  */
 public class ClassLoaderTest {

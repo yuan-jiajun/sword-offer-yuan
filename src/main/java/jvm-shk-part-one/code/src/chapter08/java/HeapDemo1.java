@@ -2,7 +2,7 @@ package chapter08.java;
 
 /**
  * -Xms20m -Xmx20m
- * @author shkstart  shkstart@126.com
+ *
  * @create 2020  16:42
  */
 public class HeapDemo1 {

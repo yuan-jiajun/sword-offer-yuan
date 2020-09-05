@@ -1,7 +1,6 @@
 package chapter08.java;
 
 /**
- * @author shkstart  shkstart@126.com
  * @create 2020  17:28
  */
 public class SimpleHeap {

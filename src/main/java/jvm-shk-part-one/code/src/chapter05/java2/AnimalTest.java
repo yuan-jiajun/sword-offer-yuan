@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 /**
  * 说明早期绑定和晚期绑定的例子
  *
- * @author shkstart
  * @create 2020 上午 11:59
  */
 class Animal {

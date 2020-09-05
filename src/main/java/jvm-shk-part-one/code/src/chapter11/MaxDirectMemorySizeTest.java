@@ -6,7 +6,7 @@ import java.lang.reflect.Field;
 
 /**
  * -Xmx20m -XX:MaxDirectMemorySize=10m
- * @author shkstart  shkstart@126.com
+ *
  * @create 2020  0:36
  */
 public class MaxDirectMemorySizeTest {

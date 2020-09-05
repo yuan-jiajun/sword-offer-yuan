@@ -10,7 +10,6 @@ import jdk.internal.org.objectweb.asm.Opcodes;
  * jdk8中：
  * -XX:MetaspaceSize=10m -XX:MaxMetaspaceSize=10m
  *
- * @author shkstart  shkstart@126.com
  * @create 2020  22:24
  */
 

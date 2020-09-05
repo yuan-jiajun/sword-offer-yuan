@@ -9,7 +9,6 @@ package chapter08.java1;
  * -XX:-UseAdaptiveSizePolicy ：关闭自适应的内存分配策略  （暂时用不到）
  * -Xmn:设置新生代的空间的大小。 （一般不设置）
  *
- * @author shkstart  shkstart@126.com
  * @create 2020  17:23
  */
 public class EdenSurvivorTest {

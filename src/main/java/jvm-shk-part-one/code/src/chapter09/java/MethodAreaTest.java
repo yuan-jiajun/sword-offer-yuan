@@ -2,7 +2,7 @@ package chapter09.java;
 
 /**
  * non-final的类变量
- * @author shkstart  shkstart@126.com
+ *
  * @create 2020  20:37
  */
 public class MethodAreaTest {

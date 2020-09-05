@@ -9,7 +9,6 @@ package chapter10;
  * 给对象的属性赋值的操作：
  * ① 属性的默认初始化 - ② 显式初始化 / ③ 代码块中初始化 - ④ 构造器中初始化
  *
- * @author shkstart  shkstart@126.com
  * @create 2020  17:58
  */
 

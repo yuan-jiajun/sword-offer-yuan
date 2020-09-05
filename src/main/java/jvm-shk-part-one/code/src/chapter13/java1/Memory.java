@@ -1,7 +1,6 @@
 package chapter13.java1;
 
 /**
- * @author shkstart  shkstart@126.com
  * @create 2020  0:51
  */
 class Memory {

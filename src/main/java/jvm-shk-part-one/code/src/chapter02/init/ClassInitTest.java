@@ -1,7 +1,6 @@
 package chapter02.init;
 
 /**
- * @author shkstart
  * @create 2020 下午 6:01
  */
 public class ClassInitTest {

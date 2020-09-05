@@ -1,7 +1,6 @@
 package chapter02.init;
 
 /**
- * @author shkstart
  * @create 2020 上午 11:23
  */
 public class DeadThreadTest {

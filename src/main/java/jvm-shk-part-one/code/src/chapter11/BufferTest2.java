@@ -6,7 +6,6 @@ import java.util.ArrayList;
 /**
  * 本地内存的OOM:  OutOfMemoryError: Direct buffer memory
  *
- * @author shkstart  shkstart@126.com
  * @create 2020  0:09
  */
 public class BufferTest2 {

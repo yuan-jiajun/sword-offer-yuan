@@ -3,7 +3,6 @@ package chapter08.java;
 /**
  * -Xms10m -Xmx10m
  *
- * @author shkstart  shkstart@126.com
  * @create 2020  16:41
  */
 public class HeapDemo {
