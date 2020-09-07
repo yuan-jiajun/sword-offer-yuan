@@ -1,4 +1,4 @@
-package upup.impmentation.lru;
+package upup.impmentation.classes.lru;
 
 
 import java.util.LinkedHashMap;

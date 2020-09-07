@@ -1,4 +1,4 @@
-package upup.juc.printoddeven;
+package upup.juc;
 
 /**
  * @author Yuan Jiajun
