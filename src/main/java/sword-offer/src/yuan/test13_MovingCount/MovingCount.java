@@ -3,7 +3,8 @@ package yuan.test13_MovingCount;
 /**
  * @author Yuan Jiajun
  * @date 2020/8/27 16:52
- * @description 机器人的运动范围，一个机器人从坐标0,0的格子开始移动，每一次只能向左，右，上，下四个方向移动一格，
+ * @description https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/
+ * 机器人的运动范围，一个机器人从坐标0,0的格子开始移动，每一次只能向左，右，上，下四个方向移动一格，
  * 但是不能进入行坐标和列坐标的数位之和大于k的格子。求机器人能够达到多少个格子
  */
 public class MovingCount {
@@ -16,7 +17,7 @@ public class MovingCount {
     }
 
     /**
-     * 递归查找
+     * 递归查找(DFS)
      */
     private static int helper(int i, int j, int rows, int cols, int[][] flag, int k) {
         if (i < 0 || i >= rows || j < 0 || j >= cols ||

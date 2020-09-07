@@ -1,18 +1,20 @@
-package yuan.test11_FindRotateArrayMinNumber;
+package yuan.test11_FindMinNumberofRotateArray;
 
 import org.junit.Test;
 
 /**
  * @author yuanjiajun
  * @description
+ * 把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。
+ * 输入一个递增排序的数组的一个旋转，输出旋转数组的最小元素。例如，数组 [3,4,5,1,2] 为 [1,2,3,4,5] 的一个旋转，该数组的最小值为1。  
  * @date 2020/8/27 1:57
  */
-public class FindRotateArrayMinNumber {
+public class FindMinNumberofRotateArray {
     /**
      * 解法一：二分查找（寻找变化点）
      * 时间复杂度：O(log n)，空间复杂度：O(1)
      */
-    public static int findRotateArrayMinNumber(int[] numbers) {
+    public static int findMinNumberofRotateArray(int[] numbers) {
         if (numbers == null || numbers.length == 0) {
             return -1;
         }
@@ -93,8 +95,8 @@ public class FindRotateArrayMinNumber {
     @Test
     public void test() {
 //        System.out.println(findRotateArrayMinNumber(new int[]{3, 4, 5, 1, 2}));
-        System.out.println(findRotateArrayMinNumber(new int[]{1, 1}));
-        System.out.println(findRotateArrayMinNumber(new int[]{2, 2, 2, 0, 1}));
+        System.out.println(findMinNumberofRotateArray(new int[]{1, 1}));
+        System.out.println(findMinNumberofRotateArray(new int[]{2, 2, 2, 0, 1}));
         System.out.println(findRotateArrayMinNumber2(new int[]{3, 3, 1, 3}));
 
     }

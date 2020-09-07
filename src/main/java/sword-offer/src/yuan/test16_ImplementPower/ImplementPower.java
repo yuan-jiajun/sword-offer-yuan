@@ -5,8 +5,8 @@ import org.junit.Test;
 /**
  * @author Yuan Jiajun
  * @date 2020/9/1 11:02
- * @description 实现函数double Power(double base, int exponent)，求base的exponent次方。不得使用库函数，同时不需要考虑大数问题。
- * https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof
+ * @description  https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof
+ * 实现函数double Power(double base, int exponent)，求base的exponent次方。不得使用库函数，同时不需要考虑大数问题。
  */
 public class ImplementPower {
     /**
@@ -24,7 +24,7 @@ public class ImplementPower {
         }
 
         if (exponent < 0) {
-//            result = powerWithExponent(1.0 / base, -exponent);
+//            result = powerWithExponent(1.0 / base, -exponent);//都可以
             result = 1.0 / powerWithExponent(base, -exponent);
 
         } else {

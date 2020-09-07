@@ -1,4 +1,4 @@
-package leetcode.GenerateParenthesis22;
+package leetcode.top100.No22_GenerateParenthesis;
 
 import org.junit.Test;
 
@@ -10,7 +10,9 @@ import java.util.Stack;
 /**
  * @author Yuan Jiajun
  * @date 2020/9/3 16:44
- * @description
+ * @description @see https://leetcode-cn.com/problems/generate-parentheses/
+ * 22. 括号生成
+ * 数字 n 代表生成括号的对数，请你设计一个函数，用于能够生成所有可能的并且 有效的 括号组合。
  */
 public class GenerateParenthesis {
     public static ArrayList<String> permutation(String str) {

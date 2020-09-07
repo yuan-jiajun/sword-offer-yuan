@@ -7,6 +7,7 @@ import java.util.Arrays;
 /**
  * @author yuanjiajun
  * @description
+ * 输入某二叉树的前序遍历和中序遍历的结果，请重建该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字
  * @date 2020/8/12 0:50
  */
 public class RebuildTree {
@@ -23,10 +24,6 @@ public class RebuildTree {
     /**
      * 解法一：递归（传入数组的拷贝）
      * 时间复杂度：O(n)，空间复杂度：O(n)
-     *
-     * @param preorder
-     * @param inorder
-     * @return
      */
     public static TreeNode buildTree2(int[] preorder, int[] inorder) {
         if (preorder == null || inorder == null || preorder.length == 0 || inorder.length == 0) {
@@ -50,10 +47,6 @@ public class RebuildTree {
     /**
      * 解法二：递归：传入子数组的边界索引
      * 时间复杂度：O(n)，空间复杂度：O(n)
-     *
-     * @param preorder
-     * @param inorder
-     * @return
      */
     public static TreeNode buildTree(int[] preorder, int[] inorder) {
         if (preorder == null || preorder.length == 0 ||
@@ -77,7 +70,6 @@ public class RebuildTree {
 
         root.left = helper(preorder, preL + 1, preL + length, inorder, inL, inL + length - 1);
         root.right = helper(preorder, preL + length + 1, preR, inorder, inL + length + 1, inR);
-
 
         return root;
     }

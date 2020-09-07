@@ -5,6 +5,7 @@ import org.junit.Test;
 /**
  * @author Yuan Jiajun
  * @description https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/
+ * 请实现一个函数，把字符串 s 中的每个空格替换成"%20"。
  * @date 2020/8/11 15:32
  */
 public class ReplaceSpace {

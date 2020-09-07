@@ -1,4 +1,4 @@
-package leetcode.GenerateParenthesis22;
+package leetcode.top100.No22_GenerateParenthesis;
 
 import org.junit.Test;
 

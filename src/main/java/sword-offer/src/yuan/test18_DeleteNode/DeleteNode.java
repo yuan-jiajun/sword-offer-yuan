@@ -5,7 +5,7 @@ import org.junit.Test;
 /**
  * @author Yuan Jiajun
  * @date 2020/8/12 15:00
- * @description
+ * @description https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/
  */
 public class DeleteNode {
 
@@ -56,7 +56,7 @@ public class DeleteNode {
      */
 
     /**
-     * 一个重要的结论，在链表删除的时候，如果使用单指针进行操作，指向的只能是deleteNode.next
+     * 一个重要的结论，在链表删除的时候，如果使用单指针进行操作，指向的 只能是 deleteNode.next
      * 如果只是单纯的用一个next指针，即使找到了要删除的节点，就像下面的方法deleteNode2，
      * 需要考虑的东西太过于复杂，且无法处理要删除的节点是最后一个节点的情况，因为deleteNode是
      * 栈上指向被删除节点的引用变量，单deleteNode是最后一个节点的时候，无法直接将deleteNode赋值为null

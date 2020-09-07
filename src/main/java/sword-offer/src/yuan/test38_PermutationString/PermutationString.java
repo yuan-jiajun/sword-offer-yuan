@@ -11,7 +11,7 @@ import java.util.HashSet;
  * @date 2020/9/1 10:12
  * @description
  */
-public class permutation {
+public class PermutationString {
     /**
      * 递归
      */

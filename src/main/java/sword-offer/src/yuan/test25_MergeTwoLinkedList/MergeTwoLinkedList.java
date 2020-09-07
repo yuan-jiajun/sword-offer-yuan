@@ -2,8 +2,10 @@ package yuan.test25_MergeTwoLinkedList;
 
 /**
  * @author yuanjiajun
- * @description
  * @date 2020/8/27 1:16
+ * @description https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/
+ * 合并两个排序的链表
+ * 输入两个递增排序的链表，合并这两个链表并使新链表中的节点仍然是递增排序的。
  */
 public class MergeTwoLinkedList {
 

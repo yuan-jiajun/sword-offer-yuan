@@ -5,7 +5,8 @@ import org.junit.Test;
 /**
  * @author Yuan Jiajun
  * @date 2020/9/1 16:17
- * @description
+ * @description https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/
+ * 输入数字 n，按顺序打印出从 1 到最大的 n 位十进制数。比如输入 3，则打印出 1、2、3 一直到最大的 3 位数 999。
  */
 public class PrintToMaxOfNDigits {
     /**
@@ -25,6 +26,7 @@ public class PrintToMaxOfNDigits {
     private static void printArray(int[] array, int n) {
         for (int i = 0; i < 10; i++) {
             if (n != array.length) {
+                /**通过下面2行的代码确保遍历的完整性和不乱序*/
                 array[n] = i;
                 printArray(array, n + 1);
             } else {
