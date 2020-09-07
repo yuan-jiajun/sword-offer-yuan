@@ -1,4 +1,4 @@
-package leetcode.top100.No215_FindKthLargest;
+package leetcode.hot100.No215_FindKthLargest;
 
 import java.util.Random;
 

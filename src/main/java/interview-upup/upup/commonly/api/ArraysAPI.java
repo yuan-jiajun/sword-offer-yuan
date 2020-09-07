@@ -1,4 +1,4 @@
-package upup.api;
+package upup.commonly.api;
 
 import org.junit.Test;
 

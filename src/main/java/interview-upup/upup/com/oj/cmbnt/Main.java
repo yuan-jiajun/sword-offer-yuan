@@ -34,6 +34,7 @@ public class Main {
         iter(matrix, startServer, "");
 
         Set<String> set = new HashSet<>(res);
+
         for (String s : set) {
             System.out.println(new StringBuilder(s).reverse().substring(0, s.length() - 1));
         }
@@ -53,6 +54,7 @@ public class Main {
                 return;
             }
         }
+
         s = s + col;
 
         List<Integer> list = nextCols(matrix, col);
@@ -64,9 +66,7 @@ public class Main {
                 iter(matrix, integer, s);
             }
         }
-
     }
-
 
     public static List<Integer> nextCols(int[][] matrix, int col) {
         List<Integer> res = new ArrayList<>();

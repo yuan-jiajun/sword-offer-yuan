@@ -1,4 +1,4 @@
-package upup.impclass.hashmap;
+package upup.impmentation.hashmap;
 
 import java.util.HashMap;
 
