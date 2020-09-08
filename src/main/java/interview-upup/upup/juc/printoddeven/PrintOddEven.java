@@ -26,7 +26,7 @@ public class PrintOddEven {
 
     //打印奇数
     static class PrintOdd implements Runnable {
-        private Counter counter;
+        private final Counter counter;
 
         public PrintOdd(Counter counter) {
             this.counter = counter;
@@ -54,7 +54,7 @@ public class PrintOddEven {
 
     //打印偶数
     static class PrintEven implements Runnable {
-        private Counter counter;
+        private final Counter counter;
 
         public PrintEven(Counter counter) {
             this.counter = counter;

@@ -10,6 +10,8 @@ package upup.juc.synchronizeddemos;
  * 2. 对于一个对象的方法， 如果没有synchronized关键字， 该方法可以被任意数量的线程，在任意时刻调用。
  * 3. 对于添加了synchronized关键字的方法，任意时刻只能被唯一的一个获得了对象实例锁的线程调用。
  * 4. synchronized用于实现多线程的同步操作
+ * 5. 如果在父类中的某个方法使用了synchronized关键字，而在子类中覆盖了这个方法，在子类中的这个方法默认情况下并不是同步的，
+ * 而必须显式地在子类的这个方法中加上synchronized关键字才可以。
  * <p>
  * 因 wait()而导致阻塞的线程是放在阻塞队列中的，因竞争失败导致的阻塞是放在同步队列中的，
  * notify()/notifyAll()实质上是把阻塞队列中的线程放到同步队列中去
@@ -29,17 +31,36 @@ package upup.juc.synchronizeddemos;
  * 3. notifyAll() 和notify()工作机制一样， 区别在于notifyAll()会将等待队列(waiting queue)中所有的线程都添加到入口队列中（entry queue）
  * 4. 注意, notifyAll()比notify()更加常用， 因为notify()方法只会唤起一个线程，且无法指定唤醒哪一个线程，所以只有在多个执行相同任务的线程在并发运行时，我们不关心哪一个线程被唤醒时，才会使用notify()
  */
-public class SynchronizedPractice implements Runnable {
-    private static int count;
-    private static final String lock = "lock";
+public class SynchronizedWaitNotify implements Runnable {
+    private static volatile int count;
+    //    private static final String lock = "lock";
+    private final String lock = "lock";
 
-    public SynchronizedPractice() {
+    public SynchronizedWaitNotify() {
         count = 0;
     }
 
     public void run() {
-        synchronized (lock) {
-            System.out.println(Thread.currentThread().getName() + " enter");
+//        synchronized (lock) {
+        synchronized (this) {
+//        synchronized (SynchronizedWaitNotify.class) {
+
+//            System.out.println(Thread.currentThread().getName() + " enter");
+
+            for (int i = 0; i < 10; i++) {
+                try {
+                    System.out.println(Thread.currentThread().getName() + "_" + i + ":" + (count++));
+                    Thread.sleep(10);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+
+//            try {
+//                Thread.sleep(3000);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
 
 //            try {
 //                lock.wait(5 * 1000);
@@ -48,14 +69,17 @@ public class SynchronizedPractice implements Runnable {
 //            }
 
         }
-
     }
 
     public static void main(String[] args) {
-        Thread thread1 = new Thread(new SynchronizedPractice(), "SyncThread1");
-        Thread thread2 = new Thread(new SynchronizedPractice(), "SyncThread2");
+        Thread thread1 = new Thread(new SynchronizedWaitNotify(), "thread1");
+        Thread thread2 = new Thread(new SynchronizedWaitNotify(), "thread2");
         thread1.start();
+//        thread1.start();
         thread2.start();
+
+//        new Thread(new SynchronizedWaitNotify(), "SyncThread1").start();
+//        new Thread(new SynchronizedWaitNotify(), "SyncThread2").start();
     }
 
 

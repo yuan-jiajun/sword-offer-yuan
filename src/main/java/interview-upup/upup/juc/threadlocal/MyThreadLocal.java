@@ -1,4 +1,4 @@
-package upup.juc;
+package upup.juc.threadlocal;
 
 /**
  * @author Yuan Jiajun

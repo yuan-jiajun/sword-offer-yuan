@@ -39,8 +39,8 @@ public class PrintOddEven2 {
 
     static class PrintOdd implements Runnable {
         private volatile Counter counter;
-        private ReentrantLock lock;
-        private Condition condition;
+        private final ReentrantLock lock;
+        private final Condition condition;
 
         public PrintOdd(ReentrantLock lock, Condition condition, Counter counter) {
             this.lock = lock;
@@ -69,10 +69,11 @@ public class PrintOddEven2 {
         }
     }
 
+    //偶数
     static class PrintEven implements Runnable {
         private volatile Counter counter;
-        private ReentrantLock lock;
-        private Condition condition;
+        private final ReentrantLock lock;
+        private final Condition condition;
 
         public PrintEven(ReentrantLock lock, Condition condition, Counter counter) {
             this.lock = lock;
