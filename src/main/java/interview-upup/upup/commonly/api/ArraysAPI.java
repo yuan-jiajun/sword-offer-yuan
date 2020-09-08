@@ -12,6 +12,9 @@ import java.util.Arrays;
 public class ArraysAPI {
     @Test
     public void test() {
-        Arrays.copyOfRange(new int[]{}, 1, 1 );
+        int[] a = new int[]{1, 2, 3, 4, 5};
+        a.clone();
+
+        Arrays.copyOfRange(a, 1, 1);
     }
 }
