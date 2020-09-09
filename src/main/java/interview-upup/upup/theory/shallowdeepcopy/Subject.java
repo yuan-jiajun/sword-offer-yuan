@@ -6,7 +6,6 @@ package upup.theory.shallowdeepcopy;
  * @description @see
  */
 public class Subject {
-
     private String name;
     public Subject(String s) {
         name = s;

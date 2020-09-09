@@ -269,8 +269,8 @@ public class HashMap<K, V> extends AbstractMap<K, V>
      * most 6 to mesh with shrinkage detection under removal.
      */
     // 当桶(bucket)上的结点数小于这个值时树转链表
-    //桶的链表还原阈值：即 红黑树转为链表的阈值，当在扩容（resize（））时
-    // （此时HashMap的数据存储位置会重新计算），在重新计算存储位置后，
+    //桶的链表还原阈值：即 红黑树转为链表的阈值，在扩容（resize（））时
+    // （HashMap的数据存储位置会重新计算），在重新计算存储位置后，
     // 当原有的红黑树内数量 < 6时，则将 红黑树转换成链表
     static final int UNTREEIFY_THRESHOLD = 6;
 
