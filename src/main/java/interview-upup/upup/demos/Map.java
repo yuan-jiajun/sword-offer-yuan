@@ -1,6 +1,7 @@
 package upup.demos;
 
 import java.util.HashMap;
+import java.util.HashSet;
 
 /**
  * @author Yuan Jiajun
@@ -22,6 +23,12 @@ public class Map {
 
         map.forEach((key, value) -> System.out.println(key + "--->" + value));
 
+        HashSet<String> set = new HashSet();
+        set.add("yuan");
+        set.add("yuan");
+        set.add(null);
+        set.add(null);
 
+        set.forEach(System.out::println);
     }
 }

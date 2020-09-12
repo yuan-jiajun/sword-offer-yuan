@@ -1,8 +1,6 @@
 package chapter13.java2;
 
 
-import org.junit.Test;
-
 /**
  * 如何保证变量s指向的是字符串常量池中的数据呢？
  * 有两种方式：
@@ -30,7 +28,7 @@ public class StringIntern {
 
         String s3 = new String("1") + new String("1");//s3变量记录的地址为：new String("11")
         //执行完上一行代码以后，字符串常量池中，是否存在"11"呢？答案：不存在！！
-        s3.intern();//在字符串常量池中生成"11"。
+//        s3.intern();//在字符串常量池中生成"11"。
 //        如何理解：jdk6:在方法区（永久代）常量池中创建了一个新的对象"11",也就有新的地址
 //                jdk7:调用intern()方法在常量池中并没有创建"11",而是创建一个指向堆空间中new String("11")创建的对象的地址
         String s4 = "11";//s4变量记录的地址：使用的是上一行代码代码执行时，在常量池中生成的"11"的地址
@@ -41,6 +39,7 @@ public class StringIntern {
 //        //执行完上一行代码以后，字符串常量池中，是否存在"11"呢？答案：不存在！！
 //        String s4 = "11";
 //        System.out.println(s3 == s4);//jdk6：false  jdk7/8：false
+
 
     }
 
