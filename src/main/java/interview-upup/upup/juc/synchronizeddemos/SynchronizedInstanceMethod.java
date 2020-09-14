@@ -3,7 +3,7 @@ package upup.juc.synchronizeddemos;
 /**
  * @author Yuan Jiajun
  * @date 2020/9/8 9:57
- * @description @see
+ * @description @link
  */
 
 public class SynchronizedInstanceMethod {

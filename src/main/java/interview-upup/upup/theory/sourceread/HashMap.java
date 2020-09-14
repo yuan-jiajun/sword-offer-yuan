@@ -128,11 +128,11 @@ import java.util.function.Function;
  * @author Josh Bloch
  * @author Arthur van Hoff
  * @author Neal Gafter
- * @see Object#hashCode()
- * @see Collection
- * @see Map
- * @see TreeMap
- * @see Hashtable
+ * @link Object#hashCode()
+ * @link Collection
+ * @link Map
+ * @link TreeMap
+ * @link Hashtable
  * @since 1.2
  */
 public class HashMap<K, V> extends AbstractMap<K, V>
@@ -579,7 +579,7 @@ public class HashMap<K, V> extends AbstractMap<K, V>
      * The {@link #containsKey containsKey} operation may be used to
      * distinguish these two cases.
      *
-     * @see #put(Object, Object)
+     * @link #put(Object, Object)
      */
     public V get(Object key) {
         Node<K, V> e;

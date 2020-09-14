@@ -3,7 +3,7 @@ package upup.juc.synchronizeddemos;
 /**
  * @author Yuan Jiajun
  * @date 2020/9/7 21:54
- * @description @see https://blog.csdn.net/lengxiao1993/article/details/52296220
+ * @description @link https://blog.csdn.net/lengxiao1993/article/details/52296220
  * <p>
  * synchronized 的含义：
  * 1. Java中每一个对象都可以成为一个监视器(Monitor), 该 Monitor由一个锁(lock),一个等待队列(阻塞队列)(waiting queue),一个入口队列 (同步队列)(entry queue).

@@ -8,7 +8,7 @@ import java.util.Arrays;
 /**
  * @author yuanjiajun
  * @date 2020/9/10 0:14
- * @description @see
+ * @description @link
  */
 
 public class BasicTypeArrayCopy {

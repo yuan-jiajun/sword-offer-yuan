@@ -4,7 +4,6 @@ import org.testng.annotations.Test;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 public class ContainerNotSafeDemo {
 
@@ -60,9 +59,9 @@ public class ContainerNotSafeDemo {
     public static void listNotSafe() {
 //        List<String> list = new ArrayList<>();
 //        List<String> list = new Vector<>();
-//        List<String> list = Collections.synchronizedList(new ArrayList<>());
+        List<String> list = Collections.synchronizedList(new ArrayList<>());
 
-        List<String> list = new CopyOnWriteArrayList<>();
+//        List<String> list = new CopyOnWriteArrayList<>();
 //        List<String> list = new CopyOnWriteArraySet<>();
 
         for (int i = 1; i <= 3000; i++) {

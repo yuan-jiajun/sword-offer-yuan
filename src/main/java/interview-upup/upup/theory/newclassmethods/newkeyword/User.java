@@ -3,7 +3,7 @@ package upup.theory.newclassmethods.newkeyword;
 /**
  * @author Yuan Jiajun
  * @date 2020/9/8 19:54
- * @description @see
+ * @description @link
  * 首先在方法区的常量池中查看是否有new 后面参数（也就是类名）的符号引用，
  * 并检查是否有类的加载信息也就是是否被加载解析和初始化过。如果已经加载过了就不在加载，否则执行类的加载全过程
  * <p>

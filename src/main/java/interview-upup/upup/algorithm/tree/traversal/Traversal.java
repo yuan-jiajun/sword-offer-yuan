@@ -1,4 +1,4 @@
-package upup.tree;
+package upup.algorithm.tree.traversal;
 
 import java.util.Stack;
 
@@ -51,7 +51,7 @@ public class Traversal {
     // 非递归先序遍历
     public static void preorderTraversal(TreeNode root) {
         // 用来暂存节点的栈
-        Stack<TreeNode> treeNodeStack = new Stack<TreeNode>();
+        Stack<TreeNode> treeNodeStack = new Stack<>();
         // 新建一个游标节点为根节点
         TreeNode node = root;
 
@@ -79,7 +79,7 @@ public class Traversal {
 
     // 非递归中序遍历
     public static void middleorderTraversal(TreeNode root) {
-        Stack<TreeNode> treeNodeStack = new Stack<TreeNode>();
+        Stack<TreeNode> treeNodeStack = new Stack<>();
         TreeNode node = root;
         while (node != null || !treeNodeStack.isEmpty()) {
             while (node != null) {
@@ -98,7 +98,7 @@ public class Traversal {
 
     // 非递归后序遍历
     public static void postorderTraversal(TreeNode root) {
-        Stack<TreeNode> treeNodeStack = new Stack<TreeNode>();
+        Stack<TreeNode> treeNodeStack = new Stack<>();
         TreeNode node = root;
         TreeNode lastVisit = root;
 

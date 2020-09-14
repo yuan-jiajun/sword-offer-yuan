@@ -5,7 +5,7 @@ import upup.theory.newclassmethods.reflect.Person;
 /**
  * @author Yuan Jiajun
  * @date 2020/9/8 21:06
- * @description @see
+ * @description @link
  */
 
 public class ClassNewInstance {

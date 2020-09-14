@@ -98,10 +98,10 @@ import java.util.function.UnaryOperator;
  *
  * @author Josh Bloch
  * @author Neal Gafter
- * @see Collection
- * @see List
- * @see LinkedList
- * @see Vector
+ * @link Collection
+ * @link List
+ * @link LinkedList
+ * @link Vector
  * @since 1.2
  */
 
@@ -704,7 +704,7 @@ public class ArrayList<E> extends AbstractList<E>
      *                              specified collection does not permit null elements
      *                              (<a href="Collection.html#optional-restrictions">optional</a>),
      *                              or if the specified collection is null
-     * @see Collection#contains(Object)
+     * @link Collection#contains(Object)
      */
     public boolean removeAll(Collection<?> c) {
         Objects.requireNonNull(c);
@@ -725,7 +725,7 @@ public class ArrayList<E> extends AbstractList<E>
      *                              specified collection does not permit null elements
      *                              (<a href="Collection.html#optional-restrictions">optional</a>),
      *                              or if the specified collection is null
-     * @see Collection#contains(Object)
+     * @link Collection#contains(Object)
      */
     public boolean retainAll(Collection<?> c) {
         Objects.requireNonNull(c);
@@ -840,7 +840,7 @@ public class ArrayList<E> extends AbstractList<E>
      *
      * <p>The returned list iterator is <a href="#fail-fast"><i>fail-fast</i></a>.
      *
-     * @see #listIterator(int)
+     * @link #listIterator(int)
      */
     public ListIterator<E> listIterator() {
         return new ListItr(0);

@@ -9,12 +9,15 @@ import java.util.HashSet;
 /**
  * @author Yuan Jiajun
  * @date 2020/9/1 10:12
- * @description
+ * @description @link https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/
+ * 输入一个字符串，打印出该字符串中字符的所有排列。
+ * 你可以以任意顺序返回这个字符串数组，但里面不能有重复元素。
+ * 示例:
+ * 输入：s = "abc"
+ * 输出：["abc","acb","bac","bca","cab","cba"]
  */
 public class PermutationString {
-    /**
-     * 递归
-     */
+
     public static ArrayList<String> permutation(String str) {
         ArrayList<String> res = new ArrayList<>();
         if (str == null || str.length() == 0) {
@@ -29,6 +32,9 @@ public class PermutationString {
 
     }
 
+    /**
+     * 回溯
+     */
     static void dfs(ArrayList<String> res, int startIndex, char[] s) {
         if (startIndex == s.length - 1) {
             res.add(String.valueOf(s)); // startIndex到达最后字符串最后一个字符，添加排列方案
@@ -42,7 +48,7 @@ public class PermutationString {
             set.add(s[i]);
             swap(s, startIndex, i); // 交换，将 s[i] 固定在第 startIndex 位
             dfs(res, startIndex + 1, s); // 开启固定第 startIndex + 1 位字符
-            swap(s, startIndex, i); // 恢复交换
+            swap(s, startIndex, i); // 恢复交换（回溯）
         }
 
     }

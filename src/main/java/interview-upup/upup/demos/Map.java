@@ -1,7 +1,6 @@
 package upup.demos;
 
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author Yuan Jiajun
@@ -10,7 +9,8 @@ import java.util.HashSet;
  */
 public class Map {
     public static void main(String[] args) {
-        HashMap<Integer, String> map = new HashMap<Integer, String>();
+        ConcurrentHashMap<Integer, String> map = new ConcurrentHashMap<Integer, String>();
+//        HashMap<Integer, String> map = new HashMap<Integer, String>();
 //        HashMap<Integer, String> map = new LinkedHashMap<Integer, String>();
 //        TreeMap<Integer, String> map = new TreeMap<Integer, String>();
 
@@ -20,15 +20,16 @@ public class Map {
         map.put(3, "3");
         map.put(4, "4");
         map.put(5, "5");
+//        map.put(null, "5");
 
         map.forEach((key, value) -> System.out.println(key + "--->" + value));
 
-        HashSet<String> set = new HashSet();
-        set.add("yuan");
-        set.add("yuan");
-        set.add(null);
-        set.add(null);
-
-        set.forEach(System.out::println);
+//        HashSet<String> set = new HashSet();
+//        set.add("yuan");
+//        set.add("yuan");
+//        set.add(null);
+//        set.add(null);
+//
+//        set.forEach(System.out::println);
     }
 }

@@ -5,7 +5,7 @@ public class DeadLockDemo {
         String lockA = "lockA";
         String lockB = "lockB";
         new Thread(new HoldLockThread(lockA, lockB), "ThreadA").start();
-//        new Thread(new HoldLockThread(lockB, lockA), "ThreadB").start();
+        new Thread(new HoldLockThread(lockB, lockA), "ThreadB").start();
     }
 }
 
@@ -23,6 +23,7 @@ class HoldLockThread implements Runnable {
 
         synchronized (lockA) {
             System.out.println(Thread.currentThread().getName() + "\t自己持有：" + lockA + "\t尝试获取：" + lockB);
+
 //            try {
 //                TimeUnit.SECONDS.sleep(2);
 //            } catch (Exception e) {

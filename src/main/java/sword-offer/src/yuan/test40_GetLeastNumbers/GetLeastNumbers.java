@@ -7,7 +7,7 @@ import java.util.Arrays;
 /**
  * @author Yuan Jiajun
  * @date 2020/8/24 14:41
- * @description
+ * @description @link https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/
  */
 public class GetLeastNumbers {
 
@@ -46,21 +46,22 @@ public class GetLeastNumbers {
     }
 
     private static void maxHeapIfy(int[] array, int root, int length) {
-        int left = 2 * root + 1;
+        int leftChild = 2 * root + 1;
 
-        if (left >= length) {
+        if (leftChild >= length) {
             return;
         }
 
-        if (left + 1 < length && array[left] < array[left + 1]) {
-            left++;
+        int maxChild = leftChild;
+        if (leftChild + 1 < length && array[leftChild] < array[leftChild + 1]) {
+            int rightChild = leftChild + 1;
+            maxChild = rightChild;
         }
 
-        if (array[left] > array[root]) {
-            swap(array, left, root);
-            maxHeapIfy(array, left, length);
+        if (array[maxChild] > array[root]) {
+            swap(array, maxChild, root);
+            maxHeapIfy(array, leftChild, length);
         }
-
     }
 
     private static void swap(int[] array, int i, int j) {
@@ -73,7 +74,7 @@ public class GetLeastNumbers {
     @Test
     public void test() {
         int[] arr = new int[]{0, 1, 2, 1};
-        System.out.println(getLeastNumbers(arr, 1));
+        System.out.println(Arrays.toString(getLeastNumbers(arr, 1)));
     }
 
 }

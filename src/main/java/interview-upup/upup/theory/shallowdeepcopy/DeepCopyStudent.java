@@ -3,7 +3,7 @@ package upup.theory.shallowdeepcopy;
 /**
  * @author Yuan Jiajun
  * @date 2020/9/9 22:50
- * @description @see
+ * @description @link
  */
 public class DeepCopyStudent implements Cloneable {
 

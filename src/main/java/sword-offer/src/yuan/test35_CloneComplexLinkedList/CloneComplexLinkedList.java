@@ -1,4 +1,4 @@
-package yuan.test35_CloneCLinkedList;
+package yuan.test35_CloneComplexLinkedList;
 
 /**
  * @author yuanjiajun
@@ -6,7 +6,7 @@ package yuan.test35_CloneCLinkedList;
  * https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/
  * @date 2020/8/12 2:37
  */
-public class CloneCLinkedList26 {
+public class CloneComplexLinkedList {
     static class Node {
         int val;
         Node next;
@@ -19,12 +19,6 @@ public class CloneCLinkedList26 {
         }
     }
 
-    /**
-     * 解法一
-     *
-     * @param head
-     * @return
-     */
     public static Node Clone1(Node head) {
         if (head == null) {
             return null;
@@ -52,13 +46,14 @@ public class CloneCLinkedList26 {
         Node cloneHead = head.next;
         cur = head;
         Node cloneCur = cloneHead;
-        //拆分链表
+        //拆分链表，A->A'->B->B'->C->C'
         while (cur != null) {
             cur.next = cur.next.next;
 
             if (cloneCur.next != null) {
                 cloneCur.next = cloneCur.next.next;
             }
+
             cloneCur = cloneCur.next;
             cur = cur.next;
         }

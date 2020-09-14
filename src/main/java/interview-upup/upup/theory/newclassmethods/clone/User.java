@@ -3,7 +3,7 @@ package upup.theory.newclassmethods.clone;
 /**
  * @author Yuan Jiajun
  * @date 2020/9/8 19:57
- * @description @see
+ * @description @link
  * 注意：
  * 1.clone是Object中的方法，
  * Cloneable是一个标识接口，它表明这个类的对象是可以拷贝的。如果没有实现Cloneable接口却调用了clone()函数将抛出异常

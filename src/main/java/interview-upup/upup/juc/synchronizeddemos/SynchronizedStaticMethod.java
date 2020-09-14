@@ -3,7 +3,7 @@ package upup.juc.synchronizeddemos;
 /**
  * @author Yuan Jiajun
  * @date 2020/9/8 10:17
- * @description @see
+ * @description @link
  */
 public class SynchronizedStaticMethod {
     //TestBean中有一个静态方法，method

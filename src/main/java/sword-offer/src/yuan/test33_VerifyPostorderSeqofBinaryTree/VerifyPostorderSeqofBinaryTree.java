@@ -3,7 +3,7 @@ package yuan.test33_VerifyPostorderSeqofBinaryTree;
 /**
  * @author Yuan Jiajun
  * @date 2020/9/7 16:31
- * @description @see
+ * @description @link
  */
 public class VerifyPostorderSeqofBinaryTree {
     public boolean verifyPostorder(int[] postorder) {

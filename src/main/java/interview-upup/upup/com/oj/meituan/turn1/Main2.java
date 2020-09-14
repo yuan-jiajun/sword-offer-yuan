@@ -1,4 +1,4 @@
-package upup.com.oj.meituan;
+package upup.com.oj.meituan.turn1;
 
 import java.util.Scanner;
 

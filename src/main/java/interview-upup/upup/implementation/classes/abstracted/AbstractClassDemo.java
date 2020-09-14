@@ -3,7 +3,7 @@ package upup.implementation.classes.abstracted;
 /**
  * @author Yuan Jiajun
  * @date 2020/9/7 21:16
- * @description @see
+ * @description @link
  * 1、抽象类不能被实例化，实例化的工作应该交由它的子类来完成，它只需要有一个引用即可。
  * 2、抽象方法必须由子类来进行重写。
  * 3、只要包含一个抽象方法的抽象类，该方法必须要定义成抽象类，不管是否还包含有其他方法。

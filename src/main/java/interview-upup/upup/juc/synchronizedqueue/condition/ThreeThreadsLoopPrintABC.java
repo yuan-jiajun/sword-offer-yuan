@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * @author Yuan Jiajun
  * @date 2020/9/8 15:30
- * @description @see
+ * @description @link
  */
 
  public class ThreeThreadsLoopPrintABC {

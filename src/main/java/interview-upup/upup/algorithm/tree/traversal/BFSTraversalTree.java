@@ -1,4 +1,4 @@
-package upup.tree;
+package upup.algorithm.tree.traversal;
 
 import org.junit.Test;
 

@@ -8,7 +8,7 @@ import java.util.Queue;
 /**
  * @author Yuan Jiajun
  * @date 2020/9/7 16:14
- * @description @see https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/
+ * @description @link https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/
  * 请实现一个函数按照之字形顺序打印二叉树，即第一行按照从左到右的顺序打印，第二层按照从右到左的顺序打印，第三行再按照从左到右的顺序打印，其他行以此类推。
  */
 public class ZPrintTree {

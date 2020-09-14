@@ -3,7 +3,7 @@ package upup.juc.synchronizeddemos;
 /**
  * @author Yuan Jiajun
  * @date 2020/9/8 10:24
- * @description @see
+ * @description @link
  */
 public class SynchronizedCodeBlocks {
 }

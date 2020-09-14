@@ -19,18 +19,16 @@ public class TreeToDoublyList {
 
     /**
      * 二叉树的转换
-     *
-     * @param root
-     * @return
      */
     public static Node treeToDoublyList(Node root) {
-        //指向双向链表的尾节点
-        //找到转换后的链表的头节点
         Node pHead = dfs(root, null);
+        //指向双向链表的尾节点
+        //向前遍历，找到转换后的链表的头节点
         while (pHead != null && pHead.left != null) {
 //            System.out.println(pHead.val);
             pHead = pHead.left;
         }
+
 //        System.out.println(pHead.val);
         //返回链表头节点
         return pHead;
@@ -56,11 +54,12 @@ public class TreeToDoublyList {
         if (lastNode != null) {
             lastNode.right = cur;
         }
-        //上面的2个赋值操作完成了current节点和比它小的那个节点的双向连接
+        //上面的2个赋值操作完成了current节点和比它小的那个节点（left)的双向连接
 
 
         //更新已经转换好的链表的最后一个节点
         lastNode = cur;
+
         //递归处理右子树
         if (cur.right != null) {
             lastNode = dfs(cur.right, lastNode);
