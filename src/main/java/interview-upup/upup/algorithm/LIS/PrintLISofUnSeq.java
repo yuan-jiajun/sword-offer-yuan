@@ -63,6 +63,7 @@ public class PrintLISofUnSeq {
 
         // 下面代码用来找到按照字母表排序最小的最长递增子序列
         int[] res = new int[len];
+
         int index = res.length - 1;
         int next = Integer.MAX_VALUE;
 

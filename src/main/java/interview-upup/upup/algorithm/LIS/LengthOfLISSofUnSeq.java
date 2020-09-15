@@ -22,7 +22,7 @@ import java.util.Arrays;
  * 当然这个覆盖操作可能会让最终的结果数组值并不是最终的递增序列值，这无所谓,反正只是求长度）
  */
 public class LengthOfLISSofUnSeq {
-    public int PrintAndLengthofLCISofUnSeq(int[] nums) {
+    public int lengthOfLIS(int[] nums) {
         int len = nums.length;
         if (len < 2) {
             return len;
@@ -51,7 +51,7 @@ public class LengthOfLISSofUnSeq {
         return res;
     }
 
-    public int lengthOfLIS(int[] nums) {
+    public int lengthOfLIS2(int[] nums) {
         int[] res = new int[nums.length];
         int len = 0;
         for (int num : nums) {
@@ -68,9 +68,9 @@ public class LengthOfLISSofUnSeq {
 
     @Test
     public void test() {
+        System.out.println(lengthOfLIS2(new int[]{4, 5, 6, 2, 3, 7}));
         System.out.println(lengthOfLIS(new int[]{4, 5, 6, 2, 3, 7}));
-        System.out.println(PrintAndLengthofLCISofUnSeq(new int[]{4, 5, 6, 2, 3, 7}));
-        System.out.println(PrintAndLengthofLCISofUnSeq(new int[]{1, 2, 8, 6, 4}));
+        System.out.println(lengthOfLIS(new int[]{1, 2, 8, 6, 4}));
 
     }
 }

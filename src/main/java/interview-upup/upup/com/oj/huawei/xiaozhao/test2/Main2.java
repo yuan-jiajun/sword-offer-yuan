@@ -14,7 +14,7 @@ import java.util.Scanner;
  * 输出：
  * 输出偏差与目标字符串单词总数
  */
-public class Main {
+public class Main2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
@@ -36,7 +36,7 @@ public class Main {
             }
         }
 
-        if (!s1.equalsIgnoreCase(s2)) {
+        if (s1.equalsIgnoreCase(s2)) {
         } else {
             for (int i = 0, j = 0; i < split1.length && j < split2.length; ) {
                 String sa = split1[i];

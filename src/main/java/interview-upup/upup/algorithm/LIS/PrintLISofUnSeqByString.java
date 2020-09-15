@@ -1,7 +1,7 @@
 package upup.algorithm.LIS;
 
 /**
- * @author Yuan Jiajun
+ * @author Yuan Jiajun zhx
  * @date 2020/9/4 16:25
  * @description
  */

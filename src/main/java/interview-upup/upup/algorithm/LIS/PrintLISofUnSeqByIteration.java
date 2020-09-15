@@ -2,7 +2,6 @@ package upup.algorithm.LIS;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -15,13 +14,14 @@ public class PrintLISofUnSeqByIteration {
     public static void LIS(int[] nums) {
         List<List<Integer>> res = new CopyOnWriteArrayList<>();
 
-        List<Integer> tmep = new ArrayList<Integer>();
+        List<Integer> tmep = new ArrayList<>();
         res.add(tmep);
         tmep.add(nums[0]);
 
         findLIS(nums, 1, res);
 
         List<Integer> result = res.get(0);
+
         for (List<Integer> re : res) {
             if (re.size() > result.size())
                 result = re;
@@ -33,17 +33,16 @@ public class PrintLISofUnSeqByIteration {
     public static void findLIS(int[] nums, int index, List<List<Integer>> res) {
         if (index == nums.length)
             return;
-        List<Integer> tmp = null;
+        List<Integer> addChose = null;
         int maxSize = 0;
-        for (Iterator<List<Integer>> iterator = res.iterator(); iterator.hasNext(); ) {
-            List<Integer> re = iterator.next();
-            if (nums[index] > re.get(re.size() - 1) && re.size() > maxSize) {
-                tmp = re;
-                maxSize = tmp.size();
+        for (List<Integer> temp : res) {
+            if (nums[index] > temp.get(temp.size() - 1) && temp.size() > maxSize) {
+                addChose = temp;
+                maxSize = addChose.size();
             }
         }
-        if (tmp != null) {
-            tmp.add(nums[index]);
+        if (addChose != null) {
+            addChose.add(nums[index]);
         } else {
             List<Integer> tmep = new ArrayList<Integer>();
             res.add(tmep);
