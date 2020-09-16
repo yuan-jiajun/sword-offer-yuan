@@ -7,7 +7,8 @@ import java.util.Scanner;
 /**
  * @author Yuan Jiajun
  * @date 2020/9/6 18:14
- * @description 当前有多个包含0到9的数字串列表，找出与指定数字串具有关联特征值的序列，
+ * @description @link
+ * 当前有多个包含0到9的数字串列表，找出与指定数字串具有关联特征值的序列，
  * 特征值是指数字串中比给指定临界值小的数字按顺序组成的数字串
  * 如果给定的数字串的特征值为当前数字串的特征值的子字符串，则认为当前字符串与给定字符串具有关联性
  */
@@ -47,13 +48,8 @@ public class Main {
             return;
         }
 
-        convert(numsInput, numsFeature, threshold);
         choseIntFeature = calFeature(choseIntFeature, threshold);
-
-
-        for (String s : numsFeature) {
-
-        }
+        convert(numsInput, numsFeature, threshold);
 
         for (int i = 0; i < numsFeature.size(); i++) {
             String s1 = String.valueOf(numsFeature.get(i));

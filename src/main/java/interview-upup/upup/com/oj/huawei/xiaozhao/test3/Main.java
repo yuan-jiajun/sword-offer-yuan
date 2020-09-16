@@ -11,7 +11,6 @@ import java.util.*;
  * n∗ m<= 1e6
  */
 public class Main {
-
     public static double[] pd = new double[100005];
     public static double[] pr = new double[100005];
     public static double[] ps = new double[100005];

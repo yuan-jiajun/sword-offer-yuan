@@ -14,7 +14,6 @@ public class Main {
         System.out.println("arr2[0] = " + arr2[0]);
         System.out.println("arr2[1] = " + arr2[1]);
         System.out.println(arr2[0].toString());
-
     }
 
 }
