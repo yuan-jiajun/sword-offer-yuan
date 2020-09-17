@@ -29,12 +29,12 @@ public class MinEditDistance {
         // 计算所有 DP 值
         for (int i = 1; i < n + 1; i++) {
             for (int j = 1; j < m + 1; j++) {
-                if (word1.charAt(i - 1) == word2.charAt(j - 1)){
+                if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
                     D[i][j] = D[i - 1][j - 1];
-                }else {
+                } else {
                     int delete = D[i - 1][j] + 1;
                     int insert = D[i][j - 1] + 1;
-                    int replace = D[i - 1][j - 1]+1;
+                    int replace = D[i - 1][j - 1] + 1;
 
 
                     D[i][j] = Math.min(delete, Math.min(insert, replace));

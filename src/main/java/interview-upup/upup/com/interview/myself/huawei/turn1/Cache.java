@@ -1,4 +1,4 @@
-package upup.com.interview.myself.huawei.test1;
+package upup.com.interview.myself.huawei.turn1;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,6 +12,7 @@ import java.util.Map;
  */
 public class Cache {
     private static volatile HashMap<Integer, Person> hashMap = new HashMap<>();
+
     private static volatile Cache cache;
 
     private Cache() {

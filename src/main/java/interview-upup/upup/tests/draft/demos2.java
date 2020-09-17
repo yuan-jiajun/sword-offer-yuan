@@ -1,4 +1,4 @@
-package upup.demos;
+package upup.tests.draft;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

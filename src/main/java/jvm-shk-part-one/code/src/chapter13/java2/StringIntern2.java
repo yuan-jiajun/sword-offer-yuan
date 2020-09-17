@@ -3,7 +3,7 @@ package chapter13.java2;
 
 /**
  * 使用intern()测试执行效率：空间使用上
- *
+ * <p>
  * 结论：对于程序中大量存在存在的字符串，尤其其中存在很多重复字符串时，使用intern()可以节省内存空间。
  *
  * @create 2020  21:17
@@ -13,7 +13,7 @@ public class StringIntern2 {
     static final String[] arr = new String[MAX_COUNT];
 
     public static void main(String[] args) {
-        Integer[] data = new Integer[]{1,2,3,4,5,6,7,8,9,10};
+        Integer[] data = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
         long start = System.currentTimeMillis();
         for (int i = 0; i < MAX_COUNT; i++) {

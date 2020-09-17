@@ -1,4 +1,4 @@
-package upup.demos;
+package upup.tests.draft;
 
 /**
  * @author Yuan Jiajun
@@ -29,6 +29,7 @@ public class SelfIncrease {
         int b = selfIncrease.a;
 
         System.out.println(b);
+
     }
 
     public static int test() {
