@@ -68,10 +68,10 @@ public class BFSTraversalTree {
      */
     public static List<List<Integer>> BFSPrintTreeNodeByLeftToRight2(TreeNode root) {
         if (root == null) {
-            return new ArrayList<List<Integer>>();
+            return new ArrayList<>();
         }
         //用来存放最终结果
-        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        List<List<Integer>> res = new ArrayList<>();
 
         traversal(1, root, res);
 
