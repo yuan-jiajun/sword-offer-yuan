@@ -1,7 +1,9 @@
 package upup.com.interview.myself.huawei.test1;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author yuanjiajun
@@ -9,8 +11,11 @@ import java.util.List;
  * @description @link
  */
 public class Cache {
-    private static volatile HashMap<Integer, Main.Person> hashMap;
+    private static volatile HashMap<Integer, Person> hashMap = new HashMap<>();
     private static volatile Cache cache;
+
+    private Cache() {
+    }
 
     public static Cache getInstance() {
         if (cache == null) {
@@ -23,21 +28,25 @@ public class Cache {
         return cache;
     }
 
-    public synchronized void update(List<Main.Person> list) {
-        for (Main.Person person : list) {
-            if (hashMap.containsKey(person.getId())) {
-            } else {
+    public synchronized void update(List<Person> list) {
+        for (Person person : list) {
+            if (!hashMap.containsKey(person.getId())) {
                 hashMap.put(person.getId(), person);
             }
         }
     }
 
-//    public synchronized Person queryId(int id) {
-//        return hashMap.get(id);
-//    }
-//
-//    public synchronized Person queryId(int id) {
-//        return hashMap.get(id);
-//    }
+    public synchronized Person queryById(int id) {
+        return hashMap.get(id);
+    }
 
+    public synchronized List<Person> queryByName(String name) {
+        List<Person> list = new ArrayList<>();
+        for (Map.Entry<Integer, Person> entry : hashMap.entrySet()) {
+            if (entry.getValue().getName().equals(name)) {
+                list.add(entry.getValue());
+            }
+        }
+        return list;
+    }
 }
