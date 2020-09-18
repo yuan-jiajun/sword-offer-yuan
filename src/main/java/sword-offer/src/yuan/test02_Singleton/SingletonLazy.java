@@ -50,13 +50,13 @@ class SingletonLazy2 {
  * 线程安全的懒汉式：给方法加锁,效率不高
  */
 class SingletonLazy3 {
-    private static SingletonLazy3 ourInstance;
+    private static SingletonLazy3 instance;
 
     public synchronized static SingletonLazy3 getInstance() {
-        if (null == ourInstance) {
-            ourInstance = new SingletonLazy3();
+        if (instance == null) {
+            instance = new SingletonLazy3();
         }
-        return ourInstance;
+        return instance;
     }
 
     private SingletonLazy3() {
@@ -68,13 +68,13 @@ class SingletonLazy3 {
  * 懒汉式：非线程安全
  */
 class SingletonLazy4 {
-    private static SingletonLazy4 ourInstance;
+    private static SingletonLazy4 instance;
 
     public static SingletonLazy4 getInstance() {
-        if (null == ourInstance) {
-            ourInstance = new SingletonLazy4();
+        if (instance == null) {
+            instance = new SingletonLazy4();
         }
-        return ourInstance;
+        return instance;
     }
 
     private SingletonLazy4() {

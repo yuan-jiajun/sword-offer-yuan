@@ -79,7 +79,7 @@ class Phone implements Runnable {
             set();
         } finally {
             lock.unlock();
-//            lock.unlock();
+            lock.unlock();
         }
         System.out.println(":");
     }

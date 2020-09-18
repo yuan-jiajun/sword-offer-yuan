@@ -15,7 +15,6 @@ public class BlockingQueueDemo {
      * 阻塞状态，吞吐量通常要高
      *
      *
-     *
      * 2.阻塞队列
      *   2.1阻塞队列有没有好的一面
      *   2.2不得不阻塞，你如何管理
@@ -27,7 +26,7 @@ public class BlockingQueueDemo {
         System.out.println(blockingQueue.add("a"));
         System.out.println(blockingQueue.add("b"));
         System.out.println(blockingQueue.add("c"));
-        System.out.println(blockingQueue.add("e"));
+        System.out.println(blockingQueue.add("d"));
         System.out.println(blockingQueue.element());
         System.out.println(blockingQueue.remove());
         System.out.println(blockingQueue.remove());
@@ -41,7 +40,7 @@ public class BlockingQueueDemo {
         System.out.println(blockingQueue.offer("a"));
         System.out.println(blockingQueue.offer("b"));
         System.out.println(blockingQueue.offer("c"));
-        System.out.println(blockingQueue.offer("e"));
+        System.out.println(blockingQueue.offer("d"));
         System.out.println(blockingQueue.peek());
         System.out.println(blockingQueue.poll());
         System.out.println(blockingQueue.poll());

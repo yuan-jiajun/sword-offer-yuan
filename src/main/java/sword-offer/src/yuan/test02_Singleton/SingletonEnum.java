@@ -32,8 +32,8 @@ public class SingletonEnum {
     }
 
     public static SingletonEnum getInstance() {
-
         return Singleton.INSTANCE.getInstance();
     }
+
 }
 

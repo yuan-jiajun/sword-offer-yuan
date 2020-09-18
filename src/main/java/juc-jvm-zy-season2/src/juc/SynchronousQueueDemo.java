@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 public class SynchronousQueueDemo {
     public static void main(String[] args) {
-        BlockingQueue<String> blockingQueue = new SynchronousQueue<String>();
+        BlockingQueue<String> blockingQueue = new SynchronousQueue<>();
         new Thread(() -> {
             try {
                 System.out.println(Thread.currentThread().getName() + "\t put 1");

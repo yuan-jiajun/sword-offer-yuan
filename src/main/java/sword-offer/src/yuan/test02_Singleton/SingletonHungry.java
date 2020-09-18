@@ -13,13 +13,13 @@ public class SingletonHungry {
  */
 class SingletonHungry1 {
     //该对象的引用不可修改
-    private static final SingletonHungry1 ourInstance = new SingletonHungry1();
+    private static SingletonHungry1 ourInstance = new SingletonHungry1();
+
+    private SingletonHungry1() {
+    }
 
     public static SingletonHungry1 getInstance() {
         return ourInstance;
-    }
-
-    private SingletonHungry1() {
     }
 }
 
@@ -29,6 +29,9 @@ class SingletonHungry1 {
 class SingletonHungry2 {
     private static SingletonHungry2 ourInstance;
 
+    private SingletonHungry2() {
+    }
+
     static {
         ourInstance = new SingletonHungry2();
     }
@@ -37,6 +40,5 @@ class SingletonHungry2 {
         return ourInstance;
     }
 
-    private SingletonHungry2() {
-    }
+
 }

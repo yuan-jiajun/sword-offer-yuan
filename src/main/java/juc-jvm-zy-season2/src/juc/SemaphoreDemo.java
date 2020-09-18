@@ -18,7 +18,6 @@ public class SemaphoreDemo {
         for (int i = 1; i <= 6; i++) {
             new Thread(() -> {
                 try {
-
                     semaphore.acquire();
                     System.out.println(Thread.currentThread().getName() + "\t抢到车位");
                     try {
@@ -27,7 +26,6 @@ public class SemaphoreDemo {
                         e.printStackTrace();
                     }
                     System.out.println(Thread.currentThread().getName() + "\t停车3秒后离开车位");
-
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 } finally {

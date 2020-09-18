@@ -24,11 +24,12 @@ public class StringIntern2 {
         long end = System.currentTimeMillis();
         System.out.println("花费的时间为：" + (end - start));
 
-        try {
-            Thread.sleep(1000000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(1000000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+
         System.gc();
     }
 }
