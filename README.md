@@ -1,4 +1,4 @@
-##2020年秋招个人学习记录和刷题总结&emsp; [(github repository)](https://github.com/yuan-jiajun/sword-offer-yuan)
+### 2020年秋招个人学习记录和刷题总结&emsp; [(github repository)](https://github.com/yuan-jiajun/sword-offer-yuan)
 - [剑指offer (Java实现)](src/main/java/sword-offer)
 - [2020年秋招笔试OJ代码](src/main/java/interview-upup/upup/com)
 - [JVM](src/main/java/jvm-shk-part-one)&emsp;[(宋红康老师关于JVM的讲解教程-强烈安利)](https://www.bilibili.com/video/BV1PJ411n7xZ)
