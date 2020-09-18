@@ -1,6 +1,6 @@
 package upup.tests.draft;
 
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.HashMap;
 
 /**
  * @author Yuan Jiajun
@@ -9,8 +9,8 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class Map {
     public static void main(String[] args) {
-        ConcurrentHashMap<Integer, String> map = new ConcurrentHashMap<Integer, String>();
-//        HashMap<Integer, String> map = new HashMap<Integer, String>();
+//        ConcurrentHashMap<Integer, String> map = new ConcurrentHashMap<Integer, String>();
+        HashMap<Integer, String> map = new HashMap<Integer, String>();
 //        HashMap<Integer, String> map = new LinkedHashMap<Integer, String>();
 //        TreeMap<Integer, String> map = new TreeMap<Integer, String>();
 
