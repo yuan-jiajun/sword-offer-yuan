@@ -395,7 +395,7 @@ public CopyOnWriteArraySet() {
 
 `ReentrantLock`在构造的时候传入`true`则是**公平锁**。
 
-## 可重入锁/递归锁
+## 可重入锁（递归锁）
 
 可重入锁又叫递归锁，指的同一个线程在**外层方法**获得锁时，进入**内层方法**会自动获取锁。也就是说，线程可以进入任何一个它已经拥有锁的代码块。比如`get`方法里面有`set`方法，两个方法都有同一把锁，得到了`get`的锁，就自动得到了`set`的锁。
 
@@ -456,7 +456,7 @@ while (!atomicReference.compareAndSet(null, thread)) { }
 
 `Demos.juc.CountDownLatchDemo`内部维护了一个**计数器**，只有当**计数器==0**时，某些线程才会停止阻塞，开始执行。
 
-`Demos.juc.CountDownLatchDemo`主要有两个方法，`countDown()`来让计数器-1，`await()`来让线程阻塞。当`count==0`时，阻塞线程自动唤醒。
+`Demos.juc.CountDownLatchDemo`主要有两个方法，`countDown()`来让计数器 -1，`await()`来让线程阻塞。当`count==0`时，阻塞线程自动唤醒。
 
 **案例一班长关门**：main线程是班长，6个线程是学生。只有6个线程运行完毕，都离开教室后，main线程班长才会关教室门。
 
