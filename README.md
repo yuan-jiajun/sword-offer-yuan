@@ -3,7 +3,7 @@
 - [2020年秋招笔试OJ代码](src/main/java/interview-upup/upup/com)
 - [JVM](src/main/java/jvm-shk-part-one)&emsp;[(宋红康老师关于JVM的讲解教程-强烈安利)](https://www.bilibili.com/video/BV1PJ411n7xZ)
 - [JUC](src/main/java/juc-jvm-zy-season2)&emsp;[(周阳JUC课程)](https://www.bilibili.com/video/BV1vE411D7KE)
-- [Java语法&理论](src/main/java/interview-upup/upup/grammar)
+- [Java语法&理论](src/main/java/interview-upup/upup/jdktheory)
 - [Java一些具体场景的实现](src/main/java/interview-upup/upup/implementation)
 - [Java输入输出练习](src/main/java/interview-upup/upup/iopractice)
 - [Java源码阅读](src/main/java/interview-upup/upup/sourceread)

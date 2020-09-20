@@ -1,7 +1,7 @@
 package upup.commonly.api;
 
 import org.junit.Test;
-import upup.grammar.shallowdeepcopy.Subject;
+import upup.jdktheory.shallowdeepcopy.Subject;
 
 import java.util.Arrays;
 

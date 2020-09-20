@@ -26,7 +26,7 @@ public class JoinTest {
     }
 }
 
-class JoinDemo implements Runnable {
+class JoinDemo implements Runnable{
 
     @Override
     public void run() {
