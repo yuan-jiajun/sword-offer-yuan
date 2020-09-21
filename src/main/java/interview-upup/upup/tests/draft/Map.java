@@ -1,6 +1,6 @@
 package upup.tests.draft;
 
-import java.util.Hashtable;
+import java.util.HashMap;
 
 /**
  * @author Yuan Jiajun
@@ -10,8 +10,8 @@ import java.util.Hashtable;
 public class Map {
     public static void main(String[] args) {
 //        ConcurrentHashMap<Integer, String> map = new ConcurrentHashMap<>();
-//        HashMap<Integer, String> map = new HashMap<>();
-        Hashtable<Integer, String> map = new Hashtable<>();
+        HashMap<Integer, String> map = new HashMap<>();
+//        Hashtable<Integer, String> map = new Hashtable<>();
 //        HashMap<Integer, String> map = new LinkedHashMap<>();
 //        TreeMap<Integer, String> map = new TreeMap<>();
 

@@ -1,5 +1,8 @@
 package upup.tests.draft;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author Yuan Jiajun
  * @date 2020/9/2 20:50
@@ -7,32 +10,20 @@ package upup.tests.draft;
  */
 
 public class demos extends Thread {
-    static int x = 0;
-
-    @Override
-    public void run() {
-        for (int i = 0; i < 1000; i++) {
-            x++;
+    public static void main(String[] args) {
+        List<String> list = new ArrayList();
+        list.add("1");
+        list.add("2");
+        list.add("3");
+        list.add("4");
+        list.add("5");
+        for (String item : list) {
+            if (item.equals("3")) {
+                System.out.println(item);
+                list.remove(item);
+            }
         }
+        System.out.println(list.size());
     }
 
-    public static void main(String[] args) throws InterruptedException {
-        for (int i = 0; i < 5; i++) {
-            new demos().start();
-        }
-        sleep(2);
-        System.out.println(x);
-    }
-
-
-//    public static void main(String[] args) throws InterruptedException {
-//
-//        demos ds = null;
-//        for (int i = 0; i < 5; i++) {
-//            ds = new demos();
-//            ds.start();
-//        }
-//        sleep(2000);
-//        System.out.println(ds.x);
-//    }
 }
