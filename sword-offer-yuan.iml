@@ -16,6 +16,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java/sword-offer/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java/jvm-shk-part-one/code/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java/onlinejudge" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java/design-pattern/src/structure-patters" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java/design-pattern/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
