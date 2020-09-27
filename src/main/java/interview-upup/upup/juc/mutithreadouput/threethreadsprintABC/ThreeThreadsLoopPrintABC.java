@@ -1,4 +1,4 @@
-package upup.juc.synchronizedqueue.condition;
+package upup.juc.mutithreadouput.threethreadsprintABC;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

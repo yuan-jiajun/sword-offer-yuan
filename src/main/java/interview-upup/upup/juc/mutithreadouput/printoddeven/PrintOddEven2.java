@@ -1,4 +1,4 @@
-package upup.juc.printoddeven;
+package upup.juc.mutithreadouput.printoddeven;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
