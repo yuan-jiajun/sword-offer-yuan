@@ -1,4 +1,4 @@
-package upup.com.oj.company.alibaba.test2;
+package upup.com.oj.company.alibaba.myself.test2;
 
 import java.util.ArrayList;
 import java.util.Arrays;

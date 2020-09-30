@@ -1,4 +1,4 @@
-package upup.com.oj.company.alibaba.test1;
+package upup.com.oj.company.alibaba.myself.test1;
 
 import java.util.Scanner;
 

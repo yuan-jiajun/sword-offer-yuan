@@ -1,4 +1,4 @@
-package upup.com.oj.company.alibaba.test3;
+package upup.com.oj.company.alibaba.myself.test3;
 
 /**
  * @author yuanjiajun
