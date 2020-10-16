@@ -11,19 +11,16 @@ import java.util.List;
 
 public class demos extends Thread {
     public static void main(String[] args) {
-        List<String> list = new ArrayList();
-        list.add("1");
-        list.add("2");
-        list.add("3");
-        list.add("4");
-        list.add("5");
-        for (String item : list) {
-            if (item.equals("3")) {
-                System.out.println(item);
-                list.remove(item);
-            }
-        }
-        System.out.println(list.size());
+//        A a = new A(5.0);
+//        System.out.println(a.value);
+//        int[2][3]x = new int[2][3];
+//        int[][] y = {{1, 2}};
+//        int[2][]z = {1, 2, 3, 4};
+//        int[][] yuan = new int[][3];
+//        int[][] jia = new int[3][];
     }
 
+    class A {
+        int value = 2;
+    }
 }

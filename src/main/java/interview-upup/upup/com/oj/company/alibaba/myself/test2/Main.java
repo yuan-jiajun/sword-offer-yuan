@@ -11,7 +11,6 @@ import java.util.Scanner;
  * @date 2020/3/30 19:43
  */
 public class Main {
-
     private static double getMean(List<int[]> serials) {
         return serials.stream().map(ints -> Arrays.stream(ints).max().getAsInt()).mapToInt(Integer::intValue).average().getAsDouble();
     }
