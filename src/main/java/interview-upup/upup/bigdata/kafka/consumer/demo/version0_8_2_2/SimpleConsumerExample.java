@@ -6,10 +6,13 @@ import kafka.consumer.KafkaStream;
 import kafka.javaapi.consumer.ConsumerConnector;
 
 import java.io.UnsupportedEncodingException;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * @author Yuan Jiajun
@@ -25,7 +28,7 @@ public class SimpleConsumerExample {
         Properties props = new Properties();
         props.put("zookeeper.connect", "10.0.3.12:2181");
         props.put("auto.offset.reset", "smallest");
-        props.put("group.id", "yuanjiajun-test");
+        props.put("group.id", "yuanjiajun-test2");
         props.put("enable.auto.commit", "true");
         props.put("zookeeper.session.timeout.ms", "400");
         props.put("zookeeper.sync.time.ms", "200");
@@ -39,16 +42,21 @@ public class SimpleConsumerExample {
         ConsumerConfig consumerConfig = new kafka.consumer.ConsumerConfig(props);
         ConsumerConnector consumerConnector = kafka.consumer.Consumer.createJavaConsumerConnector(consumerConfig);
 
-        Map<String, Integer> topicCountMap = new HashMap<String, Integer>();
+        Map<String, Integer> topicCountMap = new HashMap<>();
         int localConsumerCount = 1;
         topicCountMap.put(TOPIC, localConsumerCount);
         Map<String, List<KafkaStream<byte[], byte[]>>> consumerMap = consumerConnector
                 .createMessageStreams(topicCountMap);
         List<KafkaStream<byte[], byte[]>> streams = consumerMap.get(TOPIC);
+        AtomicLong a = new AtomicLong();
         streams.stream().forEach(stream -> {
             ConsumerIterator<byte[], byte[]> it = stream.iterator();
             while (it.hasNext()) {
-                System.out.println(new String(it.next().message()));
+                ByteBuffer s = ByteBuffer.wrap(it.next().message());
+                s.order(ByteOrder.LITTLE_ENDIAN);
+                a.getAndIncrement();
+                System.out.println(s.getInt() + " " + a);
+//                System.out.println(new String(it.next().message()));
             }
         });
     }

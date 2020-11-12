@@ -12,6 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java/jvm-shk-part-one/code/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java/onlinejudge" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java/design-pattern/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/utils" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
