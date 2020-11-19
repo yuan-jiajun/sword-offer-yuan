@@ -21,7 +21,6 @@ public class SerializableTest {
 
         String path = SerializableTest.class.getResource("").getPath() + "person.ser";
 
-
         try {
             //需要一个文件输出流和对象输出流；文件输出流用于将字节输出到文件，对象输出流用于将对象输出为字节
             ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(path));
