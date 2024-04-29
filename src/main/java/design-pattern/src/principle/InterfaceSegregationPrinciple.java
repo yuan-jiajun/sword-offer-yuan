@@ -1,4 +1,4 @@
-package src.principle;
+package principle;
 
 /**
  * @author Yuan Jiajun

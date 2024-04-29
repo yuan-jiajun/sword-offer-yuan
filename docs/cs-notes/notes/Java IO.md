@@ -70,8 +70,8 @@ public static void listAllFiles(File dir) {
 ## 实现文件复制
 
 ```java
-public static void copyFile(String src, String dist) throws IOException {
-    FileInputStream in = new FileInputStream(src);
+public static void copyFile(String interview222, String dist) throws IOException {
+    FileInputStream in = new FileInputStream(interview222);
     FileOutputStream out = new FileOutputStream(dist);
 
     byte[] buffer = new byte[20 * 1024];
@@ -362,10 +362,10 @@ I/O 包和 NIO 已经很好地集成了，java.io.\* 已经以 NIO 为基础重�
 以下展示了使用 NIO 快速复制文件的实例：
 
 ```java
-public static void fastCopy(String src, String dist) throws IOException {
+public static void fastCopy(String interview222, String dist) throws IOException {
 
     /* 获得源文件的输入字节流 */
-    FileInputStream fin = new FileInputStream(src);
+    FileInputStream fin = new FileInputStream(interview222);
 
     /* 获取输入字节流的文件通道 */
     FileChannel fcin = fin.getChannel();
